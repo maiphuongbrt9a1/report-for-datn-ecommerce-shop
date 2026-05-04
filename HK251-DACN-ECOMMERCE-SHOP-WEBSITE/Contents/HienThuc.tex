@@ -3,13 +3,110 @@
 \subsection{Cấu trúc mã nguồn}
 \subsubsection{Frontend}
 
+Todo
+
 \subsubsection{Backend}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/sourceCodeStructureImgs/backend-1.png}
+	\vspace{0.5cm}
+	\caption{Cấu trúc mã nguồn backend}
+	\label{fig: Cấu trúc mã nguồn backend}
+\end{figure}
+
+Trong đó: \\
+
+Folder prisma: Chứa tất cả các bản migration database của dự án. Và chứa file schema.prisma đây là file chứa toàn bộ model của dự án. Các model này sẽ được Prisma Orm dịch tự động thành các bảng của Postgres. \\
+
+Trong folder src, các folder tiếp theo sẽ đảm nhiệm logic cho một số nhiệm vụ cụ thể như sau: \\
+
+Folder address: Chịu trách nhiệm cho toàn bộ logic liên quan đến CURD địa chỉ của người dùng, order, shipment. \\
+
+Folder analytics: Chịu trách nhiệm tổng hợp và phân tích dữ liệu kinh doanh như doanh số, số lượng đơn hàng đã bán, đã hủy, đã hoàn, phân tích thanh toán, tồn kho, khách hàng mới và khách hàng quay lại, cùng các thống kê phục vụ dashboard quản trị. \\
+
+Folder auth: Xử lý xác thực và phân quyền người dùng, bao gồm đăng nhập, JWT, OAuth, các strategy và guard bảo vệ API. \\
+
+Folder aws-s3: Chứa logic làm việc với AWS S3, chủ yếu phục vụ việc tải lên, lưu trữ và quản lý tệp tin trên cloud. \\
+
+Folder cart: Quản lý giỏ hàng của người dùng, bao gồm các thao tác tạo, cập nhật, xóa và tính toán giỏ hàng. \\
+
+Folder cart-items: Quản lý chi tiết từng sản phẩm nằm trong giỏ hàng. \\
+
+Folder category: Quản lý danh mục sản phẩm, phục vụ phân loại và tổ chức sản phẩm trong hệ thống. \\
+
+Folder chat: Chịu trách nhiệm cho chức năng chat realtime, bao gồm phòng chat, tin nhắn và kết nối WebSocket. \\
+
+Folder color: Quản lý thuộc tính màu sắc của sản phẩm. \\
+
+Folder common: Chứa các thành phần dùng chung cho toàn bộ dự án, đặc biệt là các cấu hình hoặc tài nguyên hỗ trợ Swagger/OpenAPI. \\
+
+Folder config: Chứa các file cấu hình khởi tạo và tích hợp các dịch vụ nền như Bull queue và Mailer. \\
+
+Folder core: Chứa các thành phần lõi ở mức toàn cục của hệ thống, ví dụ interceptor dùng để chuẩn hóa dữ liệu phản hồi. \\
+
+Folder decorator: Chứa các custom decorator được tạo riêng để tái sử dụng trong nhiều module khác nhau. \\
+
+Folder helpers: Chứa các hàm tiện ích, service hỗ trợ và các kiểu dữ liệu dùng chung cho nhiều phần của dự án. \\
+
+Folder mail: Chịu trách nhiệm gửi email, quản lý template email và các logic liên quan đến mail trong hệ thống. \\
+
+Folder media: Quản lý tệp media, bao gồm lưu trữ thông tin file và xử lý các tài nguyên đa phương tiện. \\
+
+Folder notification: Xử lý hệ thống thông báo, bao gồm thông báo realtime và các logic phát sinh thông báo cho người dùng. \\
+
+Folder order-items: Quản lý chi tiết sản phẩm trong từng đơn hàng. \\
+
+Folder orders: Chịu trách nhiệm cho toàn bộ vòng đời của đơn hàng, từ khởi tạo, xử lý, xác nhận đến liên kết với thanh toán và giao hàng. \\
+
+Folder payments: Xử lý thanh toán trực tuyến, tích hợp cổng thanh toán và theo dõi trạng thái thanh toán của đơn hàng. \\
+
+Folder prisma: Chứa module kết nối Prisma, cung cấp PrismaService để toàn bộ hệ thống truy cập cơ sở dữ liệu một cách thống nhất. \\
+
+Folder product-variants: Quản lý các biến thể sản phẩm như kích thước, màu sắc, tồn kho và thông tin biến thể đi kèm. \\
+
+Folder products: Chịu trách nhiệm cho CRUD sản phẩm, danh sách sản phẩm, lọc tìm kiếm và thông tin hiển thị của sản phẩm. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Images/sourceCodeStructureImgs/backend-2.png}
+	\vspace{0.5cm}
+	\caption{Cấu trúc mã nguồn backend (Tiếp theo)}
+	\label{fig: Cấu trúc mã nguồn backend (Tiếp theo)}
+\end{figure}
+
+Folder recommendation: Chứa logic gợi ý sản phẩm cho người dùng và các tác vụ liên quan đến tính toán đề xuất. \\
+
+Folder requests: Quản lý các yêu cầu do người dùng gửi lên hệ thống. \\
+
+Folder return-requests: Xử lý yêu cầu trả hàng, hoàn hàng hoặc đổi trả của khách hàng. \\
+
+Folder reviews: Quản lý đánh giá sản phẩm, bình luận và các media đi kèm với bài đánh giá. \\
+
+Folder shipments: Chịu trách nhiệm cho logic vận chuyển, tạo đơn giao hàng, tính phí ship và tích hợp đơn vị vận chuyển. \\
+
+Folder size-profiles: Quản lý thông tin size profile để hỗ trợ sản phẩm có nhiều bảng size khác nhau. \\
+
+Folder types: Chứa các file khai báo kiểu dữ liệu mở rộng của TypeScript để dùng chung trong toàn dự án. \\
+
+Folder user: Quản lý thông tin người dùng, hồ sơ tài khoản và các thao tác CRUD liên quan đến người dùng. \\
+
+Folder user-vouchers: Quản lý mối liên kết giữa người dùng và voucher, bao gồm voucher đã lưu hoặc đã được áp dụng cho người dùng. \\
+
+Folder vouchers: Chịu trách nhiệm cho việc tạo, cập nhật và quản lý mã giảm giá của hệ thống. \\
 
 \subsection{Danh sách các API}
 
+Danh sách tất cả các api được tài liệu hóa đầy đủ ở link này: \url{https://be-ecomerce-shop-production.up.railway.app/documentation/}
+
 \subsection{Giao diện hệ thống cho người khách hàng}
+
+todo
 
 \subsection{Giao diện hệ thống cho người quản trị viên}
 
+todo
+
 \subsection{Giao diện hệ thống cho người nhân viên}
+
+todo
 
