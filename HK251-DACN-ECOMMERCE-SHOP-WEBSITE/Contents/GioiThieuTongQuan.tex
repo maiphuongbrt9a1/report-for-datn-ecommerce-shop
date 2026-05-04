@@ -22,14 +22,14 @@ Hoàn thành hệ thống bán hàng trực tuyến cho cửa hàng thời trang
 \begin{itemize}
   \item Xây dựng hoàn chỉnh hệ thống bán hàng trực tuyến cho cửa hàng thời trang dưới dạng ứng dụng Web (Web Application).
 
-  \item Hỗ trợ thuận tiện cho việc quản lý những cửa hàng thời trang nhỏ có 2 cơ sở kinh doanh và dưới 10 nhân viên hoạt động. Quản lý danh mục sản phẩm, quản lý sản phẩm, quản lý hàng tồn kho, doanh thu, đóng gói đơn hàng, vận chuyển đơn hàng, voucher, giúp đề xuất quyết định nhập hàng các loại hàng bán chạy hay đang hot trend. Hỗ trợ quản lý thông tin nhân viên cửa hàng.
+  \item Hỗ trợ thuận tiện cho việc quản lý những cửa hàng thời trang nhỏ có 1 cơ sở kinh doanh và dưới 10 nhân viên hoạt động. Quản lý danh mục sản phẩm, quản lý sản phẩm, quản lý hàng tồn kho, doanh thu, đóng gói đơn hàng, vận chuyển đơn hàng, voucher, giúp đề xuất quyết định nhập hàng các loại hàng bán chạy hay đang hot trend. Hỗ trợ quản lý thông tin nhân viên cửa hàng.
 
   \item Hỗ trợ việc mua hàng của khách hàng được dễ dàng hơn. Bằng với các chức năng dễ dùng sẽ giúp khách hàng có thể mua và theo dõi tình trạng đơn hàng, tình trạng vận chuyển dễ dàng, giao diện thân thiện đẹp mắt, hàng hóa đa dạng mẫu mã sẽ giúp thu hút và giữ chân khách hàng.
 
 \end{itemize}
 \subsection{Phạm vi và giới hạn của đề tài}
 
-Phạm vi và giới hạn của đề tài được nhóm quy ước là nhóm đang làm hệ thống bán hàng trực tuyến cho cửa hàng thời trang dưới dạng ứng dụng Web (Web Application) với những cửa hàng có quy mô dưới 10 nhân viên và chỉ có 2 cơ sở hoạt động kinh doanh. Các actor chính của hệ thống là người quản trị viên, người nhân viên cửa hàng và người khách hàng.\\
+Phạm vi và giới hạn của đề tài được nhóm quy ước là nhóm đang làm hệ thống bán hàng trực tuyến cho cửa hàng thời trang dưới dạng ứng dụng Web (Web Application) với những cửa hàng có quy mô dưới 10 nhân viên và chỉ có 1 cơ sở hoạt động kinh doanh. Các actor chính của hệ thống là người quản trị viên, người nhân viên cửa hàng và người khách hàng.\\
 
 Sản phẩm thời trang mà cửa hàng đang buôn bán là quần áo, giày dép, nón, mũ các loại dành cho cả nam và nữ. Ngoài ra còn có thêm các loại phụ kiện thời trang khác cho nam và nữ như thắt lưng, bóp, ví, túi, balo. Tất cả các sản phẩm của shop đều phục vụ cho cả nam và nữ trong độ tuổi từ 15 tuổi đến dưới 30 tuổi.\\
 
@@ -46,10 +46,16 @@ Các tính năng cốt lõi có trong hệ thống sẽ được nêu cụ thể
   \item Chương 4: Phân tích hệ thống: Trình bày chi tiết về các vai trò của người dùng trong hệ thống, các nhóm chức năng cho từng vai trò. Các yêu cầu phi chức năng mong muốn và thiết kế use case để trực quan hóa tổng thể về mặt chức năng của hệ thống để người đọc hiểu rõ hơn về hệ thống nhóm phát triển.
 
   \item Chương 5: Thiết kế hệ thống: Trình bày thiết kế kiến trúc của hệ thống. Thiết kế cơ sở dữ liệu bao gồm mô tả thực thể, sơ đồ thực thể mối quan hệ. Trình bày về lược đồ cơ sở dữ liệu và bảng ánh xạ. Trình bày về Class diagram của hệ thống. Trình bày về sơ đồ hoạt động của hệ thống. Trình bày về sơ đồ tuần tự mà người dùng sẽ trải qua khi sử dụng các chức năng. Ngoài ra, nhóm cũng đưa ra thiết kế về giao diện người dùng đối với từng vai trò và chức năng của người dùng được phép thực hiện trong hệ thống.
-    
-  \item Chương 6: Tổng kết: Tổng kết kết quả đạt được, rút ra kinh nghiệm và đề xuất hướng phát triển cho giai đoạn 2.
   
-  \item Chương 7: Tài liệu tham khảo:  Tất cả các tài liệu nhóm đã dùng tham khảo đều được trích dẫn đầy đủ tại đây.
+  \item Chương 6: Hiện thực hệ thống: Trình bày cấu trúc mã nguồn của Frontend, cấu trúc mã nguồn của Backend và các giao diện đã được hiện thực cho ứng dụng. Ngoài ra, trình bày chi tiết về danh sách các API đã được hiện thực. Bao gồm đường dẫn, parameters, và mô tả công dụng của từng api cũng như mô tả công dụng của từng parameters. Tiếp theo đó là, mô tả lại định dạng trả về của api.
+  
+  \item Chương 7: Kiểm thử và đánh giá hệ thống: Tiến hành kiểm tra hệ thống thông qua các cấp kiểm thử phần mềm: Unit testing, Integration Testing, System Testing, Acceptance Testing. Sau đó đánh giá hệ thống có đạt được những yêu cầu chức năng và phi chức năng đã đặt ra từ trước.
+  
+  \item Chương 8: Triển khai và vận hành hệ thống: Tiến hành hiện thực một phần hệ thống và giải thích cách hiện thực, cũng như triển khai hệ thống ra môi trường sử dụng được.
+  
+  \item Chương 9: Tổng kết: Tổng kết kết quả đạt được, rút ra kinh nghiệm và đề xuất hướng phát triển cho tương lai.
+  
+  \item Chương 10: Tài liệu tham khảo:  Tất cả các tài liệu nhóm đã dùng tham khảo đều được trích dẫn đầy đủ tại đây.
     
-  \item Chương 8: Phụ lục
+  \item Chương 11: Phụ lục
 \end{itemize}

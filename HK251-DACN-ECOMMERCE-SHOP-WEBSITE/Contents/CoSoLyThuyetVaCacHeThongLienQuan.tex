@@ -393,3 +393,17 @@ S3 được thiết kế với độ bền dữ liệu lên tới 99,999999999\%
 Đối với phân hệ xử lý giao dịch trực tuyến, hệ thống đã tích hợp Cổng thanh toán VNPAY \cite{vnpay2025} – đơn vị trung gian thanh toán hàng đầu và phổ biến nhất tại Việt Nam hiện nay. VNPAY đóng vai trò là cầu nối an toàn giữa website thương mại điện tử và mạng lưới ngân hàng rộng lớn, cho phép khách hàng hoàn tất đơn hàng nhanh chóng thông qua đa dạng các phương thức như: Quét mã VNPAY-QR trên ứng dụng Mobile Banking, sử dụng thẻ ATM nội địa (Napas) hoặc thẻ thanh toán quốc tế (Visa, Mastercard, JCB). \\
 
 Về mặt kỹ thuật, VNPAY cung cấp bộ API (Application Programming Interface) chuẩn hóa, dễ dàng tích hợp vào hệ thống Backend (NestJS). Quy trình thanh toán được thiết kế theo mô hình chuyển hướng (Redirect), đảm bảo an toàn tuyệt đối cho người dùng vì mọi thông tin nhạy cảm (số thẻ, mã OTP) đều được nhập trực tiếp trên giao diện bảo mật của ngân hàng hoặc cổng thanh toán, hệ thống website bán hàng không lưu trữ các dữ liệu này, giúp tuân thủ các tiêu chuẩn bảo mật khắt khe trong ngành tài chính.\\
+
+\subsection{GHN - Giao hàng nhanh}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Images/Tech_logo/ghn-logo.png}
+	\vspace{0.5cm}
+	\caption{Logo của GHN}
+	\label{fig: Logo của GHN}
+\end{figure}
+
+Đối với phân hệ xử lý giao hàng, hệ thống đã tích hợp dịch vụ Giao Hàng Nhanh (GHN) \cite{ghn2025} – đơn vị cung cấp giải pháp vận chuyển nhanh hàng đầu và phổ biến nhất tại Việt Nam hiện nay. GHN đóng vai trò là cầu nối logistics linh hoạt giữa cửa hàng trực tuyến và khách hàng trên toàn quốc, cho phép đơn hàng được xử lý và trao đến tay người mua một cách nhanh chóng thông qua đa dạng các tùy chọn dịch vụ như: Giao hàng tiêu chuẩn nội thành, giao hỏa tốc trong ngày, giao hàng thu tiền hộ (COD) và hỗ trợ đối soát tự động, minh bạch. \\
+
+Về mặt kỹ thuật, GHN cung cấp bộ API chuẩn hóa theo kiến trúc RESTful, dễ dàng tích hợp vào hệ thống Backend (NestJS). Quy trình vận hành được thiết kế theo mô hình đồng bộ trạng thái qua Webhook, đảm bảo mọi thay đổi về tình trạng đơn hàng (đã tiếp nhận, đang lấy hàng, đang giao, giao thành công, hoàn trả) được cập nhật theo thời gian thực mà không cần truy vấn định kỳ. Đồng thời, cơ chế xác thực bằng Token và truyền tải dữ liệu qua HTTPS giúp bảo vệ an toàn các thông tin nhạy cảm như địa chỉ, số điện thoại của khách hàng; hệ thống bán hàng chỉ lưu trữ mã vận đơn và trạng thái đơn hàng, không can thiệp vào dữ liệu cá nhân trong quá trình vận chuyển, đáp ứng tốt các quy định về bảo mật dữ liệu hiện hành.\\

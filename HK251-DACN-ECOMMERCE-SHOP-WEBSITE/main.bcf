@@ -2382,6 +2382,7 @@
     <bcf:citekey order="7" intorder="1">git2025</bcf:citekey>
     <bcf:citekey order="8" intorder="1">aws2025</bcf:citekey>
     <bcf:citekey order="9" intorder="1">vnpay2025</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">ghn2025</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
