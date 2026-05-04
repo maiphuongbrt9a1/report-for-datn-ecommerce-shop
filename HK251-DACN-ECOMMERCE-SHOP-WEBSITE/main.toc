@@ -112,8 +112,28 @@
 \contentsline {subsubsubsection}{\numberline {5.6.3.f}Chi tiết giao dịch}{93}{subsubsubsection.5.6.3.6}%
 \contentsline {subsubsubsection}{\numberline {5.6.3.g}Chat hỗ trợ}{94}{subsubsubsection.5.6.3.7}%
 \contentsline {section}{\numberline {6}Hiện thực hệ thống}{95}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Cấu trúc mã nguồn}{95}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Frontend}{95}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Backend}{95}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Danh sách các API}{95}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Giao diện hệ thống cho người khách hàng}{95}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Giao diện hệ thống cho người quản trị viên}{95}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Giao diện hệ thống cho người nhân viên}{95}{subsection.6.5}%
 \contentsline {section}{\numberline {7}Kiểm thử và đánh giá hệ thống}{96}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Kiểm thử đơn vị - Unit Testing}{96}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Tổng quan}{96}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Hiện thực}{96}{subsubsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.2}Kiểm thử hệ thống - System Testing}{96}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Tổng quan}{96}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Hiện thực}{96}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}Kiểm thử luồng giao diên -thêm tên luồng vào đây}{96}{subsubsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.4}Kiểm thử luồng giao diên -thêm tên luồng vào đây}{96}{subsubsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.5}Kiểm thử luồng giao diên -thêm tên luồng vào đây}{96}{subsubsection.7.2.5}%
+\contentsline {subsubsection}{\numberline {7.2.6}Kiểm thử api với Postman}{96}{subsubsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.3}Kiểm thử chấp nhận của người dùng - User Acceptance Testing - UAT}{96}{subsection.7.3}%
 \contentsline {section}{\numberline {8}Triển khai và vận hành hệ thống}{97}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Triển khai Frontend lên Vercel}{97}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Triển khai Backend lên Railway}{97}{subsection.8.2}%
 \contentsline {section}{\numberline {9}Tổng kết}{98}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Nhận xét}{98}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Hướng phát triển đồ án tốt nghiệp}{99}{subsection.9.2}%
