@@ -1,9 +1,16 @@
-\section{Triển khai và vận hành hệ thống}
+\section{Triển khai hệ thống}
 
-\subsection{Triển khai Frontend lên Vercel}
+\subsection{Database Server}
+Database Server được triển khai trên Railway (\url{https://railway.app}), một nền tảng đám mây hiện đại giúp triển khai cơ sở dữ liệu, ứng dụng và dịch vụ một cách nhanh chóng mà không cần quản lý hạ tầng phức tạp. Railway cung cấp dịch vụ PostgreSQL được quản lý hoàn toàn với gói miễn phí (có giới hạn tài nguyên), phù hợp với nhu cầu của đồ án trong điều kiện ngân sách sinh viên. Chúng em đã chọn Railway để triển khai cơ sở dữ liệu PostgreSQL của hệ thống.
 
-todo
+Quá trình triển khai diễn ra khá đơn giản. Đầu tiên, chúng em tạo một dự án mới trên Railway, chọn dịch vụ PostgreSQL và nhận ngay chuỗi kết nối (connection string). Sau đó, sử dụng pgAdmin – giao diện quản trị chính thức của PostgreSQL – để kết nối đến cơ sở dữ liệu từ xa và di chuyển (migrate) toàn bộ bảng cùng dữ liệu mẫu từ môi trường cục bộ lên. Khi quá trình hoàn tất, cơ sở dữ liệu sẵn sàng phục vụ cho back-end mà không cần thêm cấu hình thủ công.
 
-\subsection{Triển khai Backend lên Railway}
+\subsection{Back-end Server}
+Máy chủ back-end (được xây dựng bằng NestJS) cũng được triển khai trên Railway. Railway hỗ trợ triển khai ứng dụng từ mã nguồn thông qua GitHub, cung cấp giao diện thân thiện và khả năng tự động mở rộng, giúp nhóm phát triển tập trung vào code thay vì vận hành máy chủ. Dù gói miễn phí có một số hạn chế (thời gian chạy giới hạn - 30 ngày, tài nguyên RAM và CPU thấp), nhưng hoàn toàn đủ đáp ứng yêu cầu của đồ án tốt nghiệp.
 
-todo
+Việc triển khai back-end lên Railway rất thuận tiện. Chúng em chỉ cần kết nối repository GitHub của dự án với Railway. Khi deploy Railway tự động quét và chạy Dockerfile mà nhóm đã tạo trong dự án. Các biến môi trường (như chuỗi kết nối database, khóa bí mật JWT, thông tin VNPay…) được thiết lập trực tiếp trên bảng điều khiển của Railway. Mỗi khi có thay đổi mã nguồn, chỉ cần đẩy commit lên nhánh đã liên kết, Railway sẽ tự động build và triển khai phiên bản mới nhất của back-end.
+
+\subsection{Web-based front-end application}
+Ứng dụng front-end trên nền web được lưu trữ trên Vercel (\url{https://vercel.com}), một nền tảng đám mây thiết kế dành riêng cho việc triển khai và quản lý các ứng dụng front-end, đặc biệt là các framework hiện đại như Next.js. Vercel cung cấp giao diện trực quan, tích hợp sâu với GitHub và khả năng tối ưu hiệu năng một cách tự động. Mặc dù gói miễn phí có những hạn chế nhất định (băng thông, thời gian build…), nhóm vẫn lựa chọn Vercel vì các tài nguyên này đủ để phục vụ đồ án và trải nghiệm người dùng mượt mà.
+
+Triển khai front-end trên Vercel được thực hiện chỉ trong vài bước. Nhóm nhập kho lưu trữ GitHub chứa mã nguồn Next.js vào Vercel, cấu hình các biến môi trường cần thiết (ví dụ địa chỉ API của back-end, khóa công khai cho dịch vụ bên thứ ba), sau đó Vercel tự động cài đặt dependencies, build dự án và xuất bản ứng dụng ra tên miền công khai. Mỗi khi có commit mới lên nhánh chính, Vercel sẽ tự động kích hoạt quy trình CI/CD, cập nhật phiên bản mới nhất mà không cần can thiệp thủ công.
