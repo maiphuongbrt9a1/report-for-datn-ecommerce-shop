@@ -86,16 +86,62 @@
 \contentsline {figure}{\numberline {85}{\ignorespaces Cấu trúc mã nguồn frontend (Tiếp theo)}}{99}{figure.caption.131}%
 \contentsline {figure}{\numberline {86}{\ignorespaces Cấu trúc mã nguồn backend}}{100}{figure.caption.132}%
 \contentsline {figure}{\numberline {87}{\ignorespaces Cấu trúc mã nguồn backend (Tiếp theo)}}{102}{figure.caption.133}%
-\contentsline {figure}{\numberline {88}{\ignorespaces Giao diện trang chủ Paplé}}{108}{figure.caption.138}%
-\contentsline {figure}{\numberline {89}{\ignorespaces Giao diện trang đăng nhập}}{109}{figure.caption.139}%
-\contentsline {figure}{\numberline {90}{\ignorespaces Giao diện trang đăng ký tài khoản}}{109}{figure.caption.140}%
-\contentsline {figure}{\numberline {91}{\ignorespaces Giao diện chi tiết sản phẩm}}{110}{figure.caption.141}%
-\contentsline {figure}{\numberline {92}{\ignorespaces Giao diện giỏ hàng}}{111}{figure.caption.142}%
-\contentsline {figure}{\numberline {93}{\ignorespaces Giao diện trang thanh toán}}{111}{figure.caption.143}%
-\contentsline {figure}{\numberline {94}{\ignorespaces Giao diện trang tổng quan Admin}}{112}{figure.caption.144}%
-\contentsline {figure}{\numberline {95}{\ignorespaces Giao diện quản lý đơn hàng Admin}}{113}{figure.caption.145}%
-\contentsline {figure}{\numberline {96}{\ignorespaces Giao diện danh sách sản phẩm Admin}}{113}{figure.caption.146}%
-\contentsline {figure}{\numberline {97}{\ignorespaces Giao diện quản lý khách hàng Admin}}{114}{figure.caption.147}%
-\contentsline {figure}{\numberline {98}{\ignorespaces Giao diện quản lý voucher Admin}}{114}{figure.caption.148}%
-\contentsline {figure}{\numberline {99}{\ignorespaces Giao diện quản lý danh mục Admin}}{115}{figure.caption.149}%
-\contentsline {figure}{\numberline {100}{\ignorespaces Giao diện chat hỗ trợ Admin}}{115}{figure.caption.150}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Giao diện trang chủ Paplé}}{103}{figure.caption.134}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Giao diện trang đăng nhập}}{104}{figure.caption.135}%
+\contentsline {figure}{\numberline {90}{\ignorespaces Giao diện trang đăng ký tài khoản}}{104}{figure.caption.136}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Giao diện trang quên mật khẩu}}{105}{figure.caption.137}%
+\contentsline {figure}{\numberline {92}{\ignorespaces Giao diện tìm kiếm sản phẩm}}{106}{figure.caption.138}%
+\contentsline {figure}{\numberline {93}{\ignorespaces Giao diện chi tiết sản phẩm}}{107}{figure.caption.139}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Giao diện giỏ hàng}}{108}{figure.caption.140}%
+\contentsline {figure}{\numberline {95}{\ignorespaces Giao diện trang thanh toán}}{108}{figure.caption.141}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Giao diện trang hồ sơ cá nhân}}{109}{figure.caption.142}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Giao diện danh sách đơn hàng của khách hàng}}{109}{figure.caption.143}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Giao diện đổi mật khẩu}}{110}{figure.caption.144}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Giao diện trang tổng quan Admin}}{111}{figure.caption.145}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Giao diện quản lý đơn hàng Admin}}{111}{figure.caption.146}%
+\contentsline {figure}{\numberline {101}{\ignorespaces Giao diện danh sách sản phẩm Admin}}{112}{figure.caption.147}%
+\contentsline {figure}{\numberline {102}{\ignorespaces Giao diện thêm sản phẩm mới Admin}}{112}{figure.caption.148}%
+\contentsline {figure}{\numberline {103}{\ignorespaces Giao diện quản lý đánh giá sản phẩm Admin}}{113}{figure.caption.149}%
+\contentsline {figure}{\numberline {104}{\ignorespaces Giao diện quản lý danh mục Admin}}{113}{figure.caption.150}%
+\contentsline {figure}{\numberline {105}{\ignorespaces Giao diện quản lý khách hàng Admin}}{114}{figure.caption.151}%
+\contentsline {figure}{\numberline {106}{\ignorespaces Giao diện quản lý voucher Admin}}{114}{figure.caption.152}%
+\contentsline {figure}{\numberline {107}{\ignorespaces Giao diện chat hỗ trợ Admin}}{115}{figure.caption.153}%
+\contentsline {figure}{\numberline {108}{\ignorespaces Giao diện cài đặt quyền Admin}}{115}{figure.caption.154}%
+\contentsline {figure}{\numberline {109}{\ignorespaces Giao diện trang cá nhân Admin}}{116}{figure.caption.155}%
+\contentsline {figure}{\numberline {110}{\ignorespaces Giao diện trang tổng quan nhân viên}}{116}{figure.caption.156}%
+\contentsline {figure}{\numberline {111}{\ignorespaces Giao diện quản lý đơn hàng nhân viên}}{117}{figure.caption.157}%
+\contentsline {figure}{\numberline {112}{\ignorespaces Giao diện danh sách sản phẩm nhân viên}}{117}{figure.caption.158}%
+\contentsline {figure}{\numberline {113}{\ignorespaces Giao diện đánh giá sản phẩm nhân viên}}{118}{figure.caption.159}%
+\contentsline {figure}{\numberline {114}{\ignorespaces Giao diện chat hỗ trợ nhân viên}}{118}{figure.caption.160}%
+\contentsline {figure}{\numberline {115}{\ignorespaces Giao diện trang cá nhân nhân viên}}{119}{figure.caption.161}%
+\contentsline {figure}{\numberline {116}{\ignorespaces Mã nguồn test case kiểm thử đơn vị AuthService}}{123}{figure.caption.163}%
+\contentsline {figure}{\numberline {117}{\ignorespaces Kết quả chạy kiểm thử đơn vị AuthService — 7/7 test case passed}}{124}{figure.caption.164}%
+\contentsline {figure}{\numberline {118}{\ignorespaces Kết quả kiểm thử tích hợp module Auth — 10/10 passed}}{125}{figure.caption.166}%
+\contentsline {figure}{\numberline {119}{\ignorespaces Kết quả kiểm thử tích hợp module Products — 9/9 passed}}{126}{figure.caption.167}%
+\contentsline {figure}{\numberline {120}{\ignorespaces Kết quả kiểm thử tích hợp module Category — 7/7 passed}}{127}{figure.caption.168}%
+\contentsline {figure}{\numberline {121}{\ignorespaces Kết quả kiểm thử tích hợp module Address — 5/5 passed}}{127}{figure.caption.169}%
+\contentsline {figure}{\numberline {122}{\ignorespaces Kết quả kiểm thử tích hợp module Reviews — 6/6 passed}}{128}{figure.caption.170}%
+\contentsline {figure}{\numberline {123}{\ignorespaces Kết quả kiểm thử tích hợp module Orders — 11/11 passed}}{129}{figure.caption.171}%
+\contentsline {figure}{\numberline {124}{\ignorespaces Kết quả kiểm thử tích hợp module Vouchers — 8/8 passed}}{130}{figure.caption.172}%
+\contentsline {figure}{\numberline {125}{\ignorespaces Kết quả kiểm thử tích hợp module User (1/2) — 25/25 passed}}{130}{figure.caption.173}%
+\contentsline {figure}{\numberline {126}{\ignorespaces Kết quả kiểm thử tích hợp module User (2/2)}}{131}{figure.caption.174}%
+\contentsline {figure}{\numberline {127}{\ignorespaces Kết quả kiểm thử tích hợp module OrderItems — 5/5 passed}}{131}{figure.caption.175}%
+\contentsline {figure}{\numberline {128}{\ignorespaces Kết quả kiểm thử tích hợp module Shipments — 5/5 passed}}{132}{figure.caption.176}%
+\contentsline {figure}{\numberline {129}{\ignorespaces Kết quả kiểm thử tích hợp module Payments — 5/5 passed}}{132}{figure.caption.177}%
+\contentsline {figure}{\numberline {130}{\ignorespaces Kết quả kiểm thử tích hợp module CartItems — 5/5 passed}}{133}{figure.caption.178}%
+\contentsline {figure}{\numberline {131}{\ignorespaces Kết quả kiểm thử tích hợp module UserVouchers — 5/5 passed}}{133}{figure.caption.179}%
+\contentsline {figure}{\numberline {132}{\ignorespaces Kết quả kiểm thử tích hợp module Requests — 5/5 passed}}{134}{figure.caption.180}%
+\contentsline {figure}{\numberline {133}{\ignorespaces Kết quả kiểm thử tích hợp module ReturnRequests — 5/5 passed}}{134}{figure.caption.181}%
+\contentsline {figure}{\numberline {134}{\ignorespaces Kết quả kiểm thử tích hợp module Media — 5/5 passed}}{135}{figure.caption.182}%
+\contentsline {figure}{\numberline {135}{\ignorespaces ST-01: Trang chủ sau khi đăng nhập thành công với tài khoản Customer}}{136}{figure.caption.184}%
+\contentsline {figure}{\numberline {136}{\ignorespaces ST-02: Trang đăng nhập sau khi nhập mật khẩu sai}}{137}{figure.caption.185}%
+\contentsline {figure}{\numberline {137}{\ignorespaces ST-04: Trang quản trị Admin sau khi đăng nhập}}{137}{figure.caption.186}%
+\contentsline {figure}{\numberline {138}{\ignorespaces ST-05: Trang chủ hiển thị sản phẩm gợi ý}}{138}{figure.caption.188}%
+\contentsline {figure}{\numberline {139}{\ignorespaces ST-07: Trang chi tiết sản phẩm}}{139}{figure.caption.189}%
+\contentsline {figure}{\numberline {140}{\ignorespaces ST-08: Giỏ hàng sau khi thêm sản phẩm thành công}}{139}{figure.caption.190}%
+\contentsline {figure}{\numberline {141}{\ignorespaces ST-15: Trang danh sách đơn hàng của khách hàng}}{140}{figure.caption.192}%
+\contentsline {figure}{\numberline {142}{\ignorespaces ST-17: Trang tổng quan Admin — thống kê doanh thu và biểu đồ}}{141}{figure.caption.194}%
+\contentsline {figure}{\numberline {143}{\ignorespaces ST-18: Trang quản lý đơn hàng Admin}}{142}{figure.caption.195}%
+\contentsline {figure}{\numberline {144}{\ignorespaces ST-19: Trang quản lý sản phẩm Admin}}{142}{figure.caption.196}%
+\contentsline {figure}{\numberline {145}{\ignorespaces ST-20: Trang quản lý khách hàng Admin}}{142}{figure.caption.197}%
+\contentsline {figure}{\numberline {146}{\ignorespaces Kết quả chạy kiểm thử hệ thống bằng Playwright — 18/18 passed}}{143}{figure.caption.198}%
