@@ -279,6 +279,37 @@
       \verb https://sandbox.vnpayment.vn/apis/
       \endverb
     \endentry
+    \entry{ghn2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ddc34ccace401abada6338255af493d7}{%
+           family={{Giao Hàng Nhanh}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ddc34ccace401abada6338255af493d7}
+      \strng{fullhash}{ddc34ccace401abada6338255af493d7}
+      \strng{fullhashraw}{ddc34ccace401abada6338255af493d7}
+      \strng{bibnamehash}{ddc34ccace401abada6338255af493d7}
+      \strng{authorbibnamehash}{ddc34ccace401abada6338255af493d7}
+      \strng{authornamehash}{ddc34ccace401abada6338255af493d7}
+      \strng{authorfullhash}{ddc34ccace401abada6338255af493d7}
+      \strng{authorfullhashraw}{ddc34ccace401abada6338255af493d7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{GHN API Documentation}}
+      \field{urlday}{18}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://api.ghn.vn/docs
+      \endverb
+      \verb{url}
+      \verb https://api.ghn.vn/docs
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

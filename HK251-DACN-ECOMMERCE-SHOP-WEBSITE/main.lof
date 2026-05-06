@@ -16,8 +16,8 @@
 \contentsline {figure}{\numberline {15}{\ignorespaces Logo của AWS S3}}{13}{figure.caption.23}%
 \contentsline {figure}{\numberline {16}{\ignorespaces Logo của VNPAY}}{14}{figure.caption.24}%
 \contentsline {figure}{\numberline {17}{\ignorespaces Logo của GHN}}{14}{figure.caption.25}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Usecase Diagram của người Quản trị viên và nhân viên của hệ thống bán hàng trực tuyến cho cửa hàng thời trang}}{17}{figure.caption.26}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Usecase Diagram của người Khách hàng của hệ thống bán hàng trực tuyến cho cửa hàng thời trang}}{18}{figure.caption.27}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Usecase Diagram của người Quản trị viên và nhân viên của hệ thống bán hàng trực tuyến cho cửa hàng thời trang}}{16}{figure.caption.26}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Usecase Diagram của người Khách hàng của hệ thống bán hàng trực tuyến cho cửa hàng thời trang}}{17}{figure.caption.27}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Kiến trúc bậc cao của hệ thống}}{37}{figure.caption.65}%
 \contentsline {figure}{\numberline {21}{\ignorespaces EERD Diagram hệ thống bán hàng trực tuyến cho cửa hàng thời trang}}{40}{figure.caption.67}%
 \contentsline {figure}{\numberline {22}{\ignorespaces Lược đồ cơ sở dữ liệu hệ thống bán hàng trực tuyến cho cửa hàng thời trang}}{42}{figure.caption.68}%
@@ -86,3 +86,16 @@
 \contentsline {figure}{\numberline {85}{\ignorespaces Cấu trúc mã nguồn frontend (Tiếp theo)}}{99}{figure.caption.131}%
 \contentsline {figure}{\numberline {86}{\ignorespaces Cấu trúc mã nguồn backend}}{100}{figure.caption.132}%
 \contentsline {figure}{\numberline {87}{\ignorespaces Cấu trúc mã nguồn backend (Tiếp theo)}}{102}{figure.caption.133}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Giao diện trang chủ Paplé}}{108}{figure.caption.138}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Giao diện trang đăng nhập}}{109}{figure.caption.139}%
+\contentsline {figure}{\numberline {90}{\ignorespaces Giao diện trang đăng ký tài khoản}}{109}{figure.caption.140}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Giao diện chi tiết sản phẩm}}{110}{figure.caption.141}%
+\contentsline {figure}{\numberline {92}{\ignorespaces Giao diện giỏ hàng}}{111}{figure.caption.142}%
+\contentsline {figure}{\numberline {93}{\ignorespaces Giao diện trang thanh toán}}{111}{figure.caption.143}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Giao diện trang tổng quan Admin}}{112}{figure.caption.144}%
+\contentsline {figure}{\numberline {95}{\ignorespaces Giao diện quản lý đơn hàng Admin}}{113}{figure.caption.145}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Giao diện danh sách sản phẩm Admin}}{113}{figure.caption.146}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Giao diện quản lý khách hàng Admin}}{114}{figure.caption.147}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Giao diện quản lý voucher Admin}}{114}{figure.caption.148}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Giao diện quản lý danh mục Admin}}{115}{figure.caption.149}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Giao diện chat hỗ trợ Admin}}{115}{figure.caption.150}%

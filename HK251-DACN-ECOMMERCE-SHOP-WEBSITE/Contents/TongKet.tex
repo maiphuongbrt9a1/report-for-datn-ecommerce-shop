@@ -2,162 +2,57 @@
 
 \subsection{Kết quả đạt được}
 
+Trong học kỳ này, nhóm đã tập trung nghiên cứu và hiện thực hóa các chức năng cốt lõi của hệ thống. Cụ thể nhóm đã hiện thực các tính năng sau:
+
+\begin{itemize}
+	\item Đối với người nhân viên (staff):
+	\begin{itemize}
+		\item Có thể sử dụng realtime chat để có thể nhắn tin với người khách hàng.
+		\item Người nhân viên cũng có thể quản lý các đơn hàng. Trong đó người nhân viên có thể tham gia vào việc đóng gói đơn hàng và tham gia vận chuyển đơn hàng đến với khách hàng. Được thể hiện ở việc người nhân viên có thể cập nhật trạng thái của đơn hàng theo từng mốc thời gian mà đơn hàng đó được xử lý (đã nhận đơn hàng, đã đóng gói, đang giao, đã giao, chuyển hoàn.)
+		\item Người nhân viên có thể tham gia vào quá trình kiểm duyệt một yêu cầu hoàn tiền đơn hàng được tạo từ phía khách hàng. Đó là cập nhật thông tin trạng thái của một yêu cầu khách hàng (đã nhận, đang xử lý, từ chối kèm theo lý do). Không cho phép người nhân viên thực hiện chuyển khoản hoàn tiền cho người khách hàng.
+		\item Người nhân viên có thể xem số lượng tồn kho của một sản phẩm nào đó trong cửa hàng.
+	\end{itemize}
+	
+	\item Đối với người quản trị viên (admin):
+	\begin{itemize}
+		\item  Sử dụng realtime chat để nhắn tin trực tiếp với khách hàng để cung cấp thông tin về sản phẩm cho khách hàng.
+		\item Có thể quản lý danh mục sản phẩm: Thêm, xem, xóa, sửa danh mục sản phẩm.
+		\item Có thể quản lý sản phẩm: Thêm, xem, xóa, sửa sản phẩm
+		\item Có thể quản lý được đơn hàng: Trong đó người quản trị viên (admin) có thể tham gia vào quá trình đóng gói đơn hàng và vận chuyển đơn hàng đến khách hàng. Ngoài ra chỉ có người quản trị viên mới có thể thực hiện được việc chuyển khoản để hoàn tiền đơn hàng cho người khách hàng.
+		\item Có thể xem số lượng tồn kho sản phẩm nào đó trong cửa hàng.
+		\item Có thể quản lý doanh thu: Xem doanh thu trong tháng, trong quý, trong năm của cửa hàng. Xem được mặt hàng nào là bán chạy nhất của cửa hàng. Xem được thông tin nhân viên có doanh thu cao nhất.
+		\item Có thể quản lý vouchers của cửa hàng: Thêm xóa sửa voucher.
+		\item Có thể quản lý thông tin của nhân viên trong cửa hàng: Thêm mới, xem thông tin, cập nhật, xóa thông tin nhân viên.
+	\end{itemize}
+	
+	\item Đối với người khách hàng (customer):
+	\begin{itemize}
+		\item Sử dụng được realtime chat để trao đổi thông tin với người nhân viên của shop để hỏi thông tin về sản phẩm.
+		\item Tìm kiếm sản phẩm bằng từ khóa để có thể tìm kiếm nhanh một loại sản phẩm đang mong muốn mua.
+		\item Xem thông tin chi tiết của một sản phẩm bất kỳ.
+		\item Người dùng được hệ thống đề xuất các sản phẩm bán chạy hiện có trên hệ thống, hỗ trợ việc gợi ý các sản phẩm trong cùng một bộ (buy full set).
+		\item Quản lý giỏ hàng: Xem, thêm, xóa, cập nhật thông tin sản phẩm trong giỏ hàng.
+		\item Hỗ trợ việc mua hàng từ trang chi tiết của sản phẩm (mua nhanh). Hỗ trợ việc mua hàng từ giỏ hàng. Hỗ trợ việc mua hàng từ lịch sử đơn hàng đã đặt.
+		\item Hỗ trợ việc thanh toán online cho việc mua sản phẩm.
+		\item Hỗ trợ việc tạo yêu cầu hoàn tiền khi hủy đơn hoặc khi sản phẩm nhận về không đúng mô tả trên trang web.
+		\item Quản lý thông tin cá nhân: Hỗ trợ việc xem, thêm, xóa, sửa thông tin cá nhân. Hỗ trợ việc nhập địa chỉ giao hàng một lần và tái sử dụng nhiều lần.
+		\item Người khách hàng có thể lưu lại các voucher và dùng vào các lần mua hàng sau.
+	\end{itemize}
+\end{itemize}
+
 \newpage
 \subsection{Hướng phát triển trong tương lai}
 
-\begingroup
-\renewcommand{\arraystretch}{1.4} % Tăng chiều cao dòng
-\centering
-\begin{xltabular}{\textwidth}{|c|c| >{\hsize=0.8\hsize}X | >{\hsize=1.2\hsize}X |}
-	% --- PHẦN 1: TIÊU ĐỀ CHO TRANG ĐẦU TIÊN ---
-	\hline
-	\multicolumn{4}{|c|}{\bfseries \textcolor{red}{ĐỀ TÀI: PHÁT TRIỂN HỆ THỐNG BÁN HÀNG TRỰC TUYẾN CHO CỬA HÀNG THỜI TRANG}} \\
-	\hline
-	\multicolumn{4}{|c|}{\bfseries \textcolor{red}{LỊCH TRÌNH ĐỒ ÁN TỐT NGHIỆP: TỪ 12/01/2026 ĐẾN HẾT 27/04/2026}} \\
-	\hline
-	\rowcolor{excelblue}
-	\multicolumn{1}{|c|}{\textbf{Tuần}} & 
-	\multicolumn{1}{|c|}{\textbf{Ngày}} & 
-	\multicolumn{1}{|c|}{\textbf{Công việc}} & 
-	\multicolumn{1}{|c|}{\textbf{Chi tiết nội dung công việc}} \\
-	\hline
-	\endfirsthead
-	% --- PHẦN 2: TIÊU ĐỀ LẶP LẠI KHI SANG TRANG MỚI ---
-	\hline
-	\rowcolor{excelblue}
-	\multicolumn{1}{|c|}{\textbf{Tuần}} & 
-	\multicolumn{1}{|c|}{\textbf{Ngày}} & 
-	\multicolumn{1}{|c|}{\textbf{Công việc}} & 
-	\multicolumn{1}{|c|}{\textbf{Chi tiết nội dung công việc}} \\
-	\hline
-	\endhead
-	% --- PHẦN 3: CHÂN TRANG (Mỗi khi hết trang) ---
-	\hline
-	\multicolumn{4}{r}{\textit{Còn tiếp sang trang sau...}} \\
-	\endfoot
-	% --- PHẦN 4: CHÂN TRANG (Kết thúc bảng) ---
-	\endlastfoot
-	% --- NỘI DUNG DỮ LIỆU ---
-	% Tuần 1
-	1 & 12/01/2026 & 
-		- Nâng cấp UI cải thiện trải nghiệm người dùng. \newline
-		- Thực hiện việc đề xuất và cá nhân hóa cho từng người dùng. \newline
-		- Viết báo cáo hàng tuần. \newline
-	 & 
-		\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
-			\item Hiện thực bộ lọc: Xây dựng api hỗ trợ lọc đa điều kiện. (Lọc theo khoảng giá, màu sắc, kích thước, danh mục sản phẩm, hot trend,..).
-			\item Tối ưu Query để xử lý việc truy xuất trên nhiều bảng trong cơ sở dữ liệu để lấy được kết quả theo bộ lọc.
-			\item Hiện thực logic đề xuất theo danh mục (đề xuất bằng các sản phẩm đang bán chạy trong danh mục.).
-			\item Hiện thực logic đề xuất theo lịch xử duyệt web và mua hàng của người dùng (đề xuất giải thuật k-Nearest Neighbors).
-			\item Hiện thực logic hỗ trợ việc gợi ý các sản phẩm trong cùng một bộ (buy full set), gợi ý kích cỡ phù hợp của sản phẩm đối với người khách hàng.
-			\item Hiện thực UI tương ứng với các tính năng trên.
-			\item Viết báo cáo hàng tuần
-		\end{itemize}
-	
-	\\ 
-	\cline{1-2}
-	% Tuần 2 (Copy nhiều dòng để test sang trang)
-	2 & 19/01/2026 &&\\ \hline
-	3 & 26/01/2026 & 
-		-Tích hợp hệ thống thanh toán bên thứ 3: VNPay, MOMO. \newline
-		- Viết báo cáo hàng tuần .\newline
-	 & 
-		\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
-			\item Tiến hành xây dựng api tích hợp cho việc kết nối cổng thanh toán vnpay. Momo,
-			\item Hiện thực các UI tương ứng nếu có.
-			\item Xử lý việc cập nhật trạng thái thanh toán của đơn hàng sau khi thanh toán thành công. 
-			\item Hiện thực thông báo realtime khi thanh toán thành công / thất bại.
-			\item Viết báo cáo hàng tuần
-		\end{itemize}
-	\\ 
-	\cline{1-2}
-	4 & 02/02/2026 &&\\ \hline
-	5 & 09/02/2026 &
-	- Tích hợp hệ thống thông báo realtime cho các sự kiện hệ thống. \newline
-	- Xây dựng tính năng nhắn tin realtime. \newline
-	- Viết báo cáo hàng tuần. \newline
-	&
-	\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
-		\item Xây dựng tính năng thông báo và nhắn tin realtime dựa trên thư viện Socket.io của Nestjs hỗ trợ.
-		\item Viết báo cáo hàng tuần
-	\end{itemize}
-	\\ 
-	\cline{1-2}
-	6 & 16/02/2026 &&\\ \hline
-	7 & 23/02/2026 &
-	- Tích hợp các chức năng báo cáo trên dashboard của người quản trị viên. \newline
-	- Viết báo cáo hàng tuần. \newline
-	&
-	\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
-		\item Xây dựng các apis query kết quả tổng kết doanh thu, tổng kết đơn hàng, tổng kết số lượng đơn giao thành công, đơn trả hàng,….
-		\item Query các thông số sản phẩm bán chạy nhất, nhân viên doanh số cao nhất, danh sách số lượng hàng tồn còn lại trong kho,…
-		\item Hiện thực và tinh chỉnh UI theo figma đã có.
-		\item Viết báo cáo hàng tuần
-	\end{itemize}
-	\\ 
-	\cline{1-2}
-	8 & 02/03/2026 &&\\ \hline
-	9 & 09/03/2026 &
-	- Hiện thực tinh chỉnh giao diện dark mode. \newline
-	- Hiện thực tích hợp đa ngôn ngữ: Tiếng Việt / Tiếng Anh. \newline
-	- Viết báo cáo hàng tuần. \newline
-	&
-	\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
-		\item Tích hợp thư viện react-i18next cho việc cấu hình ngôn ngữ việt nam, english.
-		\item Viết báo cáo hàng tuần
-	\end{itemize}	
-	\\ 
-	\cline{1-2}
-	10 & 16/03/2026 &&\\ \hline
-	11 & 23/03/2026 &
-	- Thực hiện testing và đánh giá:
-	Unit testing,  integration testing, system testing và acceptance testing. \newline
-	- Viết báo cáo hằng tuần. \newline
-	&
-	\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
-		\item Thực hiện kiểm thử tự động bằng Selenium.
-		\item Kiểm tra và cập nhật validate và transform dữ liệu ở front-end và cả backend. Dùng các thư viện được hỗ trợ sẵn như class-validate, class-tranformer.
-		\item Kiểm tra và cập nhật lỗ hổng để lộ thông tin người dùng.
-		\item Kiểm tra và cập nhật vấn đề N + 1 query .
-		\item Kiểm tra và cập nhật index cho các bảng thường xuyên được truy xuất ví dụ Order, Payment, Product, ProductVariant.
-		\item Kiểm tra và cập nhật phân trang trong các api trả về kết quả là một danh sách các đối tượng.
-		\item Kiểm tra và cập nhật transaction cho các api có nghiệp vụ xử lý phức tạp trên nhiều bảng một lúc. Đảm bảo rollback ngay lập tức khi có lỗi. 
-		\item Thực hiện try catch cho việc bắt lỗi hệ thống.
-		\item Check và cập nhật lỗi IDOR.
-		\item Kiểm tra và cập nhật để tránh lỗi SQL Injection khi dùng các Raw Query.
-		\item Kiểm tra và cập nhật các lỗi để tránh tấn công Cross-Site Scripting.
-		\item Viết báo cáo hàng tuần
-		
-	\end{itemize}
-	\\ 
-	\cline{1-2}
-	12 & 30/03/2026 &&\\ 
-	\cline{1-2}
-	13 & 06/04/2026 &&\\ 
-	\hline
-	14 & 13/04/2026 &
-	-Deploy và demo. \newline
-	- Hoàn thiện báo cáo đồ án tốt nghiệp. \newline
-	&
-	\begin{itemize}[leftmargin=*, nosep, after=\vspace{-\baselineskip}]
-		\item Triển khai hệ thống lên server.
-		\item Cấu hình timeout cho server khi dành tài nguyên xử lý cho một request.
-		\item Cấu hình iptable để hạn chế số lượng request mà 1IP có thể gửi trong 1s, chặn IP khi một IP nào đó khi nó gửi quá số lượng request cho phép để hạn chế ảnh hưởng của Dos/DDoS 
-		\item Cấu hình CDN Cloudflare để hạn chế ảnh hưởng của Dos/DDoS.
-		\item Cấu hình load balancing bằng Nginx.
-		\item Viết báo cáo hàng tuần.
-		\item Quay chụp video, hình ảnh demo dự án.
-	\end{itemize}
-	\\ 
-	\cline{1-2}
-	15 & 20/04/2026 &&\\ \hline
-	\caption{Lịch trình chi tiết thực hiện đồ án tốt nghiệp vào học kỳ 252.} \label{tab:lich_trinh_do_an_tot_nghiep_hk252}
-\end{xltabular}
-\endgroup
+Tuy đạt được những kết quả nhất định, hệ thống vẫn còn một số hạn chế cần tiếp tục được hoàn thiện để nâng cao trải nghiệm người dùng và hiệu quả vận hành. Trong thời gian tới, nhóm định hướng phát triển hệ thống theo các hướng sau:
 
-Đối với các nhiệm vụ thuộc về giao diện người dùng (phía Front-end) sẽ do bạn Trương Tấn Sang đảm nhiệm. \\
-
-Các nhiệm vụ phát triển các chức năng mới, tích hợp các dịch vụ bên thứ ba, testing và deploy hệ thống sẽ do bạn Võ Mai Phương chịu trách nhiệm. \\
-
-Đối với báo cáo hằng tuần việc cập nhật báo cáo sẽ do cả hai bạn cùng phối hợp thực hiện vào ngày thứ 6 của mỗi tuần làm việc. \\
-\newpage
+\begin{itemize}
+	\item Hiện thực tinh chỉnh giao diện để có chế độ Dark mode.
+	\item Hiện thực tinh chỉnh để tích hợp ngôn ngữ Tiếng Anh cho ứng dụng.
+	\item Thực hiện kết nối thêm cổng thanh toán quan MOMO. Điều này đảm bảo người dùng có nhiều lựa chọn hơn để tiến hành thanh toán đơn hàng.
+	\item Tiến hành nâng cấp chức năng gợi ý sản phẩm để có thể hỗ trợ việc gợi ý size phù hợp cho người dùng.
+	\item Tiến hành thu thập thêm các thông tin lịch sử duyệt sản phẩm, thêm sản phẩm vào giỏ hàng, mua sản phẩm để nâng cấp chức năng gợi ý để có tính cá nhân hóa toàn diện.
+	\item Tiến hành nâng cấp khung chat để người nhân viên và quản trị viên có khả năng kết nối trao đổi thông tin với nhau.
+	\item Đối với quá trình đóng gói kiện hàng và tạo yêu cầu trả hàng cần nâng cấp để có thể upload bằng chứng đóng gói kiện hàng để gửi về hệ thống.
+	\item Phát triển chức năng cho chương trình khách hàng thân thiết để người khách hàng có thể đổi voucher giảm giá, phân hạng khách hàng.
+	 
+\end{itemize}

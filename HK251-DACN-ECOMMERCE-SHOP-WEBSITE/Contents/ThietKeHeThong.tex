@@ -24,6 +24,10 @@ Tiếp theo đến với Application Tier - nhóm mô tả nó là back-end evir
 	\item Payment module: Đây là module xử lý tất cả các nghiệp vụ liên quan đến việc thanh toán đơn hàng.
 	\item Shipment module: Xử lý các nghiệp vụ liên quan đến việc vận chuyển đơn hàng.
 	\item voucher module: Xử lý các nghiệp vụ liên quan đến voucher của cửa hàng.
+	\item Chat module: Xử lý các nghiệp vụ liên quan đến việc nhắn tin của cửa hàng.
+	\item Notification module: Xử lý các nghiệp vụ liên quan đến thông báo của cửa hàng.
+	\item Recommendation module: Xử lý các nghiệp vụ liên quan đến gợi ý.
+	\item Analytics module: Xử lý các nghiệp vụ liên quan đến phân tích các chỉ số kinh doanh và tập hợp dữ liệu cho dashboard admin.
 	\item User profile module: Xử lý các nghiệp vụ liên quan đến xử lý hồ sơ thông tin của người dùng trong hệ thống.
 	\item Auth module: Xử lý các nghiệp vụ liên quan đến việc xác thực người dùng đăng nhập và quyền hạn của người dùng trong hệ thống. Trong khi thực hiện module này nhóm quyết định sử dụng JWT STRATEGY và GOOGLE OAuth cho việc đăng nhập và đăng ký vì nhóm nhận thấy các chiến lược này là các quy chuẩn công nghiệp đã được công nhận và sử dụng rộng rãi bên ngoài thị trường. Giúp việc đăng nhập, đăng ký của người dùng vào hệ thống được nhanh chóng và hạn chế tối đa được các lỗ hổng bảo mật của hệ thống. Ngoài ra nhóm cũng thực hiện việc đăng nhập và đăng ký bằng email và password truyền thống bên trong LOCAL STRATEGY.
 	\item Media upload file module: Xử lý việc đăng tải hình ảnh video của sản phẩm, của đánh giá sản phẩm,.. lên hệ thống. Nhóm tiến hành chọn việc lưu trữ video và hình ảnh ở AWS S3 vì đây là dịch vụ lưu trữ đối tượng hàng đầu của nền tảng điện toán đám mây AWS. Thay vì phương

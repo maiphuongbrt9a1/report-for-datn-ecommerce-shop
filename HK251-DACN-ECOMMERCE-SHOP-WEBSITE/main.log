@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.3)  5 MAY 2026 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.12.3)  6 MAY 2026 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1960,7 +1960,7 @@ Package hyperref Info: Link coloring ON on input line 167.
 \openout5 = `main.out'.
 
 \c@lstlisting=\count529
-<Images/hcmut.png, id=573, 514.3215pt x 491.9178pt>
+<Images/hcmut.png, id=585, 514.3215pt x 491.9178pt>
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
 Package pdftex.def Info: Images/hcmut.png  used on input line 190.
@@ -2169,28 +2169,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-3.
+4.
 (d:/Program Files (x86)/texlive/2025/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 25.
+Package pdftex.def Info: Images/hcmut.png  used on input line 27.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25   \item H
-              ỗ trợ thuận tiện cho việc quản lý những cửa h...
-[1]
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+l.27 
+      [1{d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r
+.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
@@ -2205,9 +2205,8 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.258 \newpage
-               [2{d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/enc/dvip
-s/base/8r.enc}] (./Contents/CoSoLyThuyetVaCacHeThongLienQuan.tex
-<Images/Brand_Imgs/HandM.png, id=1043, 1156.32pt x 650.43pt>
+               [2] (./Contents/CoSoLyThuyetVaCacHeThongLienQuan.tex
+<Images/Brand_Imgs/HandM.png, id=1100, 1156.32pt x 650.43pt>
 File: Images/Brand_Imgs/HandM.png Graphic file (type png)
 <use Images/Brand_Imgs/HandM.png>
 Package pdftex.def Info: Images/Brand_Imgs/HandM.png  used on input line 10.
@@ -2223,7 +2222,7 @@ been already used, duplicate ignored
                    \relax 
 l.40 \newpage
               [3 <./Images/Brand_Imgs/HandM.png>]
-<Images/Brand_Imgs/Zara.png, id=1049, 1156.32pt x 650.43pt>
+<Images/Brand_Imgs/Zara.png, id=1106, 1156.32pt x 650.43pt>
 File: Images/Brand_Imgs/Zara.png Graphic file (type png)
 <use Images/Brand_Imgs/Zara.png>
 Package pdftex.def Info: Images/Brand_Imgs/Zara.png  used on input line 54.
@@ -2240,7 +2239,7 @@ been already used, duplicate ignored
 l.75   \item \textbf
                     {Tích hợp chương trình thu gom:} Thông tin về c...
 [4 <./Images/Brand_Imgs/Zara.png>]
-<Images/Brand_Imgs/Adidas.png, id=1054, 1156.32pt x 650.43pt>
+<Images/Brand_Imgs/Adidas.png, id=1111, 1156.32pt x 650.43pt>
 File: Images/Brand_Imgs/Adidas.png Graphic file (type png)
 <use Images/Brand_Imgs/Adidas.png>
 Package pdftex.def Info: Images/Brand_Imgs/Adidas.png  used on input line 103.
@@ -2257,7 +2256,7 @@ been already used, duplicate ignored
 l.114   \item \textbf
                      {Cá nhân hoá dựa trên AI/ML:} Website và app g�...
 [5 <./Images/Brand_Imgs/Adidas.png>]
-<Images/Brand_Imgs/Amazon-fashion.png, id=1059, 1156.32pt x 650.43pt>
+<Images/Brand_Imgs/Amazon-fashion.png, id=1116, 1156.32pt x 650.43pt>
 File: Images/Brand_Imgs/Amazon-fashion.png Graphic file (type png)
 <use Images/Brand_Imgs/Amazon-fashion.png>
 Package pdftex.def Info: Images/Brand_Imgs/Amazon-fashion.png  used on input li
@@ -2279,7 +2278,7 @@ File: Images/hcmut.png Graphic file (type png)
 Package pdftex.def Info: Images/hcmut.png  used on input line 186.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [7 <./Images/Brand_Imgs/Amazon-fashion.png>]
-<Images/Brand_Imgs/Coolmate.png, id=1069, 1156.32pt x 650.43pt>
+<Images/Brand_Imgs/Coolmate.png, id=1126, 1156.32pt x 650.43pt>
 File: Images/Brand_Imgs/Coolmate.png Graphic file (type png)
 <use Images/Brand_Imgs/Coolmate.png>
 Package pdftex.def Info: Images/Brand_Imgs/Coolmate.png  used on input line 193
@@ -2290,214 +2289,211 @@ File: Images/hcmut.png Graphic file (type png)
 Package pdftex.def Info: Images/hcmut.png  used on input line 218.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [8 <./Images/Brand_Imgs/Coolmate.png>]
-<Images/Tech_logo/typescript-logo.png, id=1076, 305.14pt x 166.6225pt>
+<Images/Tech_logo/typescript-logo.png, id=1133, 305.14pt x 166.6225pt>
 File: Images/Tech_logo/typescript-logo.png Graphic file (type png)
 <use Images/Tech_logo/typescript-logo.png>
 Package pdftex.def Info: Images/Tech_logo/typescript-logo.png  used on input li
-ne 252.
+ne 250.
 (pdftex.def)             Requested size: 227.62206pt x 124.2979pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-
- []
-
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 261.
+Package pdftex.def Info: Images/hcmut.png  used on input line 259.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [9 <./Images/Tech_logo/typescript-logo.png>]
-<Images/Tech_logo/nestjs-logo.png, id=1085, 1204.5pt x 677.53125pt>
+<Images/Tech_logo/nestjs-logo.png, id=1142, 1204.5pt x 677.53125pt>
 File: Images/Tech_logo/nestjs-logo.png Graphic file (type png)
 <use Images/Tech_logo/nestjs-logo.png>
 Package pdftex.def Info: Images/Tech_logo/nestjs-logo.png  used on input line 2
-66.
+64.
 (pdftex.def)             Requested size: 227.62206pt x 128.02927pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
-
- []
-
-<Images/Tech_logo/prisma-logo.png, id=1087, 602.25pt x 602.25pt>
+<Images/Tech_logo/prisma-logo.png, id=1144, 602.25pt x 602.25pt>
 File: Images/Tech_logo/prisma-logo.png Graphic file (type png)
 <use Images/Tech_logo/prisma-logo.png>
 Package pdftex.def Info: Images/Tech_logo/prisma-logo.png  used on input line 2
-80.
+78.
 (pdftex.def)             Requested size: 136.57462pt x 136.57558pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 286.
+Package pdftex.def Info: Images/hcmut.png  used on input line 284.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [10 <./Images/Tech_logo/nestjs-logo.png> <./Images/Tech_logo/prisma-logo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
-<Images/Tech_logo/PostgreSQL_logo.png, id=1097, 1408.26125pt x 886.31125pt>
+<Images/Tech_logo/PostgreSQL_logo.png, id=1155, 1408.26125pt x 886.31125pt>
 File: Images/Tech_logo/PostgreSQL_logo.png Graphic file (type png)
 <use Images/Tech_logo/PostgreSQL_logo.png>
 Package pdftex.def Info: Images/Tech_logo/PostgreSQL_logo.png  used on input li
-ne 294.
+ne 292.
 (pdftex.def)             Requested size: 136.57462pt x 85.94504pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
-
- []
-
-<Images/Tech_logo/next-js-logo.png, id=1099, 963.6pt x 602.25pt>
+<Images/Tech_logo/next-js-logo.png, id=1157, 963.6pt x 602.25pt>
 File: Images/Tech_logo/next-js-logo.png Graphic file (type png)
 <use Images/Tech_logo/next-js-logo.png>
 Package pdftex.def Info: Images/Tech_logo/next-js-logo.png  used on input line 
-308.
+306.
 (pdftex.def)             Requested size: 136.57462pt x 85.35284pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
-
- []
-
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 316.
+Package pdftex.def Info: Images/hcmut.png  used on input line 315.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [11 <./Images/Tech_logo/PostgreSQL_logo.png> <./Images/Tech_logo/next-js-logo.p
 ng>]
-<Images/Tech_logo/shadcn-ui-logo.png, id=1110, 475.7775pt x 106.3975pt>
+<Images/Tech_logo/shadcn-ui-logo.png, id=1168, 475.7775pt x 106.3975pt>
 File: Images/Tech_logo/shadcn-ui-logo.png Graphic file (type png)
 <use Images/Tech_logo/shadcn-ui-logo.png>
 Package pdftex.def Info: Images/Tech_logo/shadcn-ui-logo.png  used on input lin
-e 321.
+e 319.
 (pdftex.def)             Requested size: 136.57462pt x 30.54114pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
-<Images/Tech_logo/swagger-logo.png, id=1111, 602.25pt x 602.25pt>
+<Images/Tech_logo/swagger-logo.png, id=1169, 602.25pt x 602.25pt>
 File: Images/Tech_logo/swagger-logo.png Graphic file (type png)
 <use Images/Tech_logo/swagger-logo.png>
 Package pdftex.def Info: Images/Tech_logo/swagger-logo.png  used on input line 
-335.
+333.
 (pdftex.def)             Requested size: 136.57462pt x 136.57558pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
-<Images/Tech_logo/git-logo.png, id=1113, 602.25pt x 602.25pt>
+<Images/Tech_logo/git-logo.png, id=1171, 602.25pt x 602.25pt>
 File: Images/Tech_logo/git-logo.png Graphic file (type png)
 <use Images/Tech_logo/git-logo.png>
-Package pdftex.def Info: Images/Tech_logo/git-logo.png  used on input line 349.
+Package pdftex.def Info: Images/Tech_logo/git-logo.png  used on input line 347.
 
 (pdftex.def)             Requested size: 136.57462pt x 136.57558pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 354.
+Package pdftex.def Info: Images/hcmut.png  used on input line 352.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [12 <./Images/Tech_logo/shadcn-ui-logo.png> <./Images/Tech_logo/swagger-logo.pn
 g>]
-<Images/Tech_logo/github-logo.png, id=1122, 3854.4pt x 2168.1pt>
+<Images/Tech_logo/github-logo.png, id=1180, 3854.4pt x 2168.1pt>
 File: Images/Tech_logo/github-logo.png Graphic file (type png)
 <use Images/Tech_logo/github-logo.png>
 Package pdftex.def Info: Images/Tech_logo/github-logo.png  used on input line 3
-58.
+56.
 (pdftex.def)             Requested size: 136.57462pt x 76.81755pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
-
- []
-
-<Images/Tech_logo/amazon-s3-logo.png, id=1124, 863.225pt x 404.51125pt>
+<Images/Tech_logo/amazon-s3-logo.png, id=1182, 863.225pt x 404.51125pt>
 File: Images/Tech_logo/amazon-s3-logo.png Graphic file (type png)
 <use Images/Tech_logo/amazon-s3-logo.png>
 Package pdftex.def Info: Images/Tech_logo/amazon-s3-logo.png  used on input lin
-e 372.
+e 370.
 (pdftex.def)             Requested size: 136.57462pt x 63.99478pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 380--381
-
- []
-
-<Images/Tech_logo/vnpay-logo.jpg, id=1126, 475.02469pt x 475.02469pt>
+<Images/Tech_logo/vnpay-logo.jpg, id=1184, 475.02469pt x 475.02469pt>
 File: Images/Tech_logo/vnpay-logo.jpg Graphic file (type jpg)
 <use Images/Tech_logo/vnpay-logo.jpg>
 Package pdftex.def Info: Images/Tech_logo/vnpay-logo.jpg  used on input line 38
-7.
+5.
 (pdftex.def)             Requested size: 136.57462pt x 136.57216pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 392.
+Package pdftex.def Info: Images/hcmut.png  used on input line 390.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [13 <./Images/Tech_logo/git-logo.png> <./Images/Tech_logo/github-logo.png> <./I
 mages/Tech_logo/amazon-s3-logo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
-
- []
-
-<Images/Tech_logo/ghn-logo.png, id=1139, 5268.68375pt x 1189.44376pt>
+<Images/Tech_logo/ghn-logo.png, id=1196, 5268.68375pt x 1189.44376pt>
 File: Images/Tech_logo/ghn-logo.png Graphic file (type png)
 <use Images/Tech_logo/ghn-logo.png>
-Package pdftex.def Info: Images/Tech_logo/ghn-logo.png  used on input line 401.
+Package pdftex.def Info: Images/Tech_logo/ghn-logo.png  used on input line 399.
 
 (pdftex.def)             Requested size: 136.57462pt x 30.81772pt.
 
-LaTeX Warning: Citation 'ghn2025' on page 14 undefined on input line 407.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 409--260
+Underfull \hbox (badness 10000) in paragraph at lines 407--260
 
  []
 
@@ -2517,127 +2513,127 @@ Package hyperref Warning: bookmark level for unknown subsubsubsection defaults
 to 0.
 
 <Images/UsecaseDiagram/Đồ án - HK251-Usecase cho Admin và Staff.drawio.png
-, id=1153, 1011.78pt x 1155.31625pt>
+, id=1212, 1011.78pt x 1155.31625pt>
 File: Images/UsecaseDiagram/Đồ án - HK251-Usecase cho Admin và Staff.drawi
 o.png Graphic file (type png)
 <use Images/UsecaseDiagram/Đồ án - HK251-Usecase cho Admin và Staff.drawio
 .png>
 Package pdftex.def Info: Images/UsecaseDiagram/Đồ án - HK251-Usecase cho Ad
-min và Staff.drawio.png  used on input line 73.
+min và Staff.drawio.png  used on input line 69.
 (pdftex.def)             Requested size: 318.66948pt x 363.87366pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 78.
+Package pdftex.def Info: Images/hcmut.png  used on input line 81.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
-[16]
-File: Images/hcmut.png Graphic file (type png)
-<use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 96.
-(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [17 <./Images/UsecaseDiagram/Đồ án - HK251-Usecase cho Admin và Staff.dra
-wio.png>]
-<Images/UsecaseDiagram/Đồ án - HK251-Usecase cho customer.drawio.png, id=11
-65, 950.55125pt x 743.77875pt>
+[16 <./Images/UsecaseDiagram/Đồ án - HK251-Usecase cho Admin và Staff.draw
+io.png>]
+<Images/UsecaseDiagram/Đồ án - HK251-Usecase cho customer.drawio.png, id=12
+19, 950.55125pt x 743.77875pt>
 File: Images/UsecaseDiagram/Đồ án - HK251-Usecase cho customer.drawio.png G
 raphic file (type png)
 <use Images/UsecaseDiagram/Đồ án - HK251-Usecase cho customer.drawio.png>
 Package pdftex.def Info: Images/UsecaseDiagram/Đồ án - HK251-Usecase cho cu
-stomer.drawio.png  used on input line 107.
+stomer.drawio.png  used on input line 103.
 (pdftex.def)             Requested size: 318.66948pt x 249.35184pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 126.
+Package pdftex.def Info: Images/hcmut.png  used on input line 113.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [18 <./Images/UsecaseDiagram/Đồ án - HK251-Usecase cho customer.drawio.png
+ [17 <./Images/UsecaseDiagram/Đồ án - HK251-Usecase cho customer.drawio.png
 >]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 128.
+(hyperref)                than one, level fixed on input line 123.
 
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 283.
+Package pdftex.def Info: Images/hcmut.png  used on input line 230.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
-[19]
+[18]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 378.
+Package pdftex.def Info: Images/hcmut.png  used on input line 321.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [19]
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 423.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [20]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 470.
+Package pdftex.def Info: Images/hcmut.png  used on input line 509.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [21]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 561.
+Package pdftex.def Info: Images/hcmut.png  used on input line 603.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [22]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 651.
+Package pdftex.def Info: Images/hcmut.png  used on input line 731.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [23]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 777.
+Package pdftex.def Info: Images/hcmut.png  used on input line 860.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [24]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 907.
+Package pdftex.def Info: Images/hcmut.png  used on input line 988.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [25]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1040.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1081.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [26]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1129.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1172.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [27]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1221.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1300.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [28]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1368.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1411.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [29]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1470.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1465.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [30]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1572.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1567.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [31]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1665.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1660.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [32]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1741.
-(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [33]
-File: Images/hcmut.png Graphic file (type png)
-<use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1784.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1736.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 
-[34]
+[33]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 1886.
+Package pdftex.def Info: Images/hcmut.png  used on input line 1779.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [34]
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 1881.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [35])
 File: Images/hcmut.png Graphic file (type png)
@@ -2646,7 +2642,7 @@ Package pdftex.def Info: Images/hcmut.png  used on input line 262.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [36] (./Contents/ThietKeHeThong.tex
 <Images/System-architecture/Đồ án - HK251-primary - system architecture.dra
-wio.png, id=1266, 1526.70375pt x 1064.97874pt>
+wio.png, id=1325, 1526.70375pt x 1064.97874pt>
 File: Images/System-architecture/Đồ án - HK251-primary - system architectur
 e.drawio.png Graphic file (type png)
 <use Images/System-architecture/Đồ án - HK251-primary - system architecture
@@ -2676,57 +2672,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 29.
+Package pdftex.def Info: Images/hcmut.png  used on input line 30.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [37 <./Images/System-architecture/Đồ án - HK251-primary - system architectu
 re.drawio.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Overfull \hbox (37.59995pt too wide) in paragraph at lines 52--105
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Overfull \hbox (37.59995pt too wide) in paragraph at lines 56--109
  [][] 
  []
 
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 108.
+Package pdftex.def Info: Images/hcmut.png  used on input line 112.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [38]
-<Images/Brand_Imgs/Đồ án - HK251-ERD .drawio.png, id=1279, 2380.895pt x 228
+<Images/Brand_Imgs/Đồ án - HK251-ERD .drawio.png, id=1338, 2380.895pt x 228
 9.55376pt>
 File: Images/Brand_Imgs/Đồ án - HK251-ERD .drawio.png Graphic file (type pn
 g)
 <use Images/Brand_Imgs/Đồ án - HK251-ERD .drawio.png>
 Package pdftex.def Info: Images/Brand_Imgs/Đồ án - HK251-ERD .drawio.png  u
-sed on input line 112.
+sed on input line 116.
 (pdftex.def)             Requested size: 364.19667pt x 350.19579pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 117.
+Package pdftex.def Info: Images/hcmut.png  used on input line 121.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [39]
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
@@ -2751,11 +2737,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
-File: Images/hcmut.png Graphic file (type png)
-<use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 131.
-(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
-[40 <./Images/Brand_Imgs/Đồ án - HK251-ERD .drawio.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
@@ -2765,7 +2747,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 135.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[40 <./Images/Brand_Imgs/Đồ án - HK251-ERD .drawio.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
@@ -2795,56 +2781,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-<Images/Brand_Imgs/Đồ án - HK251-DB shemas.png, id=1291, 2439.1125pt x 3584
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+<Images/Brand_Imgs/Đồ án - HK251-DB shemas.png, id=1351, 2439.1125pt x 3584
 .39125pt>
 File: Images/Brand_Imgs/Đồ án - HK251-DB shemas.png Graphic file (type png)
 
 <use Images/Brand_Imgs/Đồ án - HK251-DB shemas.png>
 Package pdftex.def Info: Images/Brand_Imgs/Đồ án - HK251-DB shemas.png  use
-d on input line 151.
+d on input line 155.
 (pdftex.def)             Requested size: 364.19667pt x 535.1743pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 156.
+Package pdftex.def Info: Images/hcmut.png  used on input line 160.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-<Images/Brand_Imgs/Đồ án - HK251-Class Diagram.drawio.png, id=1297, 2793.43
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+<Images/Brand_Imgs/Đồ án - HK251-Class Diagram.drawio.png, id=1357, 2793.43
 625pt x 1587.9325pt>
 File: Images/Brand_Imgs/Đồ án - HK251-Class Diagram.drawio.png Graphic file
  (type png)
 <use Images/Brand_Imgs/Đồ án - HK251-Class Diagram.drawio.png>
 Package pdftex.def Info: Images/Brand_Imgs/Đồ án - HK251-Class Diagram.draw
-io.png  used on input line 166.
+io.png  used on input line 170.
 (pdftex.def)             Requested size: 455.24411pt x 258.77498pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 171.
+Package pdftex.def Info: Images/hcmut.png  used on input line 175.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [42 <./Images/Brand_Imgs/Đồ án - HK251-DB shemas.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
@@ -2879,11 +2865,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-File: Images/hcmut.png Graphic file (type png)
-<use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 189.
-(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
-[43 <./Images/Brand_Imgs/Đồ án - HK251-Class Diagram.drawio.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
@@ -2893,42 +2875,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 193.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[43 <./Images/Brand_Imgs/Đồ án - HK251-Class Diagram.drawio.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
 <Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin proc
-essing order.jpg, id=1310, 733.74126pt x 312.16624pt>
+essing order.jpg, id=1370, 733.74126pt x 312.16624pt>
 File: Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin
  processing order.jpg Graphic file (type jpg)
 <use Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin 
 processing order.jpg>
 Package pdftex.def Info: Images/ActivityDiagram/Đồ án - HK251-Activity diag
-ram Staff and Admin processing order.jpg  used on input line 201.
+ram Staff and Admin processing order.jpg  used on input line 205.
 (pdftex.def)             Requested size: 318.66948pt x 135.57687pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 211--212
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
@@ -2942,79 +2918,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
 <Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin proc
-essing refund order.jpg, id=1311, 718.685pt x 322.20375pt>
+essing refund order.jpg, id=1371, 718.685pt x 322.20375pt>
 File: Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin
  processing refund order.jpg Graphic file (type jpg)
 <use Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin 
 processing refund order.jpg>
 Package pdftex.def Info: Images/ActivityDiagram/Đồ án - HK251-Activity diag
-ram Staff and Admin processing refund order.jpg  used on input line 224.
+ram Staff and Admin processing refund order.jpg  used on input line 228.
 (pdftex.def)             Requested size: 318.66948pt x 142.87135pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 229.
+Package pdftex.def Info: Images/hcmut.png  used on input line 233.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [44 <./Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admi
 n processing order.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 <Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer browse and 
-buy product.jpg, id=1318, 1004.75375pt x 1433.355pt>
+buy product.jpg, id=1378, 1004.75375pt x 1433.355pt>
 File: Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer browse
  and buy product.jpg Graphic file (type jpg)
 <use Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer browse 
 and buy product.jpg>
 Package pdftex.def Info: Images/ActivityDiagram/Đồ án - HK251-Activity diag
-ram Customer browse and buy product.jpg  used on input line 235.
+ram Customer browse and buy product.jpg  used on input line 239.
 (pdftex.def)             Requested size: 318.66948pt x 454.59306pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 240.
+Package pdftex.def Info: Images/hcmut.png  used on input line 244.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [45 <./Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admi
 n processing refund order.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
 <Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer cancel orde
-r.drawio.png, id=1325, 1203.49625pt x 417.56pt>
+r.drawio.png, id=1384, 1203.49625pt x 417.56pt>
 File: Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer cancel
  order.drawio.png Graphic file (type png)
 <use Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer cancel 
 order.drawio.png>
 Package pdftex.def Info: Images/ActivityDiagram/Đồ án - HK251-Activity diag
-ram Customer cancel order.drawio.png  used on input line 250.
+ram Customer cancel order.drawio.png  used on input line 254.
 (pdftex.def)             Requested size: 318.66948pt x 110.56366pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 255.
+Package pdftex.def Info: Images/hcmut.png  used on input line 259.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [46 <./Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer brows
 e and buy product.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
@@ -3024,121 +3010,121 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+
+ []
+
 <Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer refund orde
-r.jpg, id=1331, 618.31pt x 192.72pt>
+r.jpg, id=1390, 618.31pt x 192.72pt>
 File: Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer refund
  order.jpg Graphic file (type jpg)
 <use Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer refund 
 order.jpg>
 Package pdftex.def Info: Images/ActivityDiagram/Đồ án - HK251-Activity diag
-ram Customer refund order.jpg  used on input line 267.
+ram Customer refund order.jpg  used on input line 271.
 (pdftex.def)             Requested size: 318.66948pt x 99.32982pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Admin, Staff proce
-ssing order.jpg, id=1332, 517.935pt x 994.71625pt>
+ssing order.jpg, id=1391, 517.935pt x 994.71625pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Admin, Staff 
 processing order.jpg Graphic file (type jpg)
 <use Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Admin, Staff p
 rocessing order.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
-ram - Admin, Staff processing order.jpg  used on input line 284.
+ram - Admin, Staff processing order.jpg  used on input line 288.
 (pdftex.def)             Requested size: 318.66948pt x 612.04285pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 289.
+Package pdftex.def Info: Images/hcmut.png  used on input line 293.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [47 <./Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer cance
 l order.drawio.png> <./Images/ActivityDiagram/Đồ án - HK251-Activity diagra
 m Customer refund order.jpg>]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 291.
+Package pdftex.def Info: Images/hcmut.png  used on input line 295.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [48 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Admin, Staf
 f processing order.jpg>]
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Admin, Staff proce
-ssing refund order.jpg, id=1344, 733.74126pt x 1167.36125pt>
+ssing refund order.jpg, id=1403, 733.74126pt x 1167.36125pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Admin, Staff 
 processing refund order.jpg Graphic file (type jpg)
 <use Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Admin, Staff p
 rocessing refund order.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
-ram - Admin, Staff processing refund order.jpg  used on input line 295.
+ram - Admin, Staff processing refund order.jpg  used on input line 299.
 (pdftex.def)             Requested size: 318.66948pt x 506.99649pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--304
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
 
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 304.
+Package pdftex.def Info: Images/hcmut.png  used on input line 308.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [49 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Admin, Staff
  processing refund order.jpg>]
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer search an
-d view product.jpg, id=1350, 543.02875pt x 231.86626pt>
+d view product.jpg, id=1409, 543.02875pt x 231.86626pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer sear
 ch and view product.jpg Graphic file (type jpg)
 <use Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer searc
 h and view product.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
-ram - Customer search and view product.jpg  used on input line 324.
+ram - Customer search and view product.jpg  used on input line 328.
 (pdftex.def)             Requested size: 318.66948pt x 136.0746pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--332
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer view comp
-are product item.jpg, id=1351, 603.25375pt x 502.87875pt>
+are product item.jpg, id=1410, 603.25375pt x 502.87875pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer view
  compare product item.jpg Graphic file (type jpg)
 <use Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer view 
 compare product item.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
-ram - Customer view compare product item.jpg  used on input line 336.
+ram - Customer view compare product item.jpg  used on input line 340.
 (pdftex.def)             Requested size: 318.66948pt x 265.64203pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 341.
+Package pdftex.def Info: Images/hcmut.png  used on input line 345.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [50 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer sea
 rch and view product.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
@@ -3148,8 +3134,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer checkout 
-and place order on product detail page (by now function).jpg, id=1358, 1285.803
+and place order on product detail page (by now function).jpg, id=1417, 1285.803
 76pt x 1265.72874pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer chec
 kout and place order on product detail page (by now function).jpg Graphic file 
@@ -3158,85 +3154,85 @@ kout and place order on product detail page (by now function).jpg Graphic file
 out and place order on product detail page (by now function).jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
 ram - Customer checkout and place order on product detail page (by now function
-).jpg  used on input line 354.
+).jpg  used on input line 358.
 (pdftex.def)             Requested size: 318.66948pt x 313.6889pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 359.
+Package pdftex.def Info: Images/hcmut.png  used on input line 363.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [51 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer vie
 w compare product item.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer add produ
-ct items to shopping cart.jpg, id=1364, 653.44125pt x 352.31625pt>
+ct items to shopping cart.jpg, id=1423, 653.44125pt x 352.31625pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer add 
 product items to shopping cart.jpg Graphic file (type jpg)
 <use Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer add p
 roduct items to shopping cart.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
-ram - Customer add product items to shopping cart.jpg  used on input line 368.
+ram - Customer add product items to shopping cart.jpg  used on input line 372.
 (pdftex.def)             Requested size: 318.66948pt x 171.81395pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 373.
+Package pdftex.def Info: Images/hcmut.png  used on input line 377.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [52 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer che
 ckout and place order on product detail page (by now function).jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer checkout 
-and place order shopping cart.jpg, id=1370, 1285.80376pt x 1265.72874pt>
+and place order shopping cart.jpg, id=1429, 1285.80376pt x 1265.72874pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer chec
 kout and place order shopping cart.jpg Graphic file (type jpg)
 <use Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer check
 out and place order shopping cart.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
 ram - Customer checkout and place order shopping cart.jpg  used on input line 3
-82.
+86.
 (pdftex.def)             Requested size: 318.66948pt x 313.6889pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
-
- []
-
-File: Images/hcmut.png Graphic file (type png)
-<use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 390.
-(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
-[53 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer add
- product items to shopping cart.jpg> <./Images/SequenceDiagram/Đồ án - HK25
-1-Sequence Diagram - Customer checkout and place order shopping cart.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
+
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 394.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[53 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer add
+ product items to shopping cart.jpg> <./Images/SequenceDiagram/Đồ án - HK25
+1-Sequence Diagram - Customer checkout and place order shopping cart.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+
+ []
+
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer checkout 
-and place order on history order page.jpg, id=1376, 1285.80376pt x 1265.72874pt
+and place order on history order page.jpg, id=1435, 1285.80376pt x 1265.72874pt
 >
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer chec
 kout and place order on history order page.jpg Graphic file (type jpg)
@@ -3244,18 +3240,8 @@ kout and place order on history order page.jpg Graphic file (type jpg)
 out and place order on history order page.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
 ram - Customer checkout and place order on history order page.jpg  used on inpu
-t line 400.
+t line 404.
 (pdftex.def)             Requested size: 318.66948pt x 313.6889pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
@@ -3267,538 +3253,548 @@ Underfull \hbox (badness 10000) in paragraph at lines 412--413
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 417.
+Package pdftex.def Info: Images/hcmut.png  used on input line 421.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [54 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer che
 ckout and place order on history order page.jpg>]
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer cancel or
-der.jpg, id=1382, 723.70375pt x 733.74126pt>
+der.jpg, id=1441, 723.70375pt x 733.74126pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer canc
 el order.jpg Graphic file (type jpg)
 <use Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer cance
 l order.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
-ram - Customer cancel order.jpg  used on input line 422.
+ram - Customer cancel order.jpg  used on input line 426.
 (pdftex.def)             Requested size: 318.66948pt x 323.09346pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
 <Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer create ne
-w refund order.jpg, id=1383, 429.605pt x 593.21625pt>
+w refund order.jpg, id=1442, 429.605pt x 593.21625pt>
 File: Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer crea
 te new refund order.jpg Graphic file (type jpg)
 <use Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer creat
 e new refund order.jpg>
 Package pdftex.def Info: Images/SequenceDiagram/Đồ án - HK251-Sequence Diag
-ram - Customer create new refund order.jpg  used on input line 438.
+ram - Customer create new refund order.jpg  used on input line 442.
 (pdftex.def)             Requested size: 318.66948pt x 440.04126pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 443.
+Package pdftex.def Info: Images/hcmut.png  used on input line 447.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [55 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer can
 cel order.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
  []
 
-<Images/MockUp/Customer/Home.png, id=1389, 1445.4pt x 1972.36874pt>
+<Images/MockUp/Customer/Home.png, id=1449, 1445.4pt x 1972.36874pt>
 File: Images/MockUp/Customer/Home.png Graphic file (type png)
 <use Images/MockUp/Customer/Home.png>
 Package pdftex.def Info: Images/MockUp/Customer/Home.png  used on input line 45
-5.
+9.
 (pdftex.def)             Requested size: 455.24411pt x 621.20917pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 460.
+Package pdftex.def Info: Images/hcmut.png  used on input line 464.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [56 <./Images/SequenceDiagram/Đồ án - HK251-Sequence Diagram - Customer cre
 ate new refund order.jpg>]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 461.
+Package pdftex.def Info: Images/hcmut.png  used on input line 465.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [57 <./Images/MockUp/Customer/Home.png>]
-<Images/MockUp/Customer/Categories+Search.png, id=1402, 1445.4pt x 1547.7825pt>
+<Images/MockUp/Customer/Categories+Search.png, id=1462, 1445.4pt x 1547.7825pt>
 
 File: Images/MockUp/Customer/Categories+Search.png Graphic file (type png)
 <use Images/MockUp/Customer/Categories+Search.png>
 Package pdftex.def Info: Images/MockUp/Customer/Categories+Search.png  used on 
-input line 464.
+input line 468.
 (pdftex.def)             Requested size: 455.24411pt x 487.48323pt.
-<Images/MockUp/Customer/Home-View.png, id=1403, 1120.185pt x 552.26324pt>
+<Images/MockUp/Customer/Home-View.png, id=1463, 1120.185pt x 552.26324pt>
 File: Images/MockUp/Customer/Home-View.png Graphic file (type png)
 <use Images/MockUp/Customer/Home-View.png>
 Package pdftex.def Info: Images/MockUp/Customer/Home-View.png  used on input li
-ne 476.
+ne 480.
 (pdftex.def)             Requested size: 455.24411pt x 224.44066pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 481.
+Package pdftex.def Info: Images/hcmut.png  used on input line 485.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [58 <./Images/MockUp/Customer/Categories+Search.png>]
-<Images/MockUp/Customer/Home-Message.png, id=1411, 1121.3895pt x 554.07pt>
+<Images/MockUp/Customer/Home-Message.png, id=1471, 1121.3895pt x 554.07pt>
 File: Images/MockUp/Customer/Home-Message.png Graphic file (type png)
 <use Images/MockUp/Customer/Home-Message.png>
 Package pdftex.def Info: Images/MockUp/Customer/Home-Message.png  used on input
- line 485.
+ line 489.
 (pdftex.def)             Requested size: 455.24411pt x 224.92975pt.
-<Images/MockUp/Customer/Cart.png, id=1412, 1445.4pt x 1016.79875pt>
+<Images/MockUp/Customer/Cart.png, id=1472, 1445.4pt x 1016.79875pt>
 File: Images/MockUp/Customer/Cart.png Graphic file (type png)
 <use Images/MockUp/Customer/Cart.png>
 Package pdftex.def Info: Images/MockUp/Customer/Cart.png  used on input line 49
-5.
+9.
 (pdftex.def)             Requested size: 455.24411pt x 320.24677pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 500.
+Package pdftex.def Info: Images/hcmut.png  used on input line 504.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [59 <./Images/MockUp/Customer/Home-View.png> <./Images/MockUp/Customer/Home-Me
 ssage.png>]
-<Images/MockUp/Customer/Checkout.png, id=1421, 1445.4pt x 1077.02374pt>
+<Images/MockUp/Customer/Checkout.png, id=1481, 1445.4pt x 1077.02374pt>
 File: Images/MockUp/Customer/Checkout.png Graphic file (type png)
 <use Images/MockUp/Customer/Checkout.png>
 Package pdftex.def Info: Images/MockUp/Customer/Checkout.png  used on input lin
-e 504.
+e 508.
 (pdftex.def)             Requested size: 455.24411pt x 339.21497pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 509.
+Package pdftex.def Info: Images/hcmut.png  used on input line 513.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [60 <./Images/MockUp/Customer/Cart.png>]
-<Images/MockUp/Customer/Product.png, id=1429, 1445.4pt x 2100.84875pt>
+<Images/MockUp/Customer/Product.png, id=1488, 1445.4pt x 2100.84875pt>
 File: Images/MockUp/Customer/Product.png Graphic file (type png)
 <use Images/MockUp/Customer/Product.png>
 Package pdftex.def Info: Images/MockUp/Customer/Product.png  used on input line
- 513.
+ 517.
 (pdftex.def)             Requested size: 455.24411pt x 661.6747pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 518.
+Package pdftex.def Info: Images/hcmut.png  used on input line 522.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [61 <./Images/MockUp/Customer/Checkout.png>]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 519.
+Package pdftex.def Info: Images/hcmut.png  used on input line 523.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [62 <./Images/MockUp/Customer/Product.png>]
-<Images/MockUp/Customer/Comparison/_1.png, id=1443, 1445.4pt x 1053.9375pt>
+<Images/MockUp/Customer/Comparison/_1.png, id=1502, 1445.4pt x 1053.9375pt>
 File: Images/MockUp/Customer/Comparison/_1.png Graphic file (type png)
 <use Images/MockUp/Customer/Comparison/_1.png>
 Package pdftex.def Info: Images/MockUp/Customer/Comparison/_1.png  used on inpu
-t line 522.
+t line 526.
 (pdftex.def)             Requested size: 455.24411pt x 331.94383pt.
-<Images/MockUp/Customer/Comparison/_2.png, id=1444, 1445.4pt x 1665.22125pt>
+<Images/MockUp/Customer/Comparison/_2.png, id=1503, 1445.4pt x 1665.22125pt>
 File: Images/MockUp/Customer/Comparison/_2.png Graphic file (type png)
 <use Images/MockUp/Customer/Comparison/_2.png>
 Package pdftex.def Info: Images/MockUp/Customer/Comparison/_2.png  used on inpu
-t line 537.
+t line 541.
 (pdftex.def)             Requested size: 455.24411pt x 524.47125pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 542.
+Package pdftex.def Info: Images/hcmut.png  used on input line 546.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [63 <./Images/MockUp/Customer/Comparison/_1.png>]
-<Images/MockUp/Customer/Profile/Profile.png, id=1456, 1445.4pt x 584.1825pt>
+<Images/MockUp/Customer/Profile/Profile.png, id=1515, 1445.4pt x 584.1825pt>
 File: Images/MockUp/Customer/Profile/Profile.png Graphic file (type png)
 <use Images/MockUp/Customer/Profile/Profile.png>
 Package pdftex.def Info: Images/MockUp/Customer/Profile/Profile.png  used on in
-put line 548.
+put line 552.
 (pdftex.def)             Requested size: 455.24411pt x 183.99171pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 553.
+Package pdftex.def Info: Images/hcmut.png  used on input line 557.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 
 [64 <./Images/MockUp/Customer/Comparison/_2.png>]
-<Images/MockUp/Customer/Profile/Size.png, id=1464, 1445.4pt x 465.74pt>
+<Images/MockUp/Customer/Profile/Size.png, id=1523, 1445.4pt x 465.74pt>
 File: Images/MockUp/Customer/Profile/Size.png Graphic file (type png)
 <use Images/MockUp/Customer/Profile/Size.png>
 Package pdftex.def Info: Images/MockUp/Customer/Profile/Size.png  used on input
- line 558.
+ line 562.
 (pdftex.def)             Requested size: 455.24411pt x 146.68755pt.
-<Images/MockUp/Customer/Profile/Address.png, id=1465, 1445.4pt x 609.27625pt>
+<Images/MockUp/Customer/Profile/Address.png, id=1524, 1445.4pt x 609.27625pt>
 File: Images/MockUp/Customer/Profile/Address.png Graphic file (type png)
 <use Images/MockUp/Customer/Profile/Address.png>
 Package pdftex.def Info: Images/MockUp/Customer/Profile/Address.png  used on in
-put line 568.
+put line 572.
 (pdftex.def)             Requested size: 455.24411pt x 191.89514pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 573.
+Package pdftex.def Info: Images/hcmut.png  used on input line 577.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [65 <./Images/MockUp/Customer/Profile/Profile.png> <./Images/MockUp/Customer/P
 rofile/Size.png>]
-<Images/MockUp/Customer/Profile/Change Password.png, id=1475, 1445.4pt x 465.74
+<Images/MockUp/Customer/Profile/Change Password.png, id=1534, 1445.4pt x 465.74
 pt>
 File: Images/MockUp/Customer/Profile/Change Password.png Graphic file (type png
 )
 <use Images/MockUp/Customer/Profile/Change Password.png>
 Package pdftex.def Info: Images/MockUp/Customer/Profile/Change Password.png  us
-ed on input line 578.
+ed on input line 582.
 (pdftex.def)             Requested size: 455.24411pt x 146.68755pt.
-<Images/MockUp/Customer/Profile/Delete Account.png, id=1476, 1445.4pt x 524.961
+<Images/MockUp/Customer/Profile/Delete Account.png, id=1535, 1445.4pt x 524.961
 24pt>
 File: Images/MockUp/Customer/Profile/Delete Account.png Graphic file (type png)
 
 <use Images/MockUp/Customer/Profile/Delete Account.png>
 Package pdftex.def Info: Images/MockUp/Customer/Profile/Delete Account.png  use
-d on input line 588.
+d on input line 592.
 (pdftex.def)             Requested size: 455.24411pt x 165.33963pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 594.
+Package pdftex.def Info: Images/hcmut.png  used on input line 598.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [66 <./Images/MockUp/Customer/Profile/Address.png> <./Images/MockUp/Customer/P
 rofile/Change Password.png> <./Images/MockUp/Customer/Profile/Delete Account.pn
 g>]
-<Images/MockUp/Customer/Orders/All.png, id=1487, 1445.4pt x 578.16pt>
+<Images/MockUp/Customer/Orders/All.png, id=1546, 1445.4pt x 578.16pt>
 File: Images/MockUp/Customer/Orders/All.png Graphic file (type png)
 <use Images/MockUp/Customer/Orders/All.png>
 Package pdftex.def Info: Images/MockUp/Customer/Orders/All.png  used on input l
-ine 600.
+ine 604.
 (pdftex.def)             Requested size: 455.24411pt x 182.0949pt.
-<Images/MockUp/Customer/Orders/Details.png, id=1488, 1445.4pt x 1014.79124pt>
+<Images/MockUp/Customer/Orders/Details.png, id=1547, 1445.4pt x 1014.79124pt>
 File: Images/MockUp/Customer/Orders/Details.png Graphic file (type png)
 <use Images/MockUp/Customer/Orders/Details.png>
 Package pdftex.def Info: Images/MockUp/Customer/Orders/Details.png  used on inp
-ut line 610.
+ut line 614.
 (pdftex.def)             Requested size: 455.24411pt x 319.61449pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 616.
+Package pdftex.def Info: Images/hcmut.png  used on input line 620.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [67 <./Images/MockUp/Customer/Orders/All.png> <./Images/MockUp/Customer/Orders
 /Details.png>]
-<Images/MockUp/Customer/Orders/Review.png, id=1498, 1445.4pt x 1014.79124pt>
+<Images/MockUp/Customer/Orders/Review.png, id=1557, 1445.4pt x 1014.79124pt>
 File: Images/MockUp/Customer/Orders/Review.png Graphic file (type png)
 <use Images/MockUp/Customer/Orders/Review.png>
 Package pdftex.def Info: Images/MockUp/Customer/Orders/Review.png  used on inpu
-t line 619.
+t line 623.
 (pdftex.def)             Requested size: 455.24411pt x 319.61449pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 625.
+Package pdftex.def Info: Images/hcmut.png  used on input line 629.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [68 <./Images/MockUp/Customer/Orders/Review.png>]
-<Images/MockUp/Customer/Orders/Cancel+Return request.png, id=1507, 1445.4pt x 7
+<Images/MockUp/Customer/Orders/Cancel+Return request.png, id=1566, 1445.4pt x 7
 57.83125pt>
 File: Images/MockUp/Customer/Orders/Cancel+Return request.png Graphic file (typ
 e png)
 <use Images/MockUp/Customer/Orders/Cancel+Return request.png>
 Package pdftex.def Info: Images/MockUp/Customer/Orders/Cancel+Return request.pn
-g  used on input line 629.
+g  used on input line 633.
 (pdftex.def)             Requested size: 455.24411pt x 238.68341pt.
-<Images/MockUp/Customer/Notifications/Order updates.png, id=1508, 1445.4pt x 57
+<Images/MockUp/Customer/Notifications/Order updates.png, id=1567, 1445.4pt x 57
 2.1375pt>
 File: Images/MockUp/Customer/Notifications/Order updates.png Graphic file (type
  png)
 <use Images/MockUp/Customer/Notifications/Order updates.png>
 Package pdftex.def Info: Images/MockUp/Customer/Notifications/Order updates.png
-  used on input line 642.
+  used on input line 646.
 (pdftex.def)             Requested size: 455.24411pt x 180.19807pt.
-<Images/MockUp/Customer/Notifications/Sales.png, id=1509, 1445.4pt x 564.1075pt
+<Images/MockUp/Customer/Notifications/Sales.png, id=1568, 1445.4pt x 564.1075pt
 >
 File: Images/MockUp/Customer/Notifications/Sales.png Graphic file (type png)
 <use Images/MockUp/Customer/Notifications/Sales.png>
 Package pdftex.def Info: Images/MockUp/Customer/Notifications/Sales.png  used o
-n input line 652.
+n input line 656.
 (pdftex.def)             Requested size: 455.24411pt x 177.66898pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 657.
+Package pdftex.def Info: Images/hcmut.png  used on input line 661.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [69 <./Images/MockUp/Customer/Orders/Cancel+Return request.png> <./Images/Mock
 Up/Customer/Notifications/Order updates.png>]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 660.
+(hyperref)                than one, level fixed on input line 664.
 
-<Images/MockUp/Admin/Dashboard.png, id=1520, 1445.4pt x 2184.16pt>
+<Images/MockUp/Admin/Dashboard.png, id=1580, 1445.4pt x 2184.16pt>
 File: Images/MockUp/Admin/Dashboard.png Graphic file (type png)
 <use Images/MockUp/Admin/Dashboard.png>
 Package pdftex.def Info: Images/MockUp/Admin/Dashboard.png  used on input line 
-664.
+668.
 (pdftex.def)             Requested size: 364.19667pt x 550.33792pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 669.
+Package pdftex.def Info: Images/hcmut.png  used on input line 673.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [70 <./Images/MockUp/Customer/Notifications/Sales.png>]
-<Images/MockUp/Admin/Order Management.png, id=1527, 1445.4pt x 1384.17125pt>
+<Images/MockUp/Admin/Order Management.png, id=1587, 1445.4pt x 1384.17125pt>
 File: Images/MockUp/Admin/Order Management.png Graphic file (type png)
 <use Images/MockUp/Admin/Order Management.png>
 Package pdftex.def Info: Images/MockUp/Admin/Order Management.png  used on inpu
-t line 674.
+t line 678.
 (pdftex.def)             Requested size: 455.24411pt x 435.9529pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 679.
+Package pdftex.def Info: Images/hcmut.png  used on input line 683.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [71 <./Images/MockUp/Admin/Dashboard.png>]
-<Images/MockUp/Admin/Order Detail.png, id=1534, 1445.4pt x 1384.17125pt>
+<Images/MockUp/Admin/Order Detail.png, id=1594, 1445.4pt x 1384.17125pt>
 File: Images/MockUp/Admin/Order Detail.png Graphic file (type png)
 <use Images/MockUp/Admin/Order Detail.png>
 Package pdftex.def Info: Images/MockUp/Admin/Order Detail.png  used on input li
-ne 686.
+ne 690.
 (pdftex.def)             Requested size: 455.24411pt x 435.9529pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 691.
+Package pdftex.def Info: Images/hcmut.png  used on input line 695.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [72 <./Images/MockUp/Admin/Order Management.png>]
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 693.
+Package pdftex.def Info: Images/hcmut.png  used on input line 697.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [73 <./Images/MockUp/Admin/Order Detail.png>]
-<Images/MockUp/Admin/Returned Order 1.png, id=1549, 1445.4pt x 1384.17125pt>
+<Images/MockUp/Admin/Returned Order 1.png, id=1608, 1445.4pt x 1384.17125pt>
 File: Images/MockUp/Admin/Returned Order 1.png Graphic file (type png)
 <use Images/MockUp/Admin/Returned Order 1.png>
 Package pdftex.def Info: Images/MockUp/Admin/Returned Order 1.png  used on inpu
-t line 697.
+t line 701.
 (pdftex.def)             Requested size: 455.24411pt x 435.9529pt.
-<Images/MockUp/Admin/Returned Order 1A.png, id=1550, 1445.4pt x 1384.17125pt>
+<Images/MockUp/Admin/Returned Order 1A.png, id=1609, 1445.4pt x 1384.17125pt>
 File: Images/MockUp/Admin/Returned Order 1A.png Graphic file (type png)
 <use Images/MockUp/Admin/Returned Order 1A.png>
 Package pdftex.def Info: Images/MockUp/Admin/Returned Order 1A.png  used on inp
-ut line 707.
+ut line 711.
 (pdftex.def)             Requested size: 455.24411pt x 435.9529pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 712.
+Package pdftex.def Info: Images/hcmut.png  used on input line 716.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [74 <./Images/MockUp/Admin/Returned Order 1.png>]
-<Images/MockUp/Admin/Returned Order 1B.png, id=1559, 1445.4pt x 1384.17125pt>
+<Images/MockUp/Admin/Returned Order 1B.png, id=1618, 1445.4pt x 1384.17125pt>
 File: Images/MockUp/Admin/Returned Order 1B.png Graphic file (type png)
 <use Images/MockUp/Admin/Returned Order 1B.png>
 Package pdftex.def Info: Images/MockUp/Admin/Returned Order 1B.png  used on inp
-ut line 715.
+ut line 719.
 (pdftex.def)             Requested size: 455.24411pt x 435.9529pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 720.
+Package pdftex.def Info: Images/hcmut.png  used on input line 724.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [75 <./Images/MockUp/Admin/Returned Order 1A.png>]
-<Images/MockUp/Admin/Customer.png, id=1566, 1445.4pt x 1431.3475pt>
+<Images/MockUp/Admin/Customer.png, id=1625, 1445.4pt x 1431.3475pt>
 File: Images/MockUp/Admin/Customer.png Graphic file (type png)
 <use Images/MockUp/Admin/Customer.png>
 Package pdftex.def Info: Images/MockUp/Admin/Customer.png  used on input line 7
-26.
+30.
 (pdftex.def)             Requested size: 455.24411pt x 450.81133pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 731.
+Package pdftex.def Info: Images/hcmut.png  used on input line 735.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [76 <./Images/MockUp/Admin/Returned Order 1B.png>]
-<Images/MockUp/Admin/Customer Details.png, id=1573, 1445.4pt x 1488.56125pt>
+<Images/MockUp/Admin/Customer Details.png, id=1632, 1445.4pt x 1488.56125pt>
 File: Images/MockUp/Admin/Customer Details.png Graphic file (type png)
 <use Images/MockUp/Admin/Customer Details.png>
 Package pdftex.def Info: Images/MockUp/Admin/Customer Details.png  used on inpu
-t line 736.
+t line 740.
 (pdftex.def)             Requested size: 455.24411pt x 468.83115pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 741.
+Package pdftex.def Info: Images/hcmut.png  used on input line 745.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [77 <./Images/MockUp/Admin/Customer.png>]
-<Images/MockUp/Admin/Add Voucher.png, id=1580, 1445.4pt x 1332.98pt>
+<Images/MockUp/Admin/Add Voucher.png, id=1639, 1445.4pt x 1332.98pt>
 File: Images/MockUp/Admin/Add Voucher.png Graphic file (type png)
 <use Images/MockUp/Admin/Add Voucher.png>
 Package pdftex.def Info: Images/MockUp/Admin/Add Voucher.png  used on input lin
-e 746.
+e 750.
 (pdftex.def)             Requested size: 455.24411pt x 419.82991pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 751.
+Package pdftex.def Info: Images/hcmut.png  used on input line 755.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 
 [78 <./Images/MockUp/Admin/Customer Details.png>]
-<Images/MockUp/Admin/Categories.png, id=1587, 1445.4pt x 1171.37625pt>
+<Images/MockUp/Admin/Categories.png, id=1646, 1445.4pt x 1171.37625pt>
 File: Images/MockUp/Admin/Categories.png Graphic file (type png)
 <use Images/MockUp/Admin/Categories.png>
 Package pdftex.def Info: Images/MockUp/Admin/Categories.png  used on input line
- 756.
+ 760.
 (pdftex.def)             Requested size: 455.24411pt x 368.93185pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 761.
+Package pdftex.def Info: Images/hcmut.png  used on input line 765.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [79 <./Images/MockUp/Admin/Add Voucher.png>]
-<Images/MockUp/Admin/Transaction.png, id=1594, 1445.4pt x 1172.38pt>
+<Images/MockUp/Admin/Transaction.png, id=1653, 1445.4pt x 1172.38pt>
 File: Images/MockUp/Admin/Transaction.png Graphic file (type png)
 <use Images/MockUp/Admin/Transaction.png>
 Package pdftex.def Info: Images/MockUp/Admin/Transaction.png  used on input lin
-e 766.
+e 770.
 (pdftex.def)             Requested size: 455.24411pt x 369.24799pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 771.
+Package pdftex.def Info: Images/hcmut.png  used on input line 775.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [80 <./Images/MockUp/Admin/Categories.png>]
-<Images/MockUp/Admin/Transaction Details.png, id=1602, 1445.4pt x 1172.38pt>
+<Images/MockUp/Admin/Transaction Details.png, id=1661, 1445.4pt x 1172.38pt>
 File: Images/MockUp/Admin/Transaction Details.png Graphic file (type png)
 <use Images/MockUp/Admin/Transaction Details.png>
 Package pdftex.def Info: Images/MockUp/Admin/Transaction Details.png  used on i
-nput line 776.
+nput line 780.
 (pdftex.def)             Requested size: 455.24411pt x 369.24799pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 781.
+Package pdftex.def Info: Images/hcmut.png  used on input line 785.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [81 <./Images/MockUp/Admin/Transaction.png>]
-<Images/MockUp/Admin/Chat.png, id=1609, 1445.4pt x 1422.31375pt>
+<Images/MockUp/Admin/Chat.png, id=1668, 1445.4pt x 1422.31375pt>
 File: Images/MockUp/Admin/Chat.png Graphic file (type png)
 <use Images/MockUp/Admin/Chat.png>
-Package pdftex.def Info: Images/MockUp/Admin/Chat.png  used on input line 786.
+Package pdftex.def Info: Images/MockUp/Admin/Chat.png  used on input line 790.
 (pdftex.def)             Requested size: 455.24411pt x 447.9661pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 791.
+Package pdftex.def Info: Images/hcmut.png  used on input line 795.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [82 <./Images/MockUp/Admin/Transaction Details.png>]
-<Images/MockUp/Admin/Add+edit Product.png, id=1616, 1445.4pt x 1893.0725pt>
+<Images/MockUp/Admin/Add+edit Product.png, id=1675, 1445.4pt x 1893.0725pt>
 File: Images/MockUp/Admin/Add+edit Product.png Graphic file (type png)
 <use Images/MockUp/Admin/Add+edit Product.png>
 Package pdftex.def Info: Images/MockUp/Admin/Add+edit Product.png  used on inpu
-t line 796.
+t line 800.
 (pdftex.def)             Requested size: 455.24411pt x 596.23434pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 801.
+Package pdftex.def Info: Images/hcmut.png  used on input line 805.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 
 [83 <./Images/MockUp/Admin/Chat.png>]
-<Images/MockUp/Admin/Products.png, id=1623, 1445.4pt x 1483.5425pt>
+<Images/MockUp/Admin/Products.png, id=1682, 1445.4pt x 1483.5425pt>
 File: Images/MockUp/Admin/Products.png Graphic file (type png)
 <use Images/MockUp/Admin/Products.png>
 Package pdftex.def Info: Images/MockUp/Admin/Products.png  used on input line 8
-06.
+10.
 (pdftex.def)             Requested size: 455.24411pt x 467.25046pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 811.
+Package pdftex.def Info: Images/hcmut.png  used on input line 815.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [84 <./Images/MockUp/Admin/Add+edit Product.png>]
-<Images/MockUp/Admin/Role Control.png, id=1630, 1445.4pt x 1494.58376pt>
+<Images/MockUp/Admin/Role Control.png, id=1689, 1445.4pt x 1494.58376pt>
 File: Images/MockUp/Admin/Role Control.png Graphic file (type png)
 <use Images/MockUp/Admin/Role Control.png>
 Package pdftex.def Info: Images/MockUp/Admin/Role Control.png  used on input li
-ne 816.
+ne 820.
 (pdftex.def)             Requested size: 455.24411pt x 470.72797pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 821.
+Package pdftex.def Info: Images/hcmut.png  used on input line 825.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [85 <./Images/MockUp/Admin/Products.png>]
-<Images/MockUp/Admin/Admin Role.png, id=1637, 1445.4pt x 1116.17pt>
+<Images/MockUp/Admin/Admin Role.png, id=1697, 1445.4pt x 1116.17pt>
 File: Images/MockUp/Admin/Admin Role.png Graphic file (type png)
 <use Images/MockUp/Admin/Admin Role.png>
 Package pdftex.def Info: Images/MockUp/Admin/Admin Role.png  used on input line
- 826.
+ 830.
 (pdftex.def)             Requested size: 455.24411pt x 351.54431pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 831.
+Package pdftex.def Info: Images/hcmut.png  used on input line 835.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [86 <./Images/MockUp/Admin/Role Control.png>]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 833.
+(hyperref)                than one, level fixed on input line 837.
 
-<Images/MockUp/Staff/Order Management.png, id=1645, 1445.4pt x 1384.17125pt>
+<Images/MockUp/Staff/Order Management.png, id=1705, 1445.4pt x 1384.17125pt>
 File: Images/MockUp/Staff/Order Management.png Graphic file (type png)
 <use Images/MockUp/Staff/Order Management.png>
 Package pdftex.def Info: Images/MockUp/Staff/Order Management.png  used on inpu
-t line 838.
+t line 842.
 (pdftex.def)             Requested size: 455.24411pt x 435.9529pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 843.
+Package pdftex.def Info: Images/hcmut.png  used on input line 847.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [87 <./Images/MockUp/Admin/Admin Role.png>]
-<Images/MockUp/Staff/Order Detail.png, id=1652, 1445.4pt x 1384.17125pt>
+<Images/MockUp/Staff/Order Detail.png, id=1712, 1445.4pt x 1384.17125pt>
 File: Images/MockUp/Staff/Order Detail.png Graphic file (type png)
 <use Images/MockUp/Staff/Order Detail.png>
 Package pdftex.def Info: Images/MockUp/Staff/Order Detail.png  used on input li
-ne 848.
+ne 852.
 (pdftex.def)             Requested size: 455.24411pt x 435.9529pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 853.
+Package pdftex.def Info: Images/hcmut.png  used on input line 857.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [88 <./Images/MockUp/Staff/Order Management.png>]
-<Images/MockUp/Staff/Products.png, id=1659, 1445.4pt x 1483.5425pt>
+<Images/MockUp/Staff/Products.png, id=1719, 1445.4pt x 1483.5425pt>
 File: Images/MockUp/Staff/Products.png Graphic file (type png)
 <use Images/MockUp/Staff/Products.png>
 Package pdftex.def Info: Images/MockUp/Staff/Products.png  used on input line 8
-58.
+62.
 (pdftex.def)             Requested size: 455.24411pt x 467.25046pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 863.
+Package pdftex.def Info: Images/hcmut.png  used on input line 867.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [89 <./Images/MockUp/Staff/Order Detail.png>]
-<Images/MockUp/Staff/Product Detail.png, id=1666, 1445.4pt x 1631.09375pt>
+<Images/MockUp/Staff/Product Detail.png, id=1726, 1445.4pt x 1631.09375pt>
 File: Images/MockUp/Staff/Product Detail.png Graphic file (type png)
 <use Images/MockUp/Staff/Product Detail.png>
 Package pdftex.def Info: Images/MockUp/Staff/Product Detail.png  used on input 
-line 868.
+line 872.
 (pdftex.def)             Requested size: 455.24411pt x 513.7226pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 873.
+Package pdftex.def Info: Images/hcmut.png  used on input line 877.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [90 <./Images/MockUp/Staff/Products.png>]
-<Images/MockUp/Staff/Transaction.png, id=1674, 1445.4pt x 1172.38pt>
+<Images/MockUp/Staff/Transaction.png, id=1733, 1445.4pt x 1172.38pt>
 File: Images/MockUp/Staff/Transaction.png Graphic file (type png)
 <use Images/MockUp/Staff/Transaction.png>
 Package pdftex.def Info: Images/MockUp/Staff/Transaction.png  used on input lin
-e 878.
+e 882.
 (pdftex.def)             Requested size: 455.24411pt x 369.24799pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 883.
+Package pdftex.def Info: Images/hcmut.png  used on input line 887.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [91 <./Images/MockUp/Staff/Product Detail.png>]
-<Images/MockUp/Staff/Transaction Details.png, id=1681, 1445.4pt x 1172.38pt>
+<Images/MockUp/Staff/Transaction Details.png, id=1740, 1445.4pt x 1172.38pt>
 File: Images/MockUp/Staff/Transaction Details.png Graphic file (type png)
 <use Images/MockUp/Staff/Transaction Details.png>
 Package pdftex.def Info: Images/MockUp/Staff/Transaction Details.png  used on i
-nput line 888.
+nput line 892.
 (pdftex.def)             Requested size: 455.24411pt x 369.24799pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 893.
+Package pdftex.def Info: Images/hcmut.png  used on input line 897.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 
 [92 <./Images/MockUp/Staff/Transaction.png>]
-<Images/MockUp/Staff/Chat.png, id=1689, 1445.4pt x 1422.31375pt>
+<Images/MockUp/Staff/Chat.png, id=1748, 1445.4pt x 1422.31375pt>
 File: Images/MockUp/Staff/Chat.png Graphic file (type png)
 <use Images/MockUp/Staff/Chat.png>
-Package pdftex.def Info: Images/MockUp/Staff/Chat.png  used on input line 898.
+Package pdftex.def Info: Images/MockUp/Staff/Chat.png  used on input line 902.
 (pdftex.def)             Requested size: 455.24411pt x 447.9661pt.
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 903.
+Package pdftex.def Info: Images/hcmut.png  used on input line 907.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [93 <./Images/MockUp/Staff/Transaction Details.png>])
 File: Images/hcmut.png Graphic file (type png)
@@ -3807,7 +3803,7 @@ Package pdftex.def Info: Images/hcmut.png  used on input line 264.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
  [94 <./Images/MockUp/Staff/Chat.png>]
 (./Contents/HienThuc.tex
-<Images/sourceCodeStructureImgs/frontend-1.png, id=1702, 204.765pt x 242.70676p
+<Images/sourceCodeStructureImgs/frontend-1.png, id=1761, 204.765pt x 242.70676p
 t>
 File: Images/sourceCodeStructureImgs/frontend-1.png Graphic file (type png)
 <use Images/sourceCodeStructureImgs/frontend-1.png>
@@ -3883,7 +3879,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-<Images/sourceCodeStructureImgs/frontend-2.png, id=1708, 201.1515pt x 297.5115p
+<Images/sourceCodeStructureImgs/frontend-2.png, id=1767, 201.1515pt x 297.5115p
 t>
 File: Images/sourceCodeStructureImgs/frontend-2.png Graphic file (type png)
 <use Images/sourceCodeStructureImgs/frontend-2.png>
@@ -3978,7 +3974,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-<Images/sourceCodeStructureImgs/frontend-3.png, id=1719, 205.36725pt x 200.5492
+<Images/sourceCodeStructureImgs/frontend-3.png, id=1778, 205.36725pt x 200.5492
 6pt>
 File: Images/sourceCodeStructureImgs/frontend-3.png Graphic file (type png)
 <use Images/sourceCodeStructureImgs/frontend-3.png>
@@ -4049,7 +4045,7 @@ File: Images/hcmut.png Graphic file (type png)
 Package pdftex.def Info: Images/hcmut.png  used on input line 111.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 [99 <./Images/sourceCodeStructureImgs/frontend-3.png>]
-<Images/sourceCodeStructureImgs/backend-1.png, id=1731, 289.68225pt x 492.6405p
+<Images/sourceCodeStructureImgs/backend-1.png, id=1790, 289.68225pt x 492.6405p
 t>
 File: Images/sourceCodeStructureImgs/backend-1.png Graphic file (type png)
 <use Images/sourceCodeStructureImgs/backend-1.png>
@@ -4194,7 +4190,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
-<Images/sourceCodeStructureImgs/backend-2.png, id=1742, 286.671pt x 348.70274pt
+<Images/sourceCodeStructureImgs/backend-2.png, id=1801, 286.671pt x 348.70274pt
 >
 File: Images/sourceCodeStructureImgs/backend-2.png Graphic file (type png)
 <use Images/sourceCodeStructureImgs/backend-2.png>
@@ -4265,66 +4261,350 @@ File: Images/hcmut.png Graphic file (type png)
 Package pdftex.def Info: Images/hcmut.png  used on input line 266.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
 
-[103] (./Contents/KiemThuHeThong.tex)
+[103] (./Contents/KiemThuHeThong.tex
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 68.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [104]
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 111.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [105]
+Underfull \hbox (badness 2644) in paragraph at lines 141--141
+[]|\T5/ptm/m/n/10 POST /auth/check-
+ []
+
+
+Underfull \hbox (badness 4543) in paragraph at lines 141--141
+[]|\T5/ptm/m/n/10 200, k�ch ho�t t�i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
+[]|\T5/ptm/m/n/10 POST /auth/retry-
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 143--143
+[]|\T5/ptm/m/n/10 POST /auth/check-
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 156--156
+[]|\T5/ptm/m/n/10 200, danh s�ch s�n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+[]|\T5/ptm/m/n/10 GET /prod-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+[]|\T5/ptm/m/n/10 200, chi ti�t s�n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]|\T5/ptm/m/n/10 DELETE /prod-
+ []
+
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 167.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[106]
+Underfull \hbox (badness 1424) in paragraph at lines 176--176
+[]|\T5/ptm/m/n/10 201, ^^_�n t�o th�nh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T5/ptm/m/n/10 PATCH /or-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[]|\T5/ptm/m/n/10 PATCH /or-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]|\T5/ptm/m/n/10 POST /or-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[]|\T5/ptm/m/n/10 POST /or-
+ []
+
+<Images/Testing/homepage.png, id=1832, 1445.4pt x 1803.73875pt>
+File: Images/Testing/homepage.png Graphic file (type png)
+<use Images/Testing/homepage.png>
+Package pdftex.def Info: Images/Testing/homepage.png  used on input line 205.
+(pdftex.def)             Requested size: 386.96027pt x 482.88756pt.
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 208.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[107]
+<Images/Testing/login.png, id=1839, 1284.8pt x 722.7pt>
+File: Images/Testing/login.png Graphic file (type png)
+<use Images/Testing/login.png>
+Package pdftex.def Info: Images/Testing/login.png  used on input line 215.
+(pdftex.def)             Requested size: 386.96027pt x 217.66078pt.
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 218.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [108 <./Images/Testing/homepage.png (PNG copy)>]
+<Images/Testing/signup.png, id=1846, 1284.8pt x 722.7pt>
+File: Images/Testing/signup.png Graphic file (type png)
+<use Images/Testing/signup.png>
+Package pdftex.def Info: Images/Testing/signup.png  used on input line 225.
+(pdftex.def)             Requested size: 386.96027pt x 217.66078pt.
+<Images/Testing/product-detail.png, id=1847, 1445.4pt x 1896.08376pt>
+File: Images/Testing/product-detail.png Graphic file (type png)
+<use Images/Testing/product-detail.png>
+Package pdftex.def Info: Images/Testing/product-detail.png  used on input line 
+235.
+(pdftex.def)             Requested size: 386.96027pt x 507.60968pt.
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 238.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [109 <./Images/Testing/login.png (PNG copy)> <./Images/Testing/signup.png (PNG
+ copy)>]
+<Images/Testing/cart.png, id=1855, 1445.4pt x 903.375pt>
+File: Images/Testing/cart.png Graphic file (type png)
+<use Images/Testing/cart.png>
+Package pdftex.def Info: Images/Testing/cart.png  used on input line 245.
+(pdftex.def)             Requested size: 386.96027pt x 241.84685pt.
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 248.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [110 <./Images/Testing/product-detail.png (PNG copy)>]
+<Images/Testing/checkout.png, id=1863, 1445.4pt x 978.65625pt>
+File: Images/Testing/checkout.png Graphic file (type png)
+<use Images/Testing/checkout.png>
+Package pdftex.def Info: Images/Testing/checkout.png  used on input line 255.
+(pdftex.def)             Requested size: 386.96027pt x 262.00076pt.
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 266.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [111 <./Images/Testing/cart.png (PNG copy)> <./Images/Testing/checkout.png (PN
+G copy)>]
+<Images/Testing/admin-dashboard.png, id=1872, 1445.4pt x 903.375pt>
+File: Images/Testing/admin-dashboard.png Graphic file (type png)
+<use Images/Testing/admin-dashboard.png>
+Package pdftex.def Info: Images/Testing/admin-dashboard.png  used on input line
+ 285.
+(pdftex.def)             Requested size: 432.48051pt x 270.2978pt.
+<Images/Testing/admin-orders.png, id=1873, 1445.4pt x 903.375pt>
+File: Images/Testing/admin-orders.png Graphic file (type png)
+<use Images/Testing/admin-orders.png>
+Package pdftex.def Info: Images/Testing/admin-orders.png  used on input line 29
+5.
+(pdftex.def)             Requested size: 432.48051pt x 270.2978pt.
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 298.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [112 <./Images/Testing/admin-dashboard.png (PNG copy)>]
+<Images/Testing/admin-products-list.png, id=1885, 1445.4pt x 903.375pt>
+File: Images/Testing/admin-products-list.png Graphic file (type png)
+<use Images/Testing/admin-products-list.png>
+Package pdftex.def Info: Images/Testing/admin-products-list.png  used on input 
+line 305.
+(pdftex.def)             Requested size: 432.48051pt x 270.2978pt.
+<Images/Testing/admin-users.png, id=1886, 1445.4pt x 903.375pt>
+File: Images/Testing/admin-users.png Graphic file (type png)
+<use Images/Testing/admin-users.png>
+Package pdftex.def Info: Images/Testing/admin-users.png  used on input line 315
+.
+(pdftex.def)             Requested size: 432.48051pt x 270.2978pt.
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 318.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [113 <./Images/Testing/admin-orders.png (PNG copy)> <./Images/Testing/admin-pr
+oducts-list.png (PNG copy)>]
+<Images/Testing/admin-vouchers.png, id=1894, 1445.4pt x 903.375pt>
+File: Images/Testing/admin-vouchers.png Graphic file (type png)
+<use Images/Testing/admin-vouchers.png>
+Package pdftex.def Info: Images/Testing/admin-vouchers.png  used on input line 
+325.
+(pdftex.def)             Requested size: 432.48051pt x 270.2978pt.
+<Images/Testing/admin-categories.png, id=1895, 1445.4pt x 903.375pt>
+File: Images/Testing/admin-categories.png Graphic file (type png)
+<use Images/Testing/admin-categories.png>
+Package pdftex.def Info: Images/Testing/admin-categories.png  used on input lin
+e 335.
+(pdftex.def)             Requested size: 432.48051pt x 270.2978pt.
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 338.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+ [114 <./Images/Testing/admin-users.png (PNG copy)> <./Images/Testing/admin-vou
+chers.png (PNG copy)>]
+<Images/Testing/admin-chat.png, id=1903, 1445.4pt x 903.375pt>
+File: Images/Testing/admin-chat.png Graphic file (type png)
+<use Images/Testing/admin-chat.png>
+Package pdftex.def Info: Images/Testing/admin-chat.png  used on input line 345.
+
+(pdftex.def)             Requested size: 432.48051pt x 270.2978pt.
+
+Underfull \hbox (badness 2671) in paragraph at lines 366--366
+[]|\T5/ptm/m/n/10 Th�m s�n ph�m v�o gi�
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 367--367
+[]|\T5/ptm/m/n/10 T�ng/gi�m s� l��ng trong
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 376--376
+[]|\T5/ptm/m/n/10 L�c, t�m ki�m, c�p nh�t
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 378--378
+[]|\T5/ptm/m/n/10 C�p nh�t ph�n �nh tr�n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
+[]|\T5/ptm/m/n/10 Th�m/s�a/x�a danh m�c
+ []
+
+
+Underfull \hbox (badness 6961) in paragraph at lines 382--382
+[]|\T5/ptm/m/n/10 Chat re-al-time v�i kh�ch
+ []
+
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 387.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[115 <./Images/Testing/admin-categories.png (PNG copy)> <./Images/Testing/admin
+-chat.png (PNG copy)>]
+Underfull \hbox (badness 1668) in paragraph at lines 403--403
+[]|\T5/ptm/m/n/10 ^^^�ng nh�p qua OAuth Google
+ []
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 418--418
+[]|\T5/ptm/m/n/10 Qu�n l� ^^_�a ch� giao
+ []
+
+
+Underfull \hbox (badness 6608) in paragraph at lines 420--420
+[]|\T5/ptm/m/n/10 Nh�n th�ng b�o ^^_�n
+ []
+
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 424.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[116]
+Underfull \hbox (badness 4954) in paragraph at lines 433--433
+[]|\T5/ptm/m/n/10 ^^^�ng nh�p t�i kho�n
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 440--440
+[]|\T5/ptm/m/n/10 Chuy�n tr�ng th�i v� ph�n h�i
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 453--453
+[]|\T5/ptm/m/n/10 Xem t�ng quan kinh
+ []
+
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 468.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[117])
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
 Package pdftex.def Info: Images/hcmut.png  used on input line 268.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [104] (./Contents/TrienKhai.tex)
+ [118] (./Contents/TrienKhai.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+File: Images/hcmut.png Graphic file (type png)
+<use Images/hcmut.png>
+Package pdftex.def Info: Images/hcmut.png  used on input line 22.
+(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
+[119])
+Underfull \hbox (badness 10000) in paragraph at lines 22--270
+
+ []
+
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
 Package pdftex.def Info: Images/hcmut.png  used on input line 270.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [105]
-(./Contents/TongKet.tex
+[120] (./Contents/TongKet.tex
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 5.
+Package pdftex.def Info: Images/hcmut.png  used on input line 43.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [106]
-Underfull \hbox (badness 2401) in paragraph at lines 155--155
-[]|\T5/ptm/m/n/10 - N�ng c�p UI c�i thi�n tr�i
- []
-
-ignored error: Infinite glue shrinkage found in box being split
+ [121])
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 155.
+Package pdftex.def Info: Images/hcmut.png  used on input line 272.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [107]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
+ [122] (./Outro/TaiLieuThamKhao.tex)
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 161.
+Package pdftex.def Info: Images/hcmut.png  used on input line 275.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
-[108]
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
- []
-
+[123] (./Outro/PhuLuc.tex)
 File: Images/hcmut.png Graphic file (type png)
 <use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 163.
+Package pdftex.def Info: Images/hcmut.png  used on input line 277.
 (pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
-[109]) (./Outro/TaiLieuThamKhao.tex)
-File: Images/hcmut.png Graphic file (type png)
-<use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 274.
-(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [110] (./Outro/PhuLuc.tex)
-File: Images/hcmut.png Graphic file (type png)
-<use Images/hcmut.png>
-Package pdftex.def Info: Images/hcmut.png  used on input line 276.
-(pdftex.def)             Requested size: 28.44864pt x 28.44792pt.
- [111]
+ [124]
 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
@@ -4334,46 +4614,32 @@ L3 programming layer <2025-11-14>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 835825D3C3226ADB442102BFA83C5912;30772
-(rerunfilecheck)             After:  6E11F0FA81CD3DDA99446A10D1798A29;30816.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: C8F41C3D716ED00DE6ACEC2F2A92BF71;31153.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38730 strings out of 467537
- 768997 string characters out of 5413250
- 1595452 words of memory out of 5000000
- 66515 multiletter control sequences out of 15000+600000
+ 38878 strings out of 467537
+ 773177 string characters out of 5413250
+ 1573311 words of memory out of 5000000
+ 66606 multiletter control sequences out of 15000+600000
  679504 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,26n,126p,1961b,1368s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,26n,126p,1706b,1368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmb8
 v.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn
 /utmr8v.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/vntex/u
 rwvn/utmri8v.pfb><d:/Program Files (x86)/texlive/2025/texmf-dist/fonts/type1/vn
 tex/vnr/vntt10.pfb>
-Output written on main.pdf (122 pages, 23635429 bytes).
+Output written on main.pdf (135 pages, 28818212 bytes).
 PDF statistics:
- 1929 PDF objects out of 2073 (max. 8388607)
- 1627 compressed objects within 17 object streams
- 415 named destinations out of 1000 (max. 500000)
- 1581 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2102 PDF objects out of 2487 (max. 8388607)
+ 1773 compressed objects within 18 object streams
+ 472 named destinations out of 1000 (max. 500000)
+ 1670 words of extra memory for PDF output out of 10000 (max. 10000000)
 

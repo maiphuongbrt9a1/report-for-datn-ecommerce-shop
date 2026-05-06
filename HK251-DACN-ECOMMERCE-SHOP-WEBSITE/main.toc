@@ -44,12 +44,12 @@
 \contentsline {section}{\numberline {4}Phân tích hệ thống}{15}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Các vai trò và yêu cầu chức năng của người dùng trong hệ thống}{15}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Các yêu cầu phi chức năng}{16}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Thiết kế usecase}{17}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Sơ đồ usecase}{17}{subsubsection.4.3.1}%
-\contentsline {subsubsubsection}{\numberline {4.3.1.a}Sơ đồ usecase cho người quản trị viên (admin) và nhân viên (staff)}{17}{subsubsubsection.4.3.1.1}%
-\contentsline {subsubsubsection}{\numberline {4.3.1.b}Sơ đồ usecase cho người khách hàng (customer)}{18}{subsubsubsection.4.3.1.2}%
-\contentsline {subsubsection}{\numberline {4.3.2}Đặc tả usecase}{19}{subsubsection.4.3.2}%
-\contentsline {subsubsubsection}{\numberline {4.3.2.a}Đặc tả usecase cho người quản trị viên (admin)}{19}{subsubsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3}Thiết kế usecase}{16}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Sơ đồ usecase}{16}{subsubsection.4.3.1}%
+\contentsline {subsubsubsection}{\numberline {4.3.1.a}Sơ đồ usecase cho người quản trị viên (admin) và nhân viên (staff)}{16}{subsubsubsection.4.3.1.1}%
+\contentsline {subsubsubsection}{\numberline {4.3.1.b}Sơ đồ usecase cho người khách hàng (customer)}{17}{subsubsubsection.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}Đặc tả usecase}{18}{subsubsection.4.3.2}%
+\contentsline {subsubsubsection}{\numberline {4.3.2.a}Đặc tả usecase cho người quản trị viên (admin)}{18}{subsubsubsection.4.3.2.1}%
 \contentsline {subsubsubsection}{\numberline {4.3.2.b}Đặc tả usecase cho người nhân viên (staff)}{29}{subsubsubsection.4.3.2.2}%
 \contentsline {subsubsubsection}{\numberline {4.3.2.c}Đặc tả usecase cho người khách hàng (customer)}{32}{subsubsubsection.4.3.2.3}%
 \contentsline {section}{\numberline {5}Thiết kế hệ thống}{37}{section.5}%
@@ -123,20 +123,37 @@
 \contentsline {subsection}{\numberline {7.1}Kiểm thử đơn vị - Unit Testing}{104}{subsection.7.1}%
 \contentsline {subsubsection}{\numberline {7.1.1}Tổng quan}{104}{subsubsection.7.1.1}%
 \contentsline {subsubsection}{\numberline {7.1.2}Hiện thực}{104}{subsubsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.2}Kiểm thử hệ thống - System Testing}{104}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Tổng quan}{104}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Hiện thực}{104}{subsubsection.7.2.2}%
-\contentsline {subsubsection}{\numberline {7.2.3}Kiểm thử luồng giao diên -thêm tên luồng vào đây}{104}{subsubsection.7.2.3}%
-\contentsline {subsubsection}{\numberline {7.2.4}Kiểm thử luồng giao diên -thêm tên luồng vào đây}{104}{subsubsection.7.2.4}%
-\contentsline {subsubsection}{\numberline {7.2.5}Kiểm thử luồng giao diên -thêm tên luồng vào đây}{104}{subsubsection.7.2.5}%
-\contentsline {subsubsection}{\numberline {7.2.6}Kiểm thử api với Postman}{104}{subsubsection.7.2.6}%
-\contentsline {subsection}{\numberline {7.3}Kiểm thử chấp nhận của người dùng - User Acceptance Testing - UAT}{104}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Triển khai hệ thống}{105}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Database Server}{105}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Back-end Server}{105}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Web-based front-end application}{105}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Tổng kết}{106}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Kết quả đạt được}{106}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Hướng phát triển trong tương lai}{107}{subsection.9.2}%
-\contentsline {section}{\numberline {10}Tài liệu tham khảo}{110}{section.10}%
-\contentsline {section}{\numberline {11}Phụ lục}{111}{section.11}%
+\contentsline {subsection}{\numberline {7.2}Kiểm thử tích hợp - Integration Testing}{106}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Tổng quan}{106}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Hiện thực}{106}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Kiểm thử hệ thống - System Testing}{107}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Tổng quan}{107}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Luồng người dùng - Customer}{107}{subsubsection.7.3.2}%
+\contentsline {paragraph}{\numberline {7.3.2.1}Trang chủ.}{107}{paragraph.7.3.2.1}%
+\contentsline {paragraph}{\numberline {7.3.2.2}Trang đăng nhập.}{108}{paragraph.7.3.2.2}%
+\contentsline {paragraph}{\numberline {7.3.2.3}Trang đăng ký.}{109}{paragraph.7.3.2.3}%
+\contentsline {paragraph}{\numberline {7.3.2.4}Trang chi tiết sản phẩm.}{109}{paragraph.7.3.2.4}%
+\contentsline {paragraph}{\numberline {7.3.2.5}Trang giỏ hàng.}{110}{paragraph.7.3.2.5}%
+\contentsline {paragraph}{\numberline {7.3.2.6}Trang thanh toán.}{111}{paragraph.7.3.2.6}%
+\contentsline {paragraph}{\numberline {7.3.2.7}Luồng thanh toán qua VNPay.}{111}{paragraph.7.3.2.7}%
+\contentsline {subsubsection}{\numberline {7.3.3}Luồng quản trị - Admin}{112}{subsubsection.7.3.3}%
+\contentsline {paragraph}{\numberline {7.3.3.1}Trang tổng quan Admin.}{112}{paragraph.7.3.3.1}%
+\contentsline {paragraph}{\numberline {7.3.3.2}Quản lý đơn hàng.}{112}{paragraph.7.3.3.2}%
+\contentsline {paragraph}{\numberline {7.3.3.3}Quản lý sản phẩm.}{113}{paragraph.7.3.3.3}%
+\contentsline {paragraph}{\numberline {7.3.3.4}Quản lý khách hàng.}{113}{paragraph.7.3.3.4}%
+\contentsline {paragraph}{\numberline {7.3.3.5}Quản lý voucher.}{114}{paragraph.7.3.3.5}%
+\contentsline {paragraph}{\numberline {7.3.3.6}Quản lý danh mục.}{114}{paragraph.7.3.3.6}%
+\contentsline {paragraph}{\numberline {7.3.3.7}Chat hỗ trợ.}{115}{paragraph.7.3.3.7}%
+\contentsline {subsubsection}{\numberline {7.3.4}Tổng kết test case kiểm thử hệ thống}{116}{subsubsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.4}Kiểm thử chấp nhận của người dùng - User Acceptance Testing}{116}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Tổng kết kiểm thử}{118}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Triển khai hệ thống}{119}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Database Server}{119}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Cloud Storage - Lưu trữ ảnh và video sản phẩm với AWS S3}{119}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Back-end Server}{119}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Web-based front-end application}{119}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Tổng kết}{121}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Kết quả đạt được}{121}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Hướng phát triển trong tương lai}{122}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Tài liệu tham khảo}{123}{section.10}%
+\contentsline {section}{\numberline {11}Phụ lục}{124}{section.11}%
