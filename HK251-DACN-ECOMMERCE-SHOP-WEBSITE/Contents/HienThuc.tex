@@ -204,13 +204,323 @@ Danh sách tất cả các api được tài liệu hóa đầy đủ ở link n
 
 \subsection{Giao diện hệ thống cho người khách hàng}
 
-todo
+Phần này trình bày các giao diện chính dành cho khách hàng trên hệ thống Paplé, được tổ chức theo luồng thao tác thực tế từ khi truy cập, tìm kiếm sản phẩm, đặt hàng đến quản lý tài khoản.
 
+\subsubsection{Trang chủ}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/homepage.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang chủ Paplé}
+\end{figure}
+
+\textbf{Các thao tác chính:} Người dùng có thể duyệt các sản phẩm gợi ý hôm nay, xem banner khuyến mãi, truy cập danh mục sản phẩm qua menu \textit{Danh mục}, tìm kiếm sản phẩm theo từ khóa qua thanh tìm kiếm, mở giỏ hàng từ biểu tượng ở góc phải, truy cập tài khoản cá nhân hoặc đăng nhập/đăng ký. Trang chủ hiển thị sản phẩm theo dạng lưới với thông tin: hình ảnh, tên, giá, số lượng tồn kho và các phiên bản màu sắc.
+
+\subsubsection{Trang đăng nhập}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/login.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang đăng nhập}
+\end{figure}
+
+\textbf{Các thao tác chính:} Nhập email và mật khẩu, nhấn \textit{Đăng nhập} để xác thực qua NextAuth.js. Hệ thống hỗ trợ đăng nhập bằng tài khoản Google OAuth. Có thể chuyển sang trang đăng ký mới hoặc trang quên mật khẩu. Sau khi xác thực thành công, hệ thống điều hướng người dùng về trang chủ (Customer), trang quản trị (Admin) hoặc trang nhân viên (Staff) tương ứng theo vai trò.
+
+\subsubsection{Trang đăng ký}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/signup.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang đăng ký tài khoản}
+\end{figure}
+
+\textbf{Các thao tác chính:} Điền họ, tên, email, mật khẩu và xác nhận mật khẩu. Sau khi gửi, hệ thống tạo tài khoản ở trạng thái chưa kích hoạt và gửi email chứa mã xác thực 6 chữ số. Tài khoản chỉ được kích hoạt khi người dùng nhập đúng mã trong vòng 5 phút.
+
+\subsubsection{Trang quên mật khẩu}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/forgot-password.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang quên mật khẩu}
+\end{figure}
+
+\textbf{Các thao tác chính:} Nhập email đã đăng ký để nhận mã xác thực đặt lại mật khẩu. Hệ thống gửi mã qua email, người dùng nhập mã và đặt mật khẩu mới.
+
+\subsubsection{Trang tìm kiếm sản phẩm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/search.png}
+    \vspace{0.5cm}
+    \caption{Giao diện tìm kiếm sản phẩm}
+\end{figure}
+
+\textbf{Các thao tác chính:} Nhập từ khóa vào thanh tìm kiếm để tìm sản phẩm. Kết quả hiển thị dưới dạng lưới với thông tin sản phẩm, giá, màu sắc và kích cỡ. Người dùng có thể click vào sản phẩm để xem chi tiết hoặc thêm trực tiếp vào giỏ hàng.
+
+\subsubsection{Trang chi tiết sản phẩm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/product-detail.png}
+    \vspace{0.5cm}
+    \caption{Giao diện chi tiết sản phẩm}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem ảnh sản phẩm từ nhiều góc nhìn qua gallery bên trái, chọn kích cỡ (S, M, L, XL, XXL), chọn màu sắc, điều chỉnh số lượng, nhấn \textit{Thêm vào giỏ} hoặc \textit{Mua ngay} để đến thẳng trang thanh toán. Có thể so sánh sản phẩm, gửi sản phẩm qua chat hoặc chia sẻ qua mạng xã hội. Phía dưới hiển thị gợi ý phối đồ (outfit recommendation) và phần đánh giá của khách hàng đã mua.
+
+\subsubsection{Trang giỏ hàng}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/customer-cart.png}
+    \vspace{0.5cm}
+    \caption{Giao diện giỏ hàng}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách sản phẩm trong giỏ kèm phân loại (kích cỡ, màu sắc), tăng/giảm số lượng từng sản phẩm, xóa sản phẩm khỏi giỏ, chọn các sản phẩm muốn thanh toán bằng checkbox, nhấn \textit{Mua hàng} để chuyển đến trang thanh toán. Tổng tiền được tính tự động dựa trên các sản phẩm được chọn.
+
+\subsubsection{Trang thanh toán}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/customer-checkout.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang thanh toán}
+\end{figure}
+
+\textbf{Các thao tác chính:} Chọn địa chỉ giao hàng từ danh sách đã lưu hoặc thêm địa chỉ mới, nhập số điện thoại người nhận, nhập ghi chú đơn hàng, chọn phương thức thanh toán giữa \textit{Thanh toán khi nhận hàng (COD)} và \textit{Thanh toán qua VNPay}, áp dụng voucher giảm giá và nhấn \textit{Đặt hàng}. Phía bên phải hiển thị tóm tắt đơn hàng gồm các sản phẩm, tạm tính, phí vận chuyển (tự động tính qua API GHN), giảm giá và tổng cộng cuối cùng.
+
+\subsubsection{Trang hồ sơ cá nhân}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/customer-profile.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang hồ sơ cá nhân}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem và chỉnh sửa thông tin cá nhân (họ tên, email, số điện thoại, giới tính, ảnh đại diện), quản lý danh sách địa chỉ giao hàng, xem lịch sử đơn hàng, quản lý voucher đã lưu, xem thông báo và truy cập chức năng đổi mật khẩu.
+
+\subsubsection{Trang đơn hàng}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/customer-orders.png}
+    \vspace{0.5cm}
+    \caption{Giao diện danh sách đơn hàng của khách hàng}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách toàn bộ đơn hàng đã đặt, lọc theo trạng thái (tất cả, đang chờ, đang giao, đã giao, đã hủy), xem chi tiết từng đơn hàng bao gồm sản phẩm, giá, phương thức thanh toán và trạng thái vận chuyển. Từ trang chi tiết đơn hàng, khách hàng có thể hủy đơn (nếu chưa đóng gói), yêu cầu trả hàng/hoàn tiền, đánh giá sản phẩm hoặc mua lại đơn hàng.
+
+\subsubsection{Trang đổi mật khẩu}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/customer-change-password.png}
+    \vspace{0.5cm}
+    \caption{Giao diện đổi mật khẩu}
+\end{figure}
+
+\textbf{Các thao tác chính:} Nhập email để nhận mã xác thực, sau đó nhập mã và đặt mật khẩu mới. Quy trình đổi mật khẩu yêu cầu xác minh qua email để đảm bảo bảo mật tài khoản.
+
+% ─── ADMIN ────────────────────────────────────────────────────────
 \subsection{Giao diện hệ thống cho người quản trị viên}
 
-todo
+Phần này trình bày các giao diện dành cho quản trị viên (Admin) của hệ thống Paplé. Quản trị viên có toàn quyền quản lý sản phẩm, đơn hàng, khách hàng, voucher, danh mục, phân quyền và chat hỗ trợ.
 
+\subsubsection{Trang tổng quan}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-dashboard.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang tổng quan Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem các chỉ số kinh doanh quan trọng: tổng doanh thu, tổng đơn hàng, đơn đã xác nhận thanh toán, đơn đã hủy, đơn đã hoàn trả, đơn đã giao hàng, đơn giao hàng thất bại và đơn hoàn thành — kèm phần trăm so với kỳ trước. Lựa chọn khoảng thời gian phân tích (theo tuần/tháng/năm) qua dropdown. Biểu đồ phía dưới so sánh dữ liệu kỳ hiện tại và kỳ trước cho 4 chỉ số: doanh thu, đơn hàng, khách hàng và sản phẩm.
+
+\subsubsection{Quản lý đơn hàng}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-orders.png}
+    \vspace{0.5cm}
+    \caption{Giao diện quản lý đơn hàng Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Lọc đơn hàng theo trạng thái (Tất cả/Đang chờ/Đang giao/Đã giao/Yêu cầu trả hàng/Hoàn tiền/Đã hủy), tìm kiếm theo mã đơn hoặc tên khách hàng, xem chi tiết từng đơn (sản phẩm, khách hàng, thời gian, giá, phương thức thanh toán, mã vận đơn GHN). Admin có thể cập nhật trạng thái đơn hàng, xử lý yêu cầu hoàn tiền và liên hệ khách hàng.
+
+\subsubsection{Quản lý sản phẩm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-products-list.png}
+    \vspace{0.5cm}
+    \caption{Giao diện danh sách sản phẩm Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Lọc sản phẩm theo danh mục bằng các tab phía trên, chuyển giữa \textit{Tất cả sản phẩm}, \textit{Đang giảm giá}, \textit{Hết hàng}, tìm kiếm sản phẩm theo tên, thêm sản phẩm mới qua nút \textit{Thêm sản phẩm}, chỉnh sửa hoặc xóa sản phẩm trực tiếp tại cột hành động.
+
+\subsubsection{Thêm sản phẩm mới}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-product-add.png}
+    \vspace{0.5cm}
+    \caption{Giao diện thêm sản phẩm mới Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Điền thông tin sản phẩm bao gồm tên, mô tả, danh mục, giá gốc. Tải lên hình ảnh sản phẩm chính và hình ảnh cho từng biến thể. Tạo ma trận biến thể theo kích cỡ và màu sắc, thiết lập giá và số lượng tồn kho cho từng biến thể. Nhấn \textit{Tạo sản phẩm} để lưu vào hệ thống.
+
+\subsubsection{Quản lý đánh giá sản phẩm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-reviews.png}
+    \vspace{0.5cm}
+    \caption{Giao diện quản lý đánh giá sản phẩm Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách tất cả đánh giá của khách hàng, lọc theo sản phẩm hoặc số sao, xem chi tiết đánh giá bao gồm nội dung, hình ảnh đính kèm và thông tin người đánh giá. Admin có thể phê duyệt hoặc ẩn các đánh giá không phù hợp.
+
+\subsubsection{Quản lý danh mục}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-categories.png}
+    \vspace{0.5cm}
+    \caption{Giao diện quản lý danh mục Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách danh mục kèm mô tả và ngày tạo, thêm danh mục mới, chỉnh sửa hoặc xóa danh mục hiện có. Mỗi danh mục có thể chứa nhiều sản phẩm và là tiêu chí lọc chính cho khách hàng trên trang chủ.
+
+\subsubsection{Quản lý khách hàng}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-users.png}
+    \vspace{0.5cm}
+    \caption{Giao diện quản lý khách hàng Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Tìm kiếm khách hàng theo ID, tên, email hoặc số điện thoại. Click vào một khách hàng để xem chi tiết tài khoản (thông tin cá nhân, lịch sử đơn hàng, quyền truy cập), chat trực tiếp với khách hàng qua biểu tượng tin nhắn, kích hoạt hoặc khóa tài khoản nếu cần.
+
+\subsubsection{Quản lý voucher}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-vouchers.png}
+    \vspace{0.5cm}
+    \caption{Giao diện quản lý voucher Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách voucher với các thông tin: mã, mô tả, loại giảm giá (số tiền cố định hoặc phần trăm), giá trị, thời gian hiệu lực, trạng thái. Tạo voucher mới, chỉnh sửa hoặc xóa voucher hiện có. Voucher hết hạn được tự động đánh dấu \textit{Hết hiệu lực} bởi cron job chạy hàng ngày.
+
+\subsubsection{Chat hỗ trợ}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-chat.png}
+    \vspace{0.5cm}
+    \caption{Giao diện chat hỗ trợ Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách các cuộc trò chuyện đang xử lý ở cột bên trái, chọn một cuộc trò chuyện để mở khung chat, gửi tin nhắn văn bản hoặc đính kèm hình ảnh, gửi sản phẩm qua chat để tư vấn cho khách hàng. Tính năng chat sử dụng Socket.IO để truyền tin nhắn realtime giữa Admin và khách hàng.
+
+\subsubsection{Cài đặt quyền}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-authority.png}
+    \vspace{0.5cm}
+    \caption{Giao diện cài đặt quyền Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách tài khoản người dùng trên hệ thống, thay đổi vai trò (Customer, Staff, Admin) cho từng tài khoản. Chỉ Admin mới có quyền truy cập trang này để phân quyền cho nhân viên.
+
+\subsubsection{Trang cá nhân Admin}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/admin-profile.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang cá nhân Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem và chỉnh sửa thông tin cá nhân của quản trị viên bao gồm họ tên, email, số điện thoại, giới tính và ảnh đại diện.
+
+% ─── STAFF ────────────────────────────────────────────────────────
 \subsection{Giao diện hệ thống cho người nhân viên}
 
-todo
+Phần này trình bày các giao diện dành cho nhân viên (Staff) của hệ thống Paplé. Nhân viên có phạm vi quyền hạn nhỏ hơn Admin — tập trung vào xử lý đơn hàng, xem sản phẩm, hỗ trợ khách hàng và quản lý đánh giá.
+
+\subsubsection{Trang tổng quan nhân viên}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/staff-dashboard.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang tổng quan nhân viên}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem tổng quan các chỉ số kinh doanh tương tự như Admin, bao gồm doanh thu, số đơn hàng và biểu đồ theo kỳ. Giao diện nhân viên có cùng bố cục sidebar nhưng với ít mục menu hơn so với Admin.
+
+\subsubsection{Quản lý đơn hàng (Nhân viên)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/staff-orders.png}
+    \vspace{0.5cm}
+    \caption{Giao diện quản lý đơn hàng nhân viên}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem và xử lý đơn hàng của khách hàng. Nhân viên có thể lọc đơn theo trạng thái, xác nhận đơn hàng mới, cập nhật trạng thái giao hàng và xử lý yêu cầu trả hàng. Giao diện hiển thị đầy đủ thông tin đơn hàng bao gồm sản phẩm, khách hàng, giá, phương thức thanh toán và mã vận đơn.
+
+\subsubsection{Danh sách sản phẩm (Nhân viên)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/staff-products.png}
+    \vspace{0.5cm}
+    \caption{Giao diện danh sách sản phẩm nhân viên}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách sản phẩm theo danh mục, kiểm tra thông tin sản phẩm và tồn kho. Nhân viên có quyền xem nhưng không có quyền thêm hoặc xóa sản phẩm — chỉ Admin mới có quyền này.
+
+\subsubsection{Đánh giá sản phẩm (Nhân viên)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/staff-reviews.png}
+    \vspace{0.5cm}
+    \caption{Giao diện đánh giá sản phẩm nhân viên}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách đánh giá từ khách hàng, phê duyệt hoặc từ chối các đánh giá. Nhân viên đóng vai trò lọc trước các đánh giá hợp lệ, giảm tải khối lượng công việc cho quản trị viên.
+
+\subsubsection{Chat hỗ trợ (Nhân viên)}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/staff-chat.png}
+    \vspace{0.5cm}
+    \caption{Giao diện chat hỗ trợ nhân viên}
+\end{figure}
+
+\textbf{Các thao tác chính:} Trả lời tin nhắn từ khách hàng qua hệ thống chat realtime, gửi sản phẩm qua chat để tư vấn. Nhân viên là đầu mối hỗ trợ chính cho khách hàng trong quá trình mua hàng.
+
+\subsubsection{Trang cá nhân nhân viên}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Images/Testing/staff-profile.png}
+    \vspace{0.5cm}
+    \caption{Giao diện trang cá nhân nhân viên}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem và chỉnh sửa thông tin cá nhân của nhân viên bao gồm họ tên, email, số điện thoại, giới tính và ảnh đại diện.
 
