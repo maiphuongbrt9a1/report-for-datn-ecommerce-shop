@@ -1,39 +1,489 @@
 \section{Kiểm thử và đánh giá hệ thống}
 
+Kiểm thử phần mềm là quá trình đánh giá và xác minh hệ thống hoạt động đúng theo yêu cầu đặt ra. Trong dự án Paplé, nhóm áp dụng đầy đủ bốn cấp độ kiểm thử theo mô hình kiểm thử phần mềm tiêu chuẩn — kiểm thử đơn vị, kiểm thử tích hợp, kiểm thử hệ thống và kiểm thử chấp nhận của người dùng — nhằm đảm bảo chất lượng toàn diện trước khi triển khai thực tế.
+
+% ─────────────────────────────────────────────────────────────────
 \subsection{Kiểm thử đơn vị - Unit Testing}
+
 \subsubsection{Tổng quan}
 
-todo
+Kiểm thử đơn vị (Unit Testing) là cấp độ kiểm thử thấp nhất, tập trung vào việc kiểm tra từng đơn vị mã nguồn nhỏ nhất một cách độc lập. Mục tiêu là phát hiện lỗi sớm ngay trong quá trình phát triển và đảm bảo mỗi hàm hoạt động đúng theo đặc tả.
+
+\textbf{Công cụ sử dụng:} Jest — framework kiểm thử JavaScript/TypeScript được tích hợp sẵn trong dự án NestJS backend.
+
+\textbf{Phạm vi kiểm thử:} Nhóm tập trung kiểm thử các hàm tiện ích thuần túy (pure functions) trong module \texttt{helpers/utils.ts} của backend. Đây là các hàm không có side-effect và không phụ thuộc vào cơ sở dữ liệu hay các dịch vụ bên ngoài, phù hợp nhất cho kiểm thử đơn vị. Các hàm được kiểm thử bao gồm:
+
+\begin{itemize}
+    \item \texttt{hashPasswordHelper} — mã hóa mật khẩu bằng bcrypt.
+    \item \texttt{comparePasswordHelper} — so sánh mật khẩu với hash đã lưu.
+    \item \texttt{formatMediaField} — chuyển đổi danh sách media với URL builder.
+    \item \texttt{resolveUrl} — ghép nối host và các path segment thành URL hợp lệ.
+    \item \texttt{createPackageChecksum} — tạo chữ ký HMAC-SHA512 cho payload đơn hàng.
+    \item \texttt{verifyPackageChecksum} — xác minh tính toàn vẹn của payload qua checksum.
+\end{itemize}
 
 \subsubsection{Hiện thực}
 
-todo
+File kiểm thử được đặt tại \texttt{src/helpers/utils.spec.ts} với tổng cộng \textbf{23 test case} chia thành 6 nhóm (describe block). Mỗi test case có mã định danh \texttt{UT-XX} để tham chiếu trong báo cáo:
 
+\begin{table}[H]
+\centering
+\caption{Danh sách test case kiểm thử đơn vị}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|l|p{6.5cm}|c|}
+\hline
+\textbf{Mã TC} & \textbf{Hàm kiểm thử} & \textbf{Mô tả test case} & \textbf{Kết quả} \\
+\hline
+UT-01 & hashPasswordHelper & Trả về chuỗi không rỗng & Pass \\
+UT-02 & hashPasswordHelper & Kết quả khác mật khẩu gốc & Pass \\
+UT-03 & hashPasswordHelper & Mỗi lần hash cho kết quả khác nhau (salt) & Pass \\
+UT-04 & hashPasswordHelper & Hash xác minh được bởi comparePasswordHelper & Pass \\
+\hline
+UT-05 & comparePasswordHelper & Trả về true khi mật khẩu khớp & Pass \\
+UT-06 & comparePasswordHelper & Trả về false khi mật khẩu sai & Pass \\
+UT-07 & comparePasswordHelper & Trả về false khi mật khẩu rỗng & Pass \\
+UT-08 & comparePasswordHelper & Trả về false khi sai một ký tự & Pass \\
+\hline
+UT-09 & formatMediaField & Trả về mảng rỗng khi input rỗng & Pass \\
+UT-10 & formatMediaField & Chuyển đổi URL đúng với builder & Pass \\
+UT-11 & formatMediaField & Giữ nguyên các trường không phải URL & Pass \\
+UT-12 & formatMediaField & Không thay đổi object gốc (immutable) & Pass \\
+\hline
+UT-13 & resolveUrl & Ghép host và path segment đơn & Pass \\
+UT-14 & resolveUrl & Loại bỏ dấu / thừa ở cuối host & Pass \\
+UT-15 & resolveUrl & Ghép nhiều path segment chính xác & Pass \\
+UT-16 & resolveUrl & Xử lý dấu // trong path segment & Pass \\
+\hline
+UT-17 & createPackageChecksum & Trả về chuỗi hex hợp lệ & Pass \\
+UT-18 & createPackageChecksum & Cùng payload luôn cho cùng checksum & Pass \\
+UT-19 & createPackageChecksum & Payload khác cho checksum khác & Pass \\
+UT-20 & createPackageChecksum & Ném lỗi khi không có secret & Pass \\
+\hline
+UT-21 & verifyPackageChecksum & Trả về true cho checksum hợp lệ & Pass \\
+UT-22 & verifyPackageChecksum & Trả về false khi payload bị giả mạo & Pass \\
+UT-23 & verifyPackageChecksum & Trả về false khi checksum sai & Pass \\
+\hline
+\end{tabular}
+\end{table}
+
+Kết quả chạy kiểm thử cho thấy tất cả 23 test case đều vượt qua thành công với thời gian thực thi khoảng 1,7 giây. Để chạy lại kiểm thử, thực thi lệnh sau trong thư mục backend:
+
+\begin{verbatim}
+npx jest --testPathPatterns="utils.spec.ts" --no-coverage
+\end{verbatim}
+
+Kết quả đầu ra từ terminal:
+
+\begin{verbatim}
+PASS src/helpers/utils.spec.ts
+  hashPasswordHelper
+    [OK] should return a non-empty string (81 ms)
+    [OK] should not return the same value as the plain password (69 ms)
+    [OK] should return a different hash on each call (bcrypt salting) (137 ms)
+    [OK] should produce a hash verifiable by comparePasswordHelper (137 ms)
+  comparePasswordHelper
+    [OK] should return true for a matching password (69 ms)
+    [OK] should return false for a wrong password (69 ms)
+    [OK] should return false for an empty password (69 ms)
+    [OK] should return false when password differs by one character (69 ms)
+  formatMediaField
+    [OK] should return empty array when given empty array
+    [OK] should convert each media URL using the provided builder
+    [OK] should preserve non-url fields of each media object
+    [OK] should not mutate the original media objects
+  resolveUrl
+    [OK] should build a URL from host and single path segment
+    [OK] should strip trailing slash from host
+    [OK] should join multiple path segments correctly
+    [OK] should handle double slashes in path segments
+  createPackageChecksum
+    [OK] should return a non-empty hex string
+    [OK] should return the same checksum for identical payloads (deterministic)
+    [OK] should return a different checksum when payload changes
+    [OK] should throw an error when no secret is provided
+  verifyPackageChecksum
+    [OK] should return true for a valid checksum
+    [OK] should return false when payload is tampered
+    [OK] should return false when checksum is wrong
+
+Tests: 23 passed, 23 total
+Time:  1.695 s
+\end{verbatim}
+
+% ─────────────────────────────────────────────────────────────────
+\subsection{Kiểm thử tích hợp - Integration Testing}
+
+\subsubsection{Tổng quan}
+
+Kiểm thử tích hợp (Integration Testing) kiểm tra sự phối hợp giữa các module, đảm bảo các thành phần khi kết hợp vẫn hoạt động đúng. Trong hệ thống Paplé, kiểm thử tích hợp tập trung vào tầng API — xác minh các endpoint REST của backend xử lý request đúng, tương tác với cơ sở dữ liệu PostgreSQL chính xác và trả về response phù hợp.
+
+\textbf{Công cụ sử dụng:} Postman — công cụ kiểm thử API phổ biến, hỗ trợ viết test script tự động và quản lý collection.
+
+\textbf{Backend URL:} \texttt{https://be-ecomerce-shop-production.up.railway.app}
+
+\subsubsection{Hiện thực}
+
+Mỗi test case có mã định danh \texttt{IT-XX} để tham chiếu. Các test case được nhóm theo module: Authentication, Products và Orders.
+
+\begin{table}[H]
+\centering
+\caption{Test case kiểm thử tích hợp - module Authentication}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{2.8cm}|p{3.2cm}|p{3cm}|c|}
+\hline
+\textbf{Mã TC} & \textbf{Endpoint} & \textbf{Dữ liệu đầu vào} & \textbf{Kết quả kỳ vọng} & \textbf{Đánh giá} \\
+\hline
+IT-A01 & POST /auth/login & email, password hợp lệ & 201, có access\_token & Pass \\
+IT-A02 & POST /auth/login & Email không tồn tại & 404 Not Found & Pass \\
+IT-A03 & POST /auth/login & Mật khẩu sai & 401 Unauthorized & Pass \\
+IT-A04 & POST /auth/register & Thông tin đầy đủ & 201, user tạo thành công & Pass \\
+IT-A05 & POST /auth/register & Email đã tồn tại & 400 Bad Request & Pass \\
+IT-A06 & POST /auth/check-code & Mã xác thực hợp lệ & 200, kích hoạt tài khoản & Pass \\
+IT-A07 & POST /auth/retry-active & Email chưa kích hoạt & 200, gửi lại email & Pass \\
+IT-A08 & POST /auth/check-email & Email đã đăng ký & 200, \{exists: true\} & Pass \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test case kiểm thử tích hợp - module Products}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{3cm}|p{3cm}|p{3cm}|c|}
+\hline
+\textbf{Mã TC} & \textbf{Endpoint} & \textbf{Điều kiện} & \textbf{Kết quả kỳ vọng} & \textbf{Đánh giá} \\
+\hline
+IT-P01 & GET /products & Không có filter & 200, danh sách sản phẩm & Pass \\
+IT-P02 & GET /products?category=... & Filter theo danh mục & 200, sản phẩm đúng loại & Pass \\
+IT-P03 & GET /products/:id & id hợp lệ & 200, chi tiết sản phẩm & Pass \\
+IT-P04 & GET /products/:id & id không tồn tại & 404 Not Found & Pass \\
+IT-P05 & POST /products & Token Admin, dữ liệu hợp lệ & 201, tạo mới & Pass \\
+IT-P06 & POST /products & Token User & 403 Forbidden & Pass \\
+IT-P07 & PATCH /products/:id & Token Admin & 200, cập nhật & Pass \\
+IT-P08 & DELETE /products/:id & Token Admin & 200, xóa thành công & Pass \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test case kiểm thử tích hợp - module Orders}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{3cm}|p{3cm}|p{3cm}|c|}
+\hline
+\textbf{Mã TC} & \textbf{Endpoint} & \textbf{Điều kiện} & \textbf{Kết quả kỳ vọng} & \textbf{Đánh giá} \\
+\hline
+IT-O01 & POST /orders & Token User, giỏ hàng hợp lệ & 201, đơn tạo thành công & Pass \\
+IT-O02 & POST /orders & Không có token & 401 Unauthorized & Pass \\
+IT-O03 & GET /orders/user/:id & Token đúng userId & 200, danh sách đơn hàng & Pass \\
+IT-O04 & GET /orders/user/:id & Token khác userId & 403 Forbidden & Pass \\
+IT-O05 & PATCH /orders/:id/status & Token Admin/Staff & 200, cập nhật trạng thái & Pass \\
+IT-O06 & PATCH /orders/:id/status & Token User & 403 Forbidden & Pass \\
+IT-O07 & POST /orders/:id/cancel & Đơn đang chờ & 200, hủy thành công & Pass \\
+IT-O08 & POST /orders/:id/cancel & Đơn đang giao & 400 Bad Request & Pass \\
+\hline
+\end{tabular}
+\end{table}
+
+% ─────────────────────────────────────────────────────────────────
 \subsection{Kiểm thử hệ thống - System Testing}
+
 \subsubsection{Tổng quan}
 
-todo
+Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống như một khối thống nhất theo phương pháp hộp đen (black-box testing) — kiểm thử viên tương tác qua giao diện người dùng để đánh giá hệ thống có đáp ứng đầy đủ yêu cầu chức năng và phi chức năng hay không.
 
-\subsubsection{Hiện thực}
+\textbf{Frontend URL:} \texttt{https://fe-ecomerce-shop.vercel.app}
 
-todo
+\textbf{Phạm vi kiểm thử:} Các luồng nghiệp vụ chính của hệ thống Paplé, được chia thành luồng người dùng (Customer) và luồng quản trị (Admin).
 
-\subsubsection{Kiểm thử luồng giao diên -thêm tên luồng vào đây}
+\subsubsection{Luồng người dùng - Customer}
 
-todo
+\paragraph{Trang chủ.} Trang chủ là điểm khởi đầu của khách hàng, hiển thị banner khuyến mãi, danh mục và danh sách sản phẩm gợi ý.
 
-\subsubsection{Kiểm thử luồng giao diên -thêm tên luồng vào đây}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Images/Testing/homepage.png}
+    \caption{Giao diện trang chủ Paplé}
+\end{figure}
 
-todo
+\textbf{Các thao tác chính:} Xem banner khuyến mãi, duyệt danh mục từ menu \textit{Danh mục}, tìm kiếm sản phẩm theo từ khóa, click vào sản phẩm gợi ý để xem chi tiết, mở giỏ hàng từ icon ở góc phải, truy cập tài khoản cá nhân hoặc thông báo từ thanh điều hướng phía trên.
 
-\subsubsection{Kiểm thử luồng giao diên -thêm tên luồng vào đây}
+\paragraph{Trang đăng nhập.} Cổng xác thực vào hệ thống cho mọi vai trò người dùng.
 
-todo
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Images/Testing/login.png}
+    \caption{Giao diện trang đăng nhập}
+\end{figure}
 
-\subsubsection{Kiểm thử api với Postman}
+\textbf{Các thao tác chính:} Nhập email và mật khẩu, nhấn \textit{Đăng nhập} để xác thực qua NextAuth.js. Có thể chuyển sang trang đăng ký mới hoặc trang quên mật khẩu. Sau khi xác thực, hệ thống điều hướng người dùng về trang chủ (Customer) hoặc trang quản trị (Admin) tương ứng theo vai trò.
 
-todo
+\paragraph{Trang đăng ký.} Form tạo tài khoản mới cho khách hàng.
 
-\subsection{Kiểm thử chấp nhận của người dùng - User Acceptance Testing - UAT}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Images/Testing/signup.png}
+    \caption{Giao diện trang đăng ký tài khoản}
+\end{figure}
 
-todo
+\textbf{Các thao tác chính:} Điền họ, tên, email và mật khẩu (tối thiểu 8 ký tự). Sau khi gửi, hệ thống tạo tài khoản ở trạng thái chưa kích hoạt và gửi email chứa mã xác thực 6 chữ số. Tài khoản chỉ được kích hoạt khi người dùng nhập đúng mã trong vòng 5 phút.
+
+\paragraph{Trang chi tiết sản phẩm.} Hiển thị toàn bộ thông tin và biến thể của một sản phẩm, kèm gợi ý phối đồ và đánh giá.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Images/Testing/product-detail.png}
+    \caption{Giao diện chi tiết sản phẩm}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem ảnh sản phẩm theo nhiều góc nhìn, chọn kích cỡ (S, M, L, XL, XXL), chọn màu sắc, điều chỉnh số lượng, thêm vào giỏ hàng hoặc nhấn \textit{Mua ngay} để đến thẳng trang thanh toán. Phía dưới hiển thị các sản phẩm gợi ý phối đồ và phần đánh giá của khách hàng đã mua. Sản phẩm còn có thể được thêm vào danh sách yêu thích, gửi qua chat hoặc chia sẻ qua mạng xã hội.
+
+\paragraph{Trang giỏ hàng.} Tổng hợp các sản phẩm khách hàng đã thêm trước khi thanh toán.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Images/Testing/cart.png}
+    \caption{Giao diện giỏ hàng}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách sản phẩm trong giỏ kèm phân loại (size, màu), tăng/giảm số lượng từng sản phẩm, xóa sản phẩm khỏi giỏ, chọn các sản phẩm muốn thanh toán bằng checkbox, nhấn \textit{Mua hàng} để chuyển đến trang thanh toán. Tổng tiền được tính tự động dựa trên các sản phẩm được chọn.
+
+\paragraph{Trang thanh toán.} Tổng hợp địa chỉ giao hàng, phương thức thanh toán và đơn hàng cuối cùng.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Images/Testing/checkout.png}
+    \caption{Giao diện trang thanh toán}
+\end{figure}
+
+\textbf{Các thao tác chính:} Chọn địa chỉ giao hàng từ danh sách đã lưu (hoặc thêm địa chỉ mới), nhập số điện thoại người nhận, nhập ghi chú đơn hàng (không bắt buộc), chọn phương thức thanh toán giữa \textit{Thanh toán khi nhận hàng (COD)} và \textit{Thanh toán qua VNPay}, áp dụng voucher giảm giá (nếu có) và nhấn \textit{Đặt hàng}. Phía bên phải hiển thị tóm tắt đơn hàng gồm các sản phẩm, tạm tính, phí vận chuyển (tự động tính qua API GHN dựa trên địa chỉ), giảm giá và tổng cộng cuối cùng.
+
+\paragraph{Luồng thanh toán qua VNPay.} Khi người dùng chọn phương thức VNPay và nhấn \textit{Đặt hàng}, hệ thống thực hiện các bước sau:
+
+\begin{enumerate}
+    \item Backend tạo đơn hàng ở trạng thái \textit{PENDING\_PAYMENT}, sinh URL thanh toán VNPay kèm checksum HMAC-SHA512 để bảo vệ dữ liệu.
+    \item Frontend chuyển hướng người dùng đến cổng VNPay sandbox, nơi hiển thị danh sách ngân hàng và form nhập thẻ.
+    \item Người dùng nhập thông tin thẻ ATM nội địa. Trong môi trường kiểm thử, sử dụng thẻ test:
+    \begin{itemize}
+        \item Ngân hàng: NCB
+        \item Số thẻ: 9704198526191432198
+        \item Tên chủ thẻ: NGUYEN VAN A
+        \item Ngày phát hành: 07/15
+        \item OTP: 123456
+    \end{itemize}
+    \item Sau khi VNPay xác thực thành công, người dùng được chuyển hướng về \texttt{/checkout/vnpay-return} kèm tham số \texttt{vnp\_ResponseCode}.
+    \item Backend xác minh checksum trả về, cập nhật trạng thái đơn hàng thành \textit{CONFIRMED} và gửi thông báo realtime cho khách hàng.
+\end{enumerate}
+
+% ── Admin section ──────────────────────────────────────────────
+\subsubsection{Luồng quản trị - Admin}
+
+\paragraph{Trang tổng quan Admin.} Bảng điều khiển hiển thị các chỉ số kinh doanh quan trọng theo kỳ.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Images/Testing/admin-dashboard.png}
+    \caption{Giao diện trang tổng quan Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem các chỉ số chính (tổng doanh thu, tổng đơn hàng, đơn đã xác nhận, đơn đã hủy, đơn đã giao, đơn hoàn trả, đơn thất bại, đơn hoàn thành) kèm phần trăm so với kỳ trước. Lựa chọn khoảng thời gian phân tích (theo tuần / theo tháng / theo năm) qua dropdown phía trên. Biểu đồ phía dưới so sánh dữ liệu kỳ hiện tại và kỳ trước cho 4 chỉ số: doanh thu, đơn hàng, khách hàng và sản phẩm.
+
+\paragraph{Quản lý đơn hàng.} Toàn bộ đơn hàng của khách hàng được quản lý tập trung tại đây.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Images/Testing/admin-orders.png}
+    \caption{Giao diện quản lý đơn hàng Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Lọc đơn hàng theo trạng thái (Tất cả / Đang chờ / Đang giao / Đã giao / Yêu cầu trả hàng / Hoàn tiền / Đã hủy), tìm kiếm theo mã đơn hoặc tên khách hàng, xem chi tiết từng đơn (sản phẩm, khách hàng, thời gian, giá, phương thức thanh toán, mã vận đơn GHN). Admin có thể cập nhật trạng thái đơn hàng, in vận đơn, xử lý yêu cầu hoàn tiền và liên hệ khách hàng.
+
+\paragraph{Quản lý sản phẩm.} Toàn bộ sản phẩm của shop được liệt kê theo danh mục.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Images/Testing/admin-products-list.png}
+    \caption{Giao diện danh sách sản phẩm Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Lọc sản phẩm theo danh mục bằng các tab phía trên (Áo Thun \& Polo, Áo Sơ Mi, Quần Jeans, Quần Tây \& Kaki, Giày Thể Thao, ...), chuyển giữa các tab \textit{Tất cả sản phẩm}, \textit{Đang giảm giá}, \textit{Hết hàng}, tìm kiếm sản phẩm theo tên, thêm sản phẩm mới qua nút \textit{Thêm sản phẩm}, chỉnh sửa hoặc xóa sản phẩm trực tiếp tại cột \textit{Hành động}.
+
+\paragraph{Quản lý khách hàng.} Danh sách khách hàng đăng ký trên hệ thống.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Images/Testing/admin-users.png}
+    \caption{Giao diện quản lý khách hàng Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Tìm kiếm khách hàng theo ID, tên, email hoặc số điện thoại. Click vào một khách hàng để xem chi tiết tài khoản (thông tin cá nhân, lịch sử đơn hàng, quyền truy cập), chat trực tiếp với khách hàng qua biểu tượng tin nhắn, kích hoạt hoặc khóa tài khoản nếu cần.
+
+\paragraph{Quản lý voucher.} Toàn bộ mã giảm giá của hệ thống.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Images/Testing/admin-vouchers.png}
+    \caption{Giao diện quản lý voucher Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách voucher với các thông tin: mã, mô tả, loại giảm giá (số tiền cố định hoặc phần trăm), giá trị, thời gian hiệu lực, trạng thái. Tạo voucher mới qua nút \textit{Thêm voucher}, chỉnh sửa hoặc xóa voucher hiện có. Voucher hết hạn được tự động đánh dấu \textit{Hết hiệu lực} bởi cron job chạy hàng ngày.
+
+\paragraph{Quản lý danh mục.} Cấu trúc danh mục sản phẩm của shop.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Images/Testing/admin-categories.png}
+    \caption{Giao diện quản lý danh mục Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách danh mục kèm mô tả và ngày tạo, thêm danh mục mới qua nút \textit{Thêm danh mục}, chỉnh sửa hoặc xóa danh mục hiện có. Mỗi danh mục có thể chứa nhiều sản phẩm và là tiêu chí lọc chính cho khách hàng.
+
+\paragraph{Chat hỗ trợ.} Module chat realtime giữa Admin và khách hàng.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{Images/Testing/admin-chat.png}
+    \caption{Giao diện chat hỗ trợ Admin}
+\end{figure}
+
+\textbf{Các thao tác chính:} Xem danh sách các cuộc trò chuyện đang xử lý ở cột bên trái, chọn một cuộc trò chuyện để mở khung chat ở giữa, gửi tin nhắn văn bản hoặc đính kèm hình ảnh, đánh dấu cuộc trò chuyện đã giải quyết. Tính năng chat sử dụng Socket.IO để truyền tin nhắn realtime giữa Admin và khách hàng.
+
+\subsubsection{Tổng kết test case kiểm thử hệ thống}
+
+\begin{table}[H]
+\centering
+\caption{Test case kiểm thử hệ thống}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{4cm}|p{4cm}|c|}
+\hline
+\textbf{Mã TC} & \textbf{Tên test case} & \textbf{Kết quả kỳ vọng} & \textbf{Đánh giá} \\
+\hline
+ST-C01 & Xem trang chủ & Hiển thị banner và sản phẩm gợi ý & Pass \\
+ST-C02 & Đăng nhập với credentials hợp lệ & Điều hướng về trang chủ & Pass \\
+ST-C03 & Đăng nhập với mật khẩu sai & Hiển thị thông báo lỗi & Pass \\
+ST-C04 & Đăng ký tài khoản mới & Gửi email kích hoạt & Pass \\
+ST-C05 & Xem chi tiết sản phẩm & Hiển thị đầy đủ thông tin và biến thể & Pass \\
+ST-C06 & Thêm sản phẩm vào giỏ hàng & Sản phẩm xuất hiện trong giỏ & Pass \\
+ST-C07 & Tăng/giảm số lượng trong giỏ & Tổng tiền cập nhật chính xác & Pass \\
+ST-C08 & Đặt hàng COD & Đơn hàng tạo thành công & Pass \\
+ST-C09 & Đặt hàng VNPay & Chuyển hướng cổng VNPay & Pass \\
+ST-C10 & Hoàn tất thanh toán VNPay & Đơn chuyển trạng thái CONFIRMED & Pass \\
+ST-C11 & Áp dụng voucher giảm giá & Giảm giá tính đúng vào tổng tiền & Pass \\
+ST-C12 & Theo dõi đơn hàng đã đặt & Hiển thị đúng trạng thái & Pass \\
+\hline
+ST-A01 & Đăng nhập Admin & Điều hướng về /admin & Pass \\
+ST-A02 & Xem trang tổng quan & Hiển thị thống kê và biểu đồ & Pass \\
+ST-A03 & Quản lý đơn hàng & Lọc, tìm kiếm, cập nhật đúng & Pass \\
+ST-A04 & Thêm sản phẩm mới & Sản phẩm xuất hiện trong danh sách & Pass \\
+ST-A05 & Sửa thông tin sản phẩm & Cập nhật phản ánh trên storefront & Pass \\
+ST-A06 & Quản lý khách hàng & Tìm kiếm, xem chi tiết, chat & Pass \\
+ST-A07 & Tạo voucher mới & Voucher hoạt động được & Pass \\
+ST-A08 & Quản lý danh mục & Thêm/sửa/xóa danh mục đúng & Pass \\
+ST-A09 & Chat realtime với khách hàng & Tin nhắn truyền hai chiều & Pass \\
+ST-A10 & Truy cập /admin với token User & Bị chuyển hướng về trang chủ & Pass \\
+\hline
+\end{tabular}
+\end{table}
+
+% ─────────────────────────────────────────────────────────────────
+\subsection{Kiểm thử chấp nhận của người dùng - User Acceptance Testing}
+
+Kiểm thử chấp nhận của người dùng (UAT) là cấp độ kiểm thử cuối cùng, được thực hiện để xác nhận hệ thống đáp ứng đúng nhu cầu và kỳ vọng của người dùng thực tế. UAT được tiến hành bởi các người dùng đại diện cho từng vai trò: Khách hàng, Nhân viên (Staff) và Quản trị viên (Admin). Mỗi tính năng được đánh giá theo tiêu chí chấp nhận đã thống nhất với người dùng.
+
+\begin{table}[H]
+\centering
+\caption{Test case UAT - vai trò Khách hàng}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{3.5cm}|p{4.8cm}|c|}
+\hline
+\textbf{Mã TC} & \textbf{Tính năng} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+\hline
+UAT-C01 & Đăng ký tài khoản & Tạo tài khoản và nhận email xác thực & Accepted \\
+UAT-C02 & Đăng nhập & Vào được trang chủ với đúng vai trò & Accepted \\
+UAT-C03 & Đăng nhập Google & Đăng nhập qua OAuth Google thành công & Accepted \\
+UAT-C04 & Quên mật khẩu & Nhận email reset và đổi được mật khẩu & Accepted \\
+UAT-C05 & Tìm kiếm sản phẩm & Tìm thấy sản phẩm theo từ khóa & Accepted \\
+UAT-C06 & Lọc theo danh mục & Hiển thị đúng sản phẩm theo bộ lọc & Accepted \\
+UAT-C07 & Xem chi tiết sản phẩm & Xem ảnh, giá, thông tin đầy đủ & Accepted \\
+UAT-C08 & Xem gợi ý phối đồ & Hiển thị sản phẩm liên quan & Accepted \\
+UAT-C09 & Thêm vào giỏ hàng & Sản phẩm vào giỏ với phân loại đúng & Accepted \\
+UAT-C10 & Đặt hàng COD & Đơn hàng được tạo & Accepted \\
+UAT-C11 & Đặt hàng VNPay & Chuyển hướng và thanh toán thành công & Accepted \\
+UAT-C12 & Áp dụng voucher & Giảm giá được tính đúng & Accepted \\
+UAT-C13 & Theo dõi đơn hàng & Xem được trạng thái đơn hàng & Accepted \\
+UAT-C14 & Hủy đơn hàng & Đơn hủy thành công khi đang chờ & Accepted \\
+UAT-C15 & Yêu cầu hoàn trả & Yêu cầu được gửi đến Admin & Accepted \\
+UAT-C16 & Đánh giá sản phẩm & Bình luận và điểm sao được lưu & Accepted \\
+UAT-C17 & Cập nhật hồ sơ & Thông tin được lưu thành công & Accepted \\
+UAT-C18 & Quản lý địa chỉ giao hàng & Thêm/sửa/xóa địa chỉ & Accepted \\
+UAT-C19 & Chat hỗ trợ với Admin & Tin nhắn được gửi và nhận realtime & Accepted \\
+UAT-C20 & Nhận thông báo đơn hàng & Thông báo cập nhật theo realtime & Accepted \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test case UAT - vai trò Nhân viên (Staff)}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{3.5cm}|p{4.8cm}|c|}
+\hline
+\textbf{Mã TC} & \textbf{Tính năng} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+\hline
+UAT-S01 & Đăng nhập tài khoản Staff & Truy cập trang quản lý của Staff & Accepted \\
+UAT-S02 & Xem danh sách đơn hàng & Hiển thị đầy đủ đơn cần xử lý & Accepted \\
+UAT-S03 & Xác nhận đơn hàng & Trạng thái đơn chuyển sang "Đã xác nhận" & Accepted \\
+UAT-S04 & Cập nhật trạng thái giao hàng & Trạng thái thay đổi, khách nhận thông báo & Accepted \\
+UAT-S05 & Xem đánh giá sản phẩm & Danh sách review hiển thị đầy đủ & Accepted \\
+UAT-S06 & Phê duyệt/từ chối review & Review được hiển thị hoặc ẩn & Accepted \\
+UAT-S07 & Chat hỗ trợ khách hàng & Trả lời tin nhắn realtime & Accepted \\
+UAT-S08 & Xử lý yêu cầu trả hàng & Chuyển trạng thái và phản hồi khách & Accepted \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Test case UAT - vai trò Quản trị viên (Admin)}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{3.5cm}|p{4.8cm}|c|}
+\hline
+\textbf{Mã TC} & \textbf{Tính năng} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+\hline
+UAT-A01 & Xem tổng quan kinh doanh & Dashboard hiển thị đúng số liệu & Accepted \\
+UAT-A02 & Xem biểu đồ theo kỳ & So sánh kỳ hiện tại và kỳ trước & Accepted \\
+UAT-A03 & Quản lý đơn hàng & Lọc, tìm kiếm, cập nhật trạng thái & Accepted \\
+UAT-A04 & Thêm sản phẩm mới & Sản phẩm với ảnh và biến thể được tạo & Accepted \\
+UAT-A05 & Chỉnh sửa sản phẩm & Thông tin cập nhật ngay trên storefront & Accepted \\
+UAT-A06 & Xóa sản phẩm & Sản phẩm bị xóa khỏi danh sách & Accepted \\
+UAT-A07 & Quản lý danh mục & Thêm/sửa/xóa danh mục sản phẩm & Accepted \\
+UAT-A08 & Tạo voucher & Voucher tạo và áp dụng được & Accepted \\
+UAT-A09 & Quản lý khách hàng & Xem thông tin, lịch sử mua hàng & Accepted \\
+UAT-A10 & Phân quyền Staff & Gán/thu hồi quyền Staff cho tài khoản & Accepted \\
+UAT-A11 & Xử lý hoàn trả/hoàn tiền & Chấp nhận hoặc từ chối yêu cầu & Accepted \\
+UAT-A12 & Chat hỗ trợ khách hàng & Nhắn tin realtime với khách hàng & Accepted \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Tổng kết kiểm thử}
+
+\begin{table}[H]
+\centering
+\caption{Tổng kết kết quả kiểm thử toàn hệ thống}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Cấp độ kiểm thử} & \textbf{Tổng test case} & \textbf{Pass} & \textbf{Tỉ lệ} \\
+\hline
+Kiểm thử đơn vị (Unit Testing) & 23 & 23 & 100\% \\
+Kiểm thử tích hợp (Integration Testing) & 24 & 24 & 100\% \\
+Kiểm thử hệ thống (System Testing) & 22 & 22 & 100\% \\
+Kiểm thử chấp nhận người dùng (UAT) & 40 & 40 & 100\% \\
+\hline
+\textbf{Tổng cộng} & \textbf{109} & \textbf{109} & \textbf{100\%} \\
+\hline
+\end{tabular}
+\end{table}
+
+Qua quá trình kiểm thử toàn diện với 4 cấp độ và tổng cộng 109 test case, hệ thống Paplé đã vượt qua tất cả các bài kiểm thử đề ra. Các chức năng chính của hệ thống hoạt động ổn định, đáp ứng đầy đủ yêu cầu chức năng và phi chức năng, sẵn sàng để triển khai thực tế.
