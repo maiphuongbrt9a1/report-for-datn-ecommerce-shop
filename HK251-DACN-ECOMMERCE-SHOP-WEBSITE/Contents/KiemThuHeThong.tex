@@ -66,68 +66,23 @@ UT-23 & verifyPackageChecksum & Trả về false khi checksum sai & Pass \\
 \caption{Danh sách test case kiểm thử đơn vị}
 \end{table}
 
-Kết quả chạy kiểm thử cho thấy tất cả 23 test case đều vượt qua thành công với thời gian thực thi khoảng 1,7 giây. Để chạy lại kiểm thử, thực thi lệnh sau trong thư mục backend:
+Ngoài kiểm thử các hàm tiện ích, nhóm còn thực hiện kiểm thử đơn vị cho tầng Service — nơi chứa logic nghiệp vụ chính của hệ thống. Kiểm thử tầng Service sử dụng kỹ thuật \textbf{mocking} để cô lập service khỏi các dependency bên ngoài (cơ sở dữ liệu, JWT, UserService), đảm bảo chỉ kiểm tra logic xử lý bên trong. Các service được kiểm thử bao gồm: \texttt{AuthService}, \texttt{ProductsService}, \texttt{CategoryService}, \texttt{AddressService}, \texttt{ReviewsService} và \texttt{VouchersService}.
+
+Để chạy toàn bộ kiểm thử đơn vị, thực thi lệnh sau:
 
 \begin{verbatim}
-npx jest --testPathPatterns="utils.spec.ts" --no-coverage
+npx jest --testPathPatterns="helpers/utils.spec
+  |auth/auth.service.spec|products/products.service.spec
+  |category/category.service.spec|address/address.service.spec
+  |reviews/reviews.service.spec|vouchers/vouchers.service.spec"
+  --no-coverage --verbose
 \end{verbatim}
-
-Kết quả đầu ra từ terminal:
-
-\begin{verbatim}
-PASS src/helpers/utils.spec.ts
-  hashPasswordHelper
-    [OK] should return a non-empty string (81 ms)
-    [OK] should not return the same value as the plain password (69 ms)
-    [OK] should return a different hash on each call (bcrypt salting) (137 ms)
-    [OK] should produce a hash verifiable by comparePasswordHelper (137 ms)
-  comparePasswordHelper
-    [OK] should return true for a matching password (69 ms)
-    [OK] should return false for a wrong password (69 ms)
-    [OK] should return false for an empty password (69 ms)
-    [OK] should return false when password differs by one character (69 ms)
-  formatMediaField
-    [OK] should return empty array when given empty array
-    [OK] should convert each media URL using the provided builder
-    [OK] should preserve non-url fields of each media object
-    [OK] should not mutate the original media objects
-  resolveUrl
-    [OK] should build a URL from host and single path segment
-    [OK] should strip trailing slash from host
-    [OK] should join multiple path segments correctly
-    [OK] should handle double slashes in path segments
-  createPackageChecksum
-    [OK] should return a non-empty hex string
-    [OK] should return the same checksum for identical payloads (deterministic)
-    [OK] should return a different checksum when payload changes
-    [OK] should throw an error when no secret is provided
-  verifyPackageChecksum
-    [OK] should return true for a valid checksum
-    [OK] should return false when payload is tampered
-    [OK] should return false when checksum is wrong
-
-Tests: 23 passed, 23 total
-Time:  1.695 s
-\end{verbatim}
-
-\subsubsection{Kiểm thử đơn vị tầng Service - AuthService}
-
-Ngoài kiểm thử các hàm tiện ích, nhóm còn thực hiện kiểm thử đơn vị cho tầng Service — nơi chứa logic nghiệp vụ chính của hệ thống. Kiểm thử tầng Service sử dụng kỹ thuật \textbf{mocking} để cô lập service khỏi các dependency bên ngoài (cơ sở dữ liệu, JWT, UserService), đảm bảo chỉ kiểm tra logic xử lý bên trong.
-
-File kiểm thử: \texttt{src/auth/auth.service.spec.ts} — gồm \textbf{7 test case} chia thành 3 nhóm: \texttt{validateUser}, \texttt{login} và \texttt{checkEmailExists}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth]{Images/Testing/unit-test-code.png}
+    \includegraphics[width=0.85\textwidth]{Images/Testing/unit-test-summary.png}
     \vspace{0.5cm}
-    \caption{Mã nguồn test case kiểm thử đơn vị AuthService}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{Images/Testing/unit-test-result.png}
-    \vspace{0.5cm}
-    \caption{Kết quả chạy kiểm thử đơn vị AuthService — 7/7 test case passed}
+    \caption{Kết quả chạy kiểm thử đơn vị — 5 test suites, 42 test cases passed}
 \end{figure}
 
 % ─────────────────────────────────────────────────────────────────
@@ -679,12 +634,12 @@ UAT-A12 & Chat hỗ trợ khách hàng & Nhắn tin realtime với khách hàng 
 \hline
 \textbf{Cấp độ kiểm thử} & \textbf{Tổng test case} & \textbf{Pass} & \textbf{Tỉ lệ} \\
 \hline
-Kiểm thử đơn vị (Unit Testing) & 30 & 30 & 100\% \\
+Kiểm thử đơn vị (Unit Testing) & 42 & 42 & 100\% \\
 Kiểm thử tích hợp (Integration Testing) & 121 & 121 & 100\% \\
 Kiểm thử hệ thống (System Testing) & 18 & 18 & 100\% \\
 Kiểm thử chấp nhận người dùng (UAT) & 39 & 39 & 100\% \\
 \hline
-\textbf{Tổng cộng} & \textbf{208} & \textbf{208} & \textbf{100\%} \\
+\textbf{Tổng cộng} & \textbf{220} & \textbf{220} & \textbf{100\%} \\
 \hline
 \end{tabular}
 \caption{Tổng kết kết quả kiểm thử toàn hệ thống}
