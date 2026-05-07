@@ -37,13 +37,13 @@
 \contentsline {table}{\numberline {36}{\ignorespaces Bảng Use-case Người khách hàng hủy một đơn hàng.}}{35}{table.caption.63}%
 \contentsline {table}{\numberline {37}{\ignorespaces Bảng Use-case Người khách hàng cập nhật thông tin cá nhân.}}{36}{table.caption.64}%
 \contentsline {table}{\numberline {38}{\ignorespaces Danh sách thực thể được phân nhóm theo chức năng.}}{39}{table.caption.66}%
-\contentsline {table}{\numberline {39}{\ignorespaces Danh sách test case kiểm thử đơn vị}}{121}{table.caption.162}%
-\contentsline {table}{\numberline {40}{\ignorespaces Tổng hợp kết quả kiểm thử tích hợp theo module}}{125}{table.caption.165}%
-\contentsline {table}{\numberline {41}{\ignorespaces Kịch bản kiểm thử module Xác thực}}{136}{table.caption.183}%
-\contentsline {table}{\numberline {42}{\ignorespaces Kịch bản kiểm thử module Sản phẩm \& Giỏ hàng}}{138}{table.caption.187}%
-\contentsline {table}{\numberline {43}{\ignorespaces Kịch bản kiểm thử module Đơn hàng \& Thanh toán}}{140}{table.caption.191}%
-\contentsline {table}{\numberline {44}{\ignorespaces Kịch bản kiểm thử module Quản trị}}{141}{table.caption.193}%
-\contentsline {table}{\numberline {45}{\ignorespaces Test case UAT - vai trò Khách hàng}}{144}{table.caption.199}%
-\contentsline {table}{\numberline {46}{\ignorespaces Test case UAT - vai trò Nhân viên (Staff)}}{144}{table.caption.200}%
-\contentsline {table}{\numberline {47}{\ignorespaces Test case UAT - vai trò Quản trị viên (Admin)}}{145}{table.caption.201}%
-\contentsline {table}{\numberline {48}{\ignorespaces Tổng kết kết quả kiểm thử toàn hệ thống}}{145}{table.caption.202}%
+\contentsline {table}{\numberline {39}{\ignorespaces Danh sách test case kiểm thử đơn vị}}{142}{table.caption.193}%
+\contentsline {table}{\numberline {40}{\ignorespaces Tổng hợp kết quả kiểm thử tích hợp theo module}}{143}{table.caption.195}%
+\contentsline {table}{\numberline {41}{\ignorespaces Kịch bản kiểm thử module Xác thực}}{154}{table.caption.213}%
+\contentsline {table}{\numberline {42}{\ignorespaces Kịch bản kiểm thử module Sản phẩm \& Giỏ hàng}}{156}{table.caption.217}%
+\contentsline {table}{\numberline {43}{\ignorespaces Kịch bản kiểm thử module Đơn hàng \& Thanh toán}}{158}{table.caption.221}%
+\contentsline {table}{\numberline {44}{\ignorespaces Kịch bản kiểm thử module Quản trị}}{159}{table.caption.223}%
+\contentsline {table}{\numberline {45}{\ignorespaces Test case UAT - vai trò Khách hàng}}{162}{table.caption.229}%
+\contentsline {table}{\numberline {46}{\ignorespaces Test case UAT - vai trò Nhân viên (Staff)}}{162}{table.caption.230}%
+\contentsline {table}{\numberline {47}{\ignorespaces Test case UAT - vai trò Quản trị viên (Admin)}}{163}{table.caption.231}%
+\contentsline {table}{\numberline {48}{\ignorespaces Tổng kết kết quả kiểm thử toàn hệ thống}}{163}{table.caption.232}%
