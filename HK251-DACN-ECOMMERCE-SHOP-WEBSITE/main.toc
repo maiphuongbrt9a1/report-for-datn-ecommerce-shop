@@ -131,50 +131,50 @@
 \contentsline {subsubsection}{\numberline {6.3.12}Yêu cầu trả hàng/hoàn tiền}{116}{subsubsection.6.3.12}%
 \contentsline {subsubsection}{\numberline {6.3.13}Đánh giá sản phẩm sau khi nhận hàng}{117}{subsubsection.6.3.13}%
 \contentsline {subsubsection}{\numberline {6.3.14}Trang hồ sơ cá nhân}{120}{subsubsection.6.3.14}%
-\contentsline {subsubsection}{\numberline {6.3.15}Trang đơn hàng}{121}{subsubsection.6.3.15}%
-\contentsline {subsubsection}{\numberline {6.3.16}Trang đổi mật khẩu}{122}{subsubsection.6.3.16}%
-\contentsline {subsection}{\numberline {6.4}Giao diện hệ thống cho người quản trị viên}{122}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Trang tổng quan}{123}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}Quản lý đơn hàng}{124}{subsubsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6.4.3}Quản lý sản phẩm}{126}{subsubsection.6.4.3}%
-\contentsline {subsubsection}{\numberline {6.4.4}Thêm sản phẩm mới}{127}{subsubsection.6.4.4}%
-\contentsline {subsubsection}{\numberline {6.4.5}Chỉnh sửa sản phẩm — Ma trận biến thể}{127}{subsubsection.6.4.5}%
-\contentsline {subsubsection}{\numberline {6.4.6}Quản lý đánh giá sản phẩm}{128}{subsubsection.6.4.6}%
-\contentsline {subsubsection}{\numberline {6.4.7}Quản lý danh mục}{129}{subsubsection.6.4.7}%
-\contentsline {subsubsection}{\numberline {6.4.8}Quản lý khách hàng}{130}{subsubsection.6.4.8}%
-\contentsline {subsubsection}{\numberline {6.4.9}Quản lý voucher}{131}{subsubsection.6.4.9}%
-\contentsline {subsubsection}{\numberline {6.4.10}Chat hỗ trợ}{132}{subsubsection.6.4.10}%
-\contentsline {subsubsection}{\numberline {6.4.11}Cài đặt quyền}{134}{subsubsection.6.4.11}%
-\contentsline {subsubsection}{\numberline {6.4.12}Trang cá nhân Admin}{135}{subsubsection.6.4.12}%
-\contentsline {subsection}{\numberline {6.5}Giao diện hệ thống cho người nhân viên}{135}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}Quản lý đơn hàng (Nhân viên)}{136}{subsubsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.2}Danh sách sản phẩm (Nhân viên)}{137}{subsubsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.3}Đánh giá sản phẩm (Nhân viên)}{138}{subsubsection.6.5.3}%
-\contentsline {subsubsection}{\numberline {6.5.4}Chat hỗ trợ (Nhân viên)}{139}{subsubsection.6.5.4}%
-\contentsline {subsubsection}{\numberline {6.5.5}Trang cá nhân nhân viên}{140}{subsubsection.6.5.5}%
-\contentsline {section}{\numberline {7}Kiểm thử và đánh giá hệ thống}{141}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Kiểm thử đơn vị - Unit Testing}{141}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Tổng quan}{141}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Hiện thực}{141}{subsubsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.2}Kiểm thử tích hợp - Integration Testing}{142}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Tổng quan}{142}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Hiện thực}{143}{subsubsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.3}Kiểm thử hệ thống - System Testing}{153}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Tổng quan}{153}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Kịch bản kiểm thử module Xác thực}{154}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Kịch bản kiểm thử module Sản phẩm \& Giỏ hàng}{156}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.4}Kịch bản kiểm thử module Đơn hàng \& Thanh toán}{158}{subsubsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.3.5}Kịch bản kiểm thử module Quản trị}{159}{subsubsection.7.3.5}%
-\contentsline {subsubsection}{\numberline {7.3.6}Kết quả kiểm thử hệ thống}{161}{subsubsection.7.3.6}%
-\contentsline {subsection}{\numberline {7.4}Kiểm thử chấp nhận của người dùng - User Acceptance Testing}{161}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Tổng kết kiểm thử}{163}{subsection.7.5}%
-\contentsline {section}{\numberline {8}Triển khai hệ thống}{164}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Database Server}{164}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Cloud Storage - Lưu trữ ảnh và video sản phẩm với AWS S3}{164}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Back-end Server}{164}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Web-based front-end application}{164}{subsection.8.4}%
-\contentsline {section}{\numberline {9}Tổng kết}{166}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Kết quả đạt được}{166}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Hướng phát triển trong tương lai}{167}{subsection.9.2}%
-\contentsline {section}{\numberline {10}Tài liệu tham khảo}{168}{section.10}%
-\contentsline {section}{\numberline {11}Phụ lục}{169}{section.11}%
+\contentsline {subsubsection}{\numberline {6.3.15}Trang đơn hàng}{122}{subsubsection.6.3.15}%
+\contentsline {subsubsection}{\numberline {6.3.16}Thông báo}{123}{subsubsection.6.3.16}%
+\contentsline {subsection}{\numberline {6.4}Giao diện hệ thống cho người quản trị viên}{124}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Trang tổng quan}{125}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Quản lý đơn hàng}{126}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}Quản lý sản phẩm}{130}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.4}Thêm sản phẩm mới}{131}{subsubsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6.4.5}Chỉnh sửa sản phẩm — Ma trận biến thể}{131}{subsubsection.6.4.5}%
+\contentsline {subsubsection}{\numberline {6.4.6}Quản lý đánh giá sản phẩm}{132}{subsubsection.6.4.6}%
+\contentsline {subsubsection}{\numberline {6.4.7}Quản lý danh mục}{133}{subsubsection.6.4.7}%
+\contentsline {subsubsection}{\numberline {6.4.8}Quản lý khách hàng}{134}{subsubsection.6.4.8}%
+\contentsline {subsubsection}{\numberline {6.4.9}Quản lý voucher}{135}{subsubsection.6.4.9}%
+\contentsline {subsubsection}{\numberline {6.4.10}Chat hỗ trợ}{136}{subsubsection.6.4.10}%
+\contentsline {subsubsection}{\numberline {6.4.11}Cài đặt quyền}{138}{subsubsection.6.4.11}%
+\contentsline {subsubsection}{\numberline {6.4.12}Trang cá nhân Admin}{139}{subsubsection.6.4.12}%
+\contentsline {subsection}{\numberline {6.5}Giao diện hệ thống cho người nhân viên}{139}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Quản lý đơn hàng (Nhân viên)}{140}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Danh sách sản phẩm (Nhân viên)}{141}{subsubsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.3}Đánh giá sản phẩm (Nhân viên)}{142}{subsubsection.6.5.3}%
+\contentsline {subsubsection}{\numberline {6.5.4}Chat hỗ trợ (Nhân viên)}{143}{subsubsection.6.5.4}%
+\contentsline {subsubsection}{\numberline {6.5.5}Trang cá nhân nhân viên}{144}{subsubsection.6.5.5}%
+\contentsline {section}{\numberline {7}Kiểm thử và đánh giá hệ thống}{145}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Kiểm thử đơn vị - Unit Testing}{145}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Tổng quan}{145}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Hiện thực}{145}{subsubsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.2}Kiểm thử tích hợp - Integration Testing}{146}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Tổng quan}{146}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Hiện thực}{147}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Kiểm thử hệ thống - System Testing}{157}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Tổng quan}{157}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Kịch bản kiểm thử module Xác thực}{158}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Kịch bản kiểm thử module Sản phẩm \& Giỏ hàng}{160}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Kịch bản kiểm thử module Đơn hàng \& Thanh toán}{162}{subsubsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.5}Kịch bản kiểm thử module Quản trị}{163}{subsubsection.7.3.5}%
+\contentsline {subsubsection}{\numberline {7.3.6}Kết quả kiểm thử hệ thống}{165}{subsubsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.4}Kiểm thử chấp nhận của người dùng - User Acceptance Testing}{165}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Tổng kết kiểm thử}{167}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Triển khai hệ thống}{168}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Database Server}{168}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Cloud Storage - Lưu trữ ảnh và video sản phẩm với AWS S3}{168}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Back-end Server}{168}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Web-based front-end application}{168}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Tổng kết}{170}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Kết quả đạt được}{170}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Hướng phát triển trong tương lai}{171}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Tài liệu tham khảo}{172}{section.10}%
+\contentsline {section}{\numberline {11}Phụ lục}{173}{section.11}%

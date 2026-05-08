@@ -114,64 +114,72 @@
 \contentsline {figure}{\numberline {113}{\ignorespaces Điền đánh giá: chọn sao, nhập nội dung, đính kèm hình ảnh}}{119}{figure.caption.159}%
 \contentsline {figure}{\numberline {114}{\ignorespaces Đánh giá đã gửi thành công — xem lại đánh giá}}{119}{figure.caption.160}%
 \contentsline {figure}{\numberline {115}{\ignorespaces Đánh giá hiển thị trên trang chi tiết sản phẩm}}{120}{figure.caption.161}%
-\contentsline {figure}{\numberline {116}{\ignorespaces Giao diện trang hồ sơ cá nhân}}{120}{figure.caption.162}%
-\contentsline {figure}{\numberline {117}{\ignorespaces Giao diện danh sách đơn hàng của khách hàng}}{121}{figure.caption.163}%
-\contentsline {figure}{\numberline {118}{\ignorespaces Giao diện đổi mật khẩu}}{122}{figure.caption.164}%
-\contentsline {figure}{\numberline {119}{\ignorespaces Giao diện trang tổng quan Admin}}{123}{figure.caption.165}%
-\contentsline {figure}{\numberline {120}{\ignorespaces Giao diện quản lý đơn hàng Admin}}{124}{figure.caption.166}%
-\contentsline {figure}{\numberline {121}{\ignorespaces Chi tiết đơn hàng — trạng thái Đang chờ xử lý}}{124}{figure.caption.167}%
-\contentsline {figure}{\numberline {122}{\ignorespaces Chi tiết đơn hàng — trạng thái Đang giao}}{125}{figure.caption.168}%
-\contentsline {figure}{\numberline {123}{\ignorespaces Chi tiết đơn hàng — trạng thái Đã giao}}{125}{figure.caption.169}%
-\contentsline {figure}{\numberline {124}{\ignorespaces Chi tiết đơn hàng — trạng thái Đã hủy}}{126}{figure.caption.170}%
-\contentsline {figure}{\numberline {125}{\ignorespaces Giao diện danh sách sản phẩm Admin}}{126}{figure.caption.171}%
-\contentsline {figure}{\numberline {126}{\ignorespaces Giao diện thêm sản phẩm mới Admin}}{127}{figure.caption.172}%
-\contentsline {figure}{\numberline {127}{\ignorespaces Ma trận biến thể — chế độ xem Số lượng tồn kho}}{127}{figure.caption.173}%
-\contentsline {figure}{\numberline {128}{\ignorespaces Ma trận biến thể — chế độ xem Giá bán}}{128}{figure.caption.174}%
-\contentsline {figure}{\numberline {129}{\ignorespaces Giao diện quản lý đánh giá sản phẩm Admin}}{128}{figure.caption.175}%
-\contentsline {figure}{\numberline {130}{\ignorespaces Chi tiết đánh giá sản phẩm}}{129}{figure.caption.176}%
-\contentsline {figure}{\numberline {131}{\ignorespaces Giao diện quản lý danh mục Admin}}{129}{figure.caption.177}%
-\contentsline {figure}{\numberline {132}{\ignorespaces Modal thêm danh mục mới}}{130}{figure.caption.178}%
-\contentsline {figure}{\numberline {133}{\ignorespaces Giao diện quản lý khách hàng Admin}}{130}{figure.caption.179}%
-\contentsline {figure}{\numberline {134}{\ignorespaces Giao diện quản lý voucher Admin}}{131}{figure.caption.180}%
-\contentsline {figure}{\numberline {135}{\ignorespaces Modal tạo voucher mới}}{131}{figure.caption.181}%
-\contentsline {figure}{\numberline {136}{\ignorespaces Giao diện chat hỗ trợ Admin}}{132}{figure.caption.182}%
-\contentsline {figure}{\numberline {137}{\ignorespaces Chọn sản phẩm để gửi — danh sách sản phẩm}}{132}{figure.caption.183}%
-\contentsline {figure}{\numberline {138}{\ignorespaces Mở rộng sản phẩm — hiển thị các biến thể (size, màu)}}{133}{figure.caption.184}%
-\contentsline {figure}{\numberline {139}{\ignorespaces Sản phẩm đã gửi hiển thị dưới dạng thẻ trong cuộc trò chuyện}}{133}{figure.caption.185}%
-\contentsline {figure}{\numberline {140}{\ignorespaces Giao diện cài đặt quyền Admin}}{134}{figure.caption.186}%
-\contentsline {figure}{\numberline {141}{\ignorespaces Giao diện trang cá nhân Admin}}{135}{figure.caption.187}%
-\contentsline {figure}{\numberline {142}{\ignorespaces Giao diện quản lý đơn hàng nhân viên}}{136}{figure.caption.188}%
-\contentsline {figure}{\numberline {143}{\ignorespaces Giao diện danh sách sản phẩm nhân viên}}{137}{figure.caption.189}%
-\contentsline {figure}{\numberline {144}{\ignorespaces Giao diện đánh giá sản phẩm nhân viên}}{138}{figure.caption.190}%
-\contentsline {figure}{\numberline {145}{\ignorespaces Giao diện chat hỗ trợ nhân viên}}{139}{figure.caption.191}%
-\contentsline {figure}{\numberline {146}{\ignorespaces Giao diện trang cá nhân nhân viên}}{140}{figure.caption.192}%
-\contentsline {figure}{\numberline {147}{\ignorespaces Kết quả chạy kiểm thử đơn vị — 5 test suites, 42 test cases passed}}{142}{figure.caption.194}%
-\contentsline {figure}{\numberline {148}{\ignorespaces Kết quả kiểm thử tích hợp module Auth — 10/10 passed}}{144}{figure.caption.196}%
-\contentsline {figure}{\numberline {149}{\ignorespaces Kết quả kiểm thử tích hợp module Products — 9/9 passed}}{144}{figure.caption.197}%
-\contentsline {figure}{\numberline {150}{\ignorespaces Kết quả kiểm thử tích hợp module Category — 7/7 passed}}{145}{figure.caption.198}%
-\contentsline {figure}{\numberline {151}{\ignorespaces Kết quả kiểm thử tích hợp module Address — 5/5 passed}}{145}{figure.caption.199}%
-\contentsline {figure}{\numberline {152}{\ignorespaces Kết quả kiểm thử tích hợp module Reviews — 6/6 passed}}{146}{figure.caption.200}%
-\contentsline {figure}{\numberline {153}{\ignorespaces Kết quả kiểm thử tích hợp module Orders — 11/11 passed}}{147}{figure.caption.201}%
-\contentsline {figure}{\numberline {154}{\ignorespaces Kết quả kiểm thử tích hợp module Vouchers — 8/8 passed}}{148}{figure.caption.202}%
-\contentsline {figure}{\numberline {155}{\ignorespaces Kết quả kiểm thử tích hợp module User (1/2) — 25/25 passed}}{148}{figure.caption.203}%
-\contentsline {figure}{\numberline {156}{\ignorespaces Kết quả kiểm thử tích hợp module User (2/2)}}{149}{figure.caption.204}%
-\contentsline {figure}{\numberline {157}{\ignorespaces Kết quả kiểm thử tích hợp module OrderItems — 5/5 passed}}{149}{figure.caption.205}%
-\contentsline {figure}{\numberline {158}{\ignorespaces Kết quả kiểm thử tích hợp module Shipments — 5/5 passed}}{150}{figure.caption.206}%
-\contentsline {figure}{\numberline {159}{\ignorespaces Kết quả kiểm thử tích hợp module Payments — 5/5 passed}}{150}{figure.caption.207}%
-\contentsline {figure}{\numberline {160}{\ignorespaces Kết quả kiểm thử tích hợp module CartItems — 5/5 passed}}{151}{figure.caption.208}%
-\contentsline {figure}{\numberline {161}{\ignorespaces Kết quả kiểm thử tích hợp module UserVouchers — 5/5 passed}}{151}{figure.caption.209}%
-\contentsline {figure}{\numberline {162}{\ignorespaces Kết quả kiểm thử tích hợp module Requests — 5/5 passed}}{152}{figure.caption.210}%
-\contentsline {figure}{\numberline {163}{\ignorespaces Kết quả kiểm thử tích hợp module ReturnRequests — 5/5 passed}}{152}{figure.caption.211}%
-\contentsline {figure}{\numberline {164}{\ignorespaces Kết quả kiểm thử tích hợp module Media — 5/5 passed}}{153}{figure.caption.212}%
-\contentsline {figure}{\numberline {165}{\ignorespaces ST-01: Trang chủ sau khi đăng nhập thành công với tài khoản Customer}}{154}{figure.caption.214}%
-\contentsline {figure}{\numberline {166}{\ignorespaces ST-02: Trang đăng nhập sau khi nhập mật khẩu sai}}{155}{figure.caption.215}%
-\contentsline {figure}{\numberline {167}{\ignorespaces ST-04: Trang quản trị Admin sau khi đăng nhập}}{155}{figure.caption.216}%
-\contentsline {figure}{\numberline {168}{\ignorespaces ST-05: Trang chủ hiển thị sản phẩm gợi ý}}{156}{figure.caption.218}%
-\contentsline {figure}{\numberline {169}{\ignorespaces ST-07: Trang chi tiết sản phẩm}}{157}{figure.caption.219}%
-\contentsline {figure}{\numberline {170}{\ignorespaces ST-08: Giỏ hàng sau khi thêm sản phẩm thành công}}{157}{figure.caption.220}%
-\contentsline {figure}{\numberline {171}{\ignorespaces ST-15: Trang danh sách đơn hàng của khách hàng}}{158}{figure.caption.222}%
-\contentsline {figure}{\numberline {172}{\ignorespaces ST-17: Trang tổng quan Admin — thống kê doanh thu và biểu đồ}}{159}{figure.caption.224}%
-\contentsline {figure}{\numberline {173}{\ignorespaces ST-18: Trang quản lý đơn hàng Admin}}{160}{figure.caption.225}%
-\contentsline {figure}{\numberline {174}{\ignorespaces ST-19: Trang quản lý sản phẩm Admin}}{160}{figure.caption.226}%
-\contentsline {figure}{\numberline {175}{\ignorespaces ST-20: Trang quản lý khách hàng Admin}}{160}{figure.caption.227}%
-\contentsline {figure}{\numberline {176}{\ignorespaces Kết quả chạy kiểm thử hệ thống bằng Playwright — 18/18 passed}}{161}{figure.caption.228}%
+\contentsline {figure}{\numberline {116}{\ignorespaces Tab Hồ sơ — thông tin cá nhân của khách hàng}}{120}{figure.caption.162}%
+\contentsline {figure}{\numberline {117}{\ignorespaces Tab Địa chỉ — quản lý danh sách địa chỉ giao hàng}}{121}{figure.caption.163}%
+\contentsline {figure}{\numberline {118}{\ignorespaces Tab Đổi mật khẩu — thay đổi mật khẩu tài khoản}}{121}{figure.caption.164}%
+\contentsline {figure}{\numberline {119}{\ignorespaces Giao diện danh sách đơn hàng của khách hàng}}{122}{figure.caption.165}%
+\contentsline {figure}{\numberline {120}{\ignorespaces Modal thông báo mở từ nút trên thanh điều hướng tại trang chủ}}{123}{figure.caption.166}%
+\contentsline {figure}{\numberline {121}{\ignorespaces Trang đầy đủ danh sách thông báo của khách hàng}}{123}{figure.caption.167}%
+\contentsline {figure}{\numberline {122}{\ignorespaces Trang voucher của khách hàng — đích đến khi nhấn vào thông báo voucher}}{124}{figure.caption.168}%
+\contentsline {figure}{\numberline {123}{\ignorespaces Giao diện trang tổng quan Admin}}{125}{figure.caption.169}%
+\contentsline {figure}{\numberline {124}{\ignorespaces Giao diện quản lý đơn hàng Admin}}{126}{figure.caption.170}%
+\contentsline {figure}{\numberline {125}{\ignorespaces Chi tiết đơn hàng — trạng thái Đang chờ xử lý}}{126}{figure.caption.171}%
+\contentsline {figure}{\numberline {126}{\ignorespaces Chi tiết đơn hàng — trạng thái Đang chờ gửi cho đơn vị vận chuyển}}{127}{figure.caption.172}%
+\contentsline {figure}{\numberline {127}{\ignorespaces Chi tiết đơn hàng — trạng thái Đang giao}}{127}{figure.caption.173}%
+\contentsline {figure}{\numberline {128}{\ignorespaces Chi tiết đơn hàng — trạng thái Đã giao}}{128}{figure.caption.174}%
+\contentsline {figure}{\numberline {129}{\ignorespaces Chi tiết đơn hàng — trạng thái Đã hủy}}{128}{figure.caption.175}%
+\contentsline {figure}{\numberline {130}{\ignorespaces Chi tiết đơn hàng — yêu cầu trả hàng đang chờ xử lý}}{129}{figure.caption.176}%
+\contentsline {figure}{\numberline {131}{\ignorespaces Chi tiết đơn hàng — yêu cầu trả hàng đang được xử lý}}{129}{figure.caption.177}%
+\contentsline {figure}{\numberline {132}{\ignorespaces Chi tiết đơn hàng — yêu cầu trả hàng đã được chấp nhận và hoàn tiền}}{130}{figure.caption.178}%
+\contentsline {figure}{\numberline {133}{\ignorespaces Giao diện danh sách sản phẩm Admin}}{130}{figure.caption.179}%
+\contentsline {figure}{\numberline {134}{\ignorespaces Giao diện thêm sản phẩm mới Admin}}{131}{figure.caption.180}%
+\contentsline {figure}{\numberline {135}{\ignorespaces Ma trận biến thể — chế độ xem Số lượng tồn kho}}{131}{figure.caption.181}%
+\contentsline {figure}{\numberline {136}{\ignorespaces Ma trận biến thể — chế độ xem Giá bán}}{132}{figure.caption.182}%
+\contentsline {figure}{\numberline {137}{\ignorespaces Giao diện quản lý đánh giá sản phẩm Admin}}{132}{figure.caption.183}%
+\contentsline {figure}{\numberline {138}{\ignorespaces Chi tiết đánh giá sản phẩm}}{133}{figure.caption.184}%
+\contentsline {figure}{\numberline {139}{\ignorespaces Giao diện quản lý danh mục Admin}}{133}{figure.caption.185}%
+\contentsline {figure}{\numberline {140}{\ignorespaces Modal thêm danh mục mới}}{134}{figure.caption.186}%
+\contentsline {figure}{\numberline {141}{\ignorespaces Giao diện quản lý khách hàng Admin}}{134}{figure.caption.187}%
+\contentsline {figure}{\numberline {142}{\ignorespaces Giao diện quản lý voucher Admin}}{135}{figure.caption.188}%
+\contentsline {figure}{\numberline {143}{\ignorespaces Modal tạo voucher mới}}{135}{figure.caption.189}%
+\contentsline {figure}{\numberline {144}{\ignorespaces Giao diện chat hỗ trợ Admin}}{136}{figure.caption.190}%
+\contentsline {figure}{\numberline {145}{\ignorespaces Chọn sản phẩm để gửi — danh sách sản phẩm}}{136}{figure.caption.191}%
+\contentsline {figure}{\numberline {146}{\ignorespaces Mở rộng sản phẩm — hiển thị các biến thể (size, màu)}}{137}{figure.caption.192}%
+\contentsline {figure}{\numberline {147}{\ignorespaces Sản phẩm đã gửi hiển thị dưới dạng thẻ trong cuộc trò chuyện}}{137}{figure.caption.193}%
+\contentsline {figure}{\numberline {148}{\ignorespaces Giao diện cài đặt quyền Admin}}{138}{figure.caption.194}%
+\contentsline {figure}{\numberline {149}{\ignorespaces Giao diện trang cá nhân Admin}}{139}{figure.caption.195}%
+\contentsline {figure}{\numberline {150}{\ignorespaces Giao diện quản lý đơn hàng nhân viên}}{140}{figure.caption.196}%
+\contentsline {figure}{\numberline {151}{\ignorespaces Giao diện danh sách sản phẩm nhân viên}}{141}{figure.caption.197}%
+\contentsline {figure}{\numberline {152}{\ignorespaces Giao diện đánh giá sản phẩm nhân viên}}{142}{figure.caption.198}%
+\contentsline {figure}{\numberline {153}{\ignorespaces Giao diện chat hỗ trợ nhân viên}}{143}{figure.caption.199}%
+\contentsline {figure}{\numberline {154}{\ignorespaces Giao diện trang cá nhân nhân viên}}{144}{figure.caption.200}%
+\contentsline {figure}{\numberline {155}{\ignorespaces Kết quả chạy kiểm thử đơn vị — 5 test suites, 42 test cases passed}}{146}{figure.caption.202}%
+\contentsline {figure}{\numberline {156}{\ignorespaces Kết quả kiểm thử tích hợp module Auth — 10/10 passed}}{148}{figure.caption.204}%
+\contentsline {figure}{\numberline {157}{\ignorespaces Kết quả kiểm thử tích hợp module Products — 9/9 passed}}{148}{figure.caption.205}%
+\contentsline {figure}{\numberline {158}{\ignorespaces Kết quả kiểm thử tích hợp module Category — 7/7 passed}}{149}{figure.caption.206}%
+\contentsline {figure}{\numberline {159}{\ignorespaces Kết quả kiểm thử tích hợp module Address — 5/5 passed}}{149}{figure.caption.207}%
+\contentsline {figure}{\numberline {160}{\ignorespaces Kết quả kiểm thử tích hợp module Reviews — 6/6 passed}}{150}{figure.caption.208}%
+\contentsline {figure}{\numberline {161}{\ignorespaces Kết quả kiểm thử tích hợp module Orders — 11/11 passed}}{151}{figure.caption.209}%
+\contentsline {figure}{\numberline {162}{\ignorespaces Kết quả kiểm thử tích hợp module Vouchers — 8/8 passed}}{152}{figure.caption.210}%
+\contentsline {figure}{\numberline {163}{\ignorespaces Kết quả kiểm thử tích hợp module User (1/2) — 25/25 passed}}{152}{figure.caption.211}%
+\contentsline {figure}{\numberline {164}{\ignorespaces Kết quả kiểm thử tích hợp module User (2/2)}}{153}{figure.caption.212}%
+\contentsline {figure}{\numberline {165}{\ignorespaces Kết quả kiểm thử tích hợp module OrderItems — 5/5 passed}}{153}{figure.caption.213}%
+\contentsline {figure}{\numberline {166}{\ignorespaces Kết quả kiểm thử tích hợp module Shipments — 5/5 passed}}{154}{figure.caption.214}%
+\contentsline {figure}{\numberline {167}{\ignorespaces Kết quả kiểm thử tích hợp module Payments — 5/5 passed}}{154}{figure.caption.215}%
+\contentsline {figure}{\numberline {168}{\ignorespaces Kết quả kiểm thử tích hợp module CartItems — 5/5 passed}}{155}{figure.caption.216}%
+\contentsline {figure}{\numberline {169}{\ignorespaces Kết quả kiểm thử tích hợp module UserVouchers — 5/5 passed}}{155}{figure.caption.217}%
+\contentsline {figure}{\numberline {170}{\ignorespaces Kết quả kiểm thử tích hợp module Requests — 5/5 passed}}{156}{figure.caption.218}%
+\contentsline {figure}{\numberline {171}{\ignorespaces Kết quả kiểm thử tích hợp module ReturnRequests — 5/5 passed}}{156}{figure.caption.219}%
+\contentsline {figure}{\numberline {172}{\ignorespaces Kết quả kiểm thử tích hợp module Media — 5/5 passed}}{157}{figure.caption.220}%
+\contentsline {figure}{\numberline {173}{\ignorespaces ST-01: Trang chủ sau khi đăng nhập thành công với tài khoản Customer}}{158}{figure.caption.222}%
+\contentsline {figure}{\numberline {174}{\ignorespaces ST-02: Trang đăng nhập sau khi nhập mật khẩu sai}}{159}{figure.caption.223}%
+\contentsline {figure}{\numberline {175}{\ignorespaces ST-04: Trang quản trị Admin sau khi đăng nhập}}{159}{figure.caption.224}%
+\contentsline {figure}{\numberline {176}{\ignorespaces ST-05: Trang chủ hiển thị sản phẩm gợi ý}}{160}{figure.caption.226}%
+\contentsline {figure}{\numberline {177}{\ignorespaces ST-07: Trang chi tiết sản phẩm}}{161}{figure.caption.227}%
+\contentsline {figure}{\numberline {178}{\ignorespaces ST-08: Giỏ hàng sau khi thêm sản phẩm thành công}}{161}{figure.caption.228}%
+\contentsline {figure}{\numberline {179}{\ignorespaces ST-15: Trang danh sách đơn hàng của khách hàng}}{162}{figure.caption.230}%
+\contentsline {figure}{\numberline {180}{\ignorespaces ST-17: Trang tổng quan Admin — thống kê doanh thu và biểu đồ}}{163}{figure.caption.232}%
+\contentsline {figure}{\numberline {181}{\ignorespaces ST-18: Trang quản lý đơn hàng Admin}}{164}{figure.caption.233}%
+\contentsline {figure}{\numberline {182}{\ignorespaces ST-19: Trang quản lý sản phẩm Admin}}{164}{figure.caption.234}%
+\contentsline {figure}{\numberline {183}{\ignorespaces ST-20: Trang quản lý khách hàng Admin}}{164}{figure.caption.235}%
+\contentsline {figure}{\numberline {184}{\ignorespaces Kết quả chạy kiểm thử hệ thống bằng Playwright — 18/18 passed}}{165}{figure.caption.236}%
