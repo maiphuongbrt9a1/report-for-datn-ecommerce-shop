@@ -150,36 +150,38 @@
 \contentsline {figure}{\numberline {149}{\ignorespaces Giao diện trang cá nhân Admin}}{139}{figure.caption.195}%
 \contentsline {figure}{\numberline {150}{\ignorespaces Giao diện quản lý đơn hàng nhân viên}}{140}{figure.caption.196}%
 \contentsline {figure}{\numberline {151}{\ignorespaces Giao diện danh sách sản phẩm nhân viên}}{141}{figure.caption.197}%
-\contentsline {figure}{\numberline {152}{\ignorespaces Giao diện đánh giá sản phẩm nhân viên}}{142}{figure.caption.198}%
-\contentsline {figure}{\numberline {153}{\ignorespaces Giao diện chat hỗ trợ nhân viên}}{143}{figure.caption.199}%
-\contentsline {figure}{\numberline {154}{\ignorespaces Giao diện trang cá nhân nhân viên}}{144}{figure.caption.200}%
-\contentsline {figure}{\numberline {155}{\ignorespaces Kết quả chạy kiểm thử đơn vị — 5 test suites, 42 test cases passed}}{146}{figure.caption.202}%
-\contentsline {figure}{\numberline {156}{\ignorespaces Kết quả kiểm thử tích hợp module Auth — 10/10 passed}}{148}{figure.caption.204}%
-\contentsline {figure}{\numberline {157}{\ignorespaces Kết quả kiểm thử tích hợp module Products — 9/9 passed}}{148}{figure.caption.205}%
-\contentsline {figure}{\numberline {158}{\ignorespaces Kết quả kiểm thử tích hợp module Category — 7/7 passed}}{149}{figure.caption.206}%
-\contentsline {figure}{\numberline {159}{\ignorespaces Kết quả kiểm thử tích hợp module Address — 5/5 passed}}{149}{figure.caption.207}%
-\contentsline {figure}{\numberline {160}{\ignorespaces Kết quả kiểm thử tích hợp module Reviews — 6/6 passed}}{150}{figure.caption.208}%
-\contentsline {figure}{\numberline {161}{\ignorespaces Kết quả kiểm thử tích hợp module Orders — 11/11 passed}}{151}{figure.caption.209}%
-\contentsline {figure}{\numberline {162}{\ignorespaces Kết quả kiểm thử tích hợp module Vouchers — 8/8 passed}}{152}{figure.caption.210}%
-\contentsline {figure}{\numberline {163}{\ignorespaces Kết quả kiểm thử tích hợp module User (1/2) — 25/25 passed}}{152}{figure.caption.211}%
-\contentsline {figure}{\numberline {164}{\ignorespaces Kết quả kiểm thử tích hợp module User (2/2)}}{153}{figure.caption.212}%
-\contentsline {figure}{\numberline {165}{\ignorespaces Kết quả kiểm thử tích hợp module OrderItems — 5/5 passed}}{153}{figure.caption.213}%
-\contentsline {figure}{\numberline {166}{\ignorespaces Kết quả kiểm thử tích hợp module Shipments — 5/5 passed}}{154}{figure.caption.214}%
-\contentsline {figure}{\numberline {167}{\ignorespaces Kết quả kiểm thử tích hợp module Payments — 5/5 passed}}{154}{figure.caption.215}%
-\contentsline {figure}{\numberline {168}{\ignorespaces Kết quả kiểm thử tích hợp module CartItems — 5/5 passed}}{155}{figure.caption.216}%
-\contentsline {figure}{\numberline {169}{\ignorespaces Kết quả kiểm thử tích hợp module UserVouchers — 5/5 passed}}{155}{figure.caption.217}%
-\contentsline {figure}{\numberline {170}{\ignorespaces Kết quả kiểm thử tích hợp module Requests — 5/5 passed}}{156}{figure.caption.218}%
-\contentsline {figure}{\numberline {171}{\ignorespaces Kết quả kiểm thử tích hợp module ReturnRequests — 5/5 passed}}{156}{figure.caption.219}%
-\contentsline {figure}{\numberline {172}{\ignorespaces Kết quả kiểm thử tích hợp module Media — 5/5 passed}}{157}{figure.caption.220}%
-\contentsline {figure}{\numberline {173}{\ignorespaces ST-01: Trang chủ sau khi đăng nhập thành công với tài khoản Customer}}{158}{figure.caption.222}%
-\contentsline {figure}{\numberline {174}{\ignorespaces ST-02: Trang đăng nhập sau khi nhập mật khẩu sai}}{159}{figure.caption.223}%
-\contentsline {figure}{\numberline {175}{\ignorespaces ST-04: Trang quản trị Admin sau khi đăng nhập}}{159}{figure.caption.224}%
-\contentsline {figure}{\numberline {176}{\ignorespaces ST-05: Trang chủ hiển thị sản phẩm gợi ý}}{160}{figure.caption.226}%
-\contentsline {figure}{\numberline {177}{\ignorespaces ST-07: Trang chi tiết sản phẩm}}{161}{figure.caption.227}%
-\contentsline {figure}{\numberline {178}{\ignorespaces ST-08: Giỏ hàng sau khi thêm sản phẩm thành công}}{161}{figure.caption.228}%
-\contentsline {figure}{\numberline {179}{\ignorespaces ST-15: Trang danh sách đơn hàng của khách hàng}}{162}{figure.caption.230}%
-\contentsline {figure}{\numberline {180}{\ignorespaces ST-17: Trang tổng quan Admin — thống kê doanh thu và biểu đồ}}{163}{figure.caption.232}%
-\contentsline {figure}{\numberline {181}{\ignorespaces ST-18: Trang quản lý đơn hàng Admin}}{164}{figure.caption.233}%
-\contentsline {figure}{\numberline {182}{\ignorespaces ST-19: Trang quản lý sản phẩm Admin}}{164}{figure.caption.234}%
-\contentsline {figure}{\numberline {183}{\ignorespaces ST-20: Trang quản lý khách hàng Admin}}{164}{figure.caption.235}%
-\contentsline {figure}{\numberline {184}{\ignorespaces Kết quả chạy kiểm thử hệ thống bằng Playwright — 18/18 passed}}{165}{figure.caption.236}%
+\contentsline {figure}{\numberline {152}{\ignorespaces Modal cập nhật tồn kho — phần thông tin cơ bản chỉ ở chế độ xem}}{141}{figure.caption.198}%
+\contentsline {figure}{\numberline {153}{\ignorespaces Modal cập nhật tồn kho — ma trận biến thể cho phép chỉnh sửa số lượng}}{142}{figure.caption.199}%
+\contentsline {figure}{\numberline {154}{\ignorespaces Giao diện đánh giá sản phẩm nhân viên}}{142}{figure.caption.200}%
+\contentsline {figure}{\numberline {155}{\ignorespaces Giao diện chat hỗ trợ nhân viên}}{143}{figure.caption.201}%
+\contentsline {figure}{\numberline {156}{\ignorespaces Giao diện trang cá nhân nhân viên}}{144}{figure.caption.202}%
+\contentsline {figure}{\numberline {157}{\ignorespaces Kết quả chạy kiểm thử đơn vị — 5 test suites, 42 test cases passed}}{146}{figure.caption.204}%
+\contentsline {figure}{\numberline {158}{\ignorespaces Kết quả kiểm thử tích hợp module Auth — 10/10 passed}}{148}{figure.caption.206}%
+\contentsline {figure}{\numberline {159}{\ignorespaces Kết quả kiểm thử tích hợp module Products — 9/9 passed}}{148}{figure.caption.207}%
+\contentsline {figure}{\numberline {160}{\ignorespaces Kết quả kiểm thử tích hợp module Category — 7/7 passed}}{149}{figure.caption.208}%
+\contentsline {figure}{\numberline {161}{\ignorespaces Kết quả kiểm thử tích hợp module Address — 5/5 passed}}{149}{figure.caption.209}%
+\contentsline {figure}{\numberline {162}{\ignorespaces Kết quả kiểm thử tích hợp module Reviews — 6/6 passed}}{150}{figure.caption.210}%
+\contentsline {figure}{\numberline {163}{\ignorespaces Kết quả kiểm thử tích hợp module Orders — 11/11 passed}}{151}{figure.caption.211}%
+\contentsline {figure}{\numberline {164}{\ignorespaces Kết quả kiểm thử tích hợp module Vouchers — 8/8 passed}}{152}{figure.caption.212}%
+\contentsline {figure}{\numberline {165}{\ignorespaces Kết quả kiểm thử tích hợp module User (1/2) — 25/25 passed}}{152}{figure.caption.213}%
+\contentsline {figure}{\numberline {166}{\ignorespaces Kết quả kiểm thử tích hợp module User (2/2)}}{153}{figure.caption.214}%
+\contentsline {figure}{\numberline {167}{\ignorespaces Kết quả kiểm thử tích hợp module OrderItems — 5/5 passed}}{153}{figure.caption.215}%
+\contentsline {figure}{\numberline {168}{\ignorespaces Kết quả kiểm thử tích hợp module Shipments — 5/5 passed}}{154}{figure.caption.216}%
+\contentsline {figure}{\numberline {169}{\ignorespaces Kết quả kiểm thử tích hợp module Payments — 5/5 passed}}{154}{figure.caption.217}%
+\contentsline {figure}{\numberline {170}{\ignorespaces Kết quả kiểm thử tích hợp module CartItems — 5/5 passed}}{155}{figure.caption.218}%
+\contentsline {figure}{\numberline {171}{\ignorespaces Kết quả kiểm thử tích hợp module UserVouchers — 5/5 passed}}{155}{figure.caption.219}%
+\contentsline {figure}{\numberline {172}{\ignorespaces Kết quả kiểm thử tích hợp module Requests — 5/5 passed}}{156}{figure.caption.220}%
+\contentsline {figure}{\numberline {173}{\ignorespaces Kết quả kiểm thử tích hợp module ReturnRequests — 5/5 passed}}{156}{figure.caption.221}%
+\contentsline {figure}{\numberline {174}{\ignorespaces Kết quả kiểm thử tích hợp module Media — 5/5 passed}}{157}{figure.caption.222}%
+\contentsline {figure}{\numberline {175}{\ignorespaces ST-01: Trang chủ sau khi đăng nhập thành công với tài khoản Customer}}{158}{figure.caption.224}%
+\contentsline {figure}{\numberline {176}{\ignorespaces ST-02: Trang đăng nhập sau khi nhập mật khẩu sai}}{159}{figure.caption.225}%
+\contentsline {figure}{\numberline {177}{\ignorespaces ST-04: Trang quản trị Admin sau khi đăng nhập}}{159}{figure.caption.226}%
+\contentsline {figure}{\numberline {178}{\ignorespaces ST-05: Trang chủ hiển thị sản phẩm gợi ý}}{160}{figure.caption.228}%
+\contentsline {figure}{\numberline {179}{\ignorespaces ST-07: Trang chi tiết sản phẩm}}{161}{figure.caption.229}%
+\contentsline {figure}{\numberline {180}{\ignorespaces ST-08: Giỏ hàng sau khi thêm sản phẩm thành công}}{161}{figure.caption.230}%
+\contentsline {figure}{\numberline {181}{\ignorespaces ST-15: Trang danh sách đơn hàng của khách hàng}}{162}{figure.caption.232}%
+\contentsline {figure}{\numberline {182}{\ignorespaces ST-17: Trang tổng quan Admin — thống kê doanh thu và biểu đồ}}{163}{figure.caption.234}%
+\contentsline {figure}{\numberline {183}{\ignorespaces ST-18: Trang quản lý đơn hàng Admin}}{164}{figure.caption.235}%
+\contentsline {figure}{\numberline {184}{\ignorespaces ST-19: Trang quản lý sản phẩm Admin}}{164}{figure.caption.236}%
+\contentsline {figure}{\numberline {185}{\ignorespaces ST-20: Trang quản lý khách hàng Admin}}{164}{figure.caption.237}%
+\contentsline {figure}{\numberline {186}{\ignorespaces Kết quả chạy kiểm thử hệ thống bằng Playwright — 18/18 passed}}{165}{figure.caption.238}%
