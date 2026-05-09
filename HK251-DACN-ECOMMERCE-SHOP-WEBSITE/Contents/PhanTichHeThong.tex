@@ -50,11 +50,8 @@
 \subsection{Các yêu cầu phi chức năng}
 \begin{itemize}
   \item Thời gian tải trang (Page Load Time): Trang chủ, trang danh mục và trang sản phẩm phải tải dưới 3 giây (tối ưu là 2 giây) trên cả thiết bị di động và máy tính.
-  \item Khả năng chịu tải (Load Capacity): Hệ thống phải xử lý được ít nhất 500 người dùng đồng thời mà vẫn duy trì tốc độ ổn định, đặc biệt trong các đợt Flash Sale lớn.
-  \item Thời gian phản hồi (Response Time): Thời gian phản hồi của API thanh toán và giỏ hàng phải dưới 2 giây để đảm bảo giao dịch diễn ra nhanh chóng.
+  \item Thời gian phản hồi (Response Time): Thời gian phản hồi của API tạo mới đơn hàng, API thêm sản phẩm vào giỏ hàng và API lấy thông tin sản phẩm trong giỏ hàng phải dưới 2 giây để đảm bảo giao dịch diễn ra nhanh chóng.
   \item Bảo vệ dữ liệu người dùng (Data Protection), cụ thể mật khẩu đăng nhập tài khoản của người dùng phải được mã hóa trước khi lưu trữ tại database.
-  \item Thời gian hoạt động (Uptime)  Trang web phải đảm bảo thời gian hoạt động tối thiểu là 99.9\% (tương đương không quá 8.7 giờ ngừng hoạt động mỗi năm).
-
   \item Khả năng Phục hồi (Disaster Recovery)  Phải có kế hoạch và quy trình sao lưu dữ liệu 2 ngày / lần. Trong trường hợp xảy ra lỗi nghiêm trọng, hệ thống phải được khôi phục về trạng thái hoạt động gần nhất trong vòng 4 giờ.
   
 \end{itemize}

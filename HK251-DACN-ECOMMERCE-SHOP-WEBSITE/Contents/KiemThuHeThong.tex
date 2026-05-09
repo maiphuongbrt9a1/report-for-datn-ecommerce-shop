@@ -1152,21 +1152,253 @@ UAT-A14 & Chat hỗ trợ khách hàng & Nhắn tin realtime với khách hàng 
 		\hline
 		NFR-C01 & Thời gian tải trang (Page Load Time): Trang chủ, trang danh mục và trang sản phẩm phải tải dưới 3 giây (tối ưu là 2 giây) trên cả thiết bị di động và máy tính. & Passed \\
 		\hline
-		NFR-C02 & Khả năng chịu tải (Load Capacity): Hệ thống phải xử lý được ít nhất 500 người dùng đồng thời mà vẫn duy trì tốc độ ổn định, đặc biệt trong các đợt Flash Sale lớn. & Passed \\
+		NFR-C02 & Khả năng Phục hồi (Disaster Recovery)  Phải có kế hoạch và quy trình sao lưu dữ liệu 2 ngày / lần. Trong trường hợp xảy ra lỗi nghiêm trọng, hệ thống phải được khôi phục về trạng thái hoạt động gần nhất trong vòng 4 giờ. & Passed \\
 		\hline
-		NFR-C03 & Thời gian phản hồi (Response Time): Thời gian phản hồi của API thanh toán và giỏ hàng phải dưới 2 giây để đảm bảo giao dịch diễn ra nhanh chóng. & Passed \\
+		NFR-C03 & Thời gian phản hồi (Response Time): Thời gian phản hồi của API tạo mới đơn hàng, API thêm sản phẩm vào giỏ hàng và API lấy thông tin sản phẩm trong giỏ hàng phải dưới 2 giây để đảm bảo giao dịch diễn ra nhanh chóng. & Passed \\
 		\hline
 		NFR-C04 & Bảo vệ dữ liệu người dùng (Data Protection), cụ thể mật khẩu đăng nhập tài khoản của người dùng phải được mã hóa trước khi lưu trữ tại database. & Passed \\
-		\hline
-		NFR-C05 & Thời gian hoạt động (Uptime)  Trang web phải đảm bảo thời gian hoạt động tối thiểu là 99.9\% (tương đương không quá 8.7 giờ ngừng hoạt động mỗi năm). & Passed \\
-		\hline
-		NFR-C06 & Khả năng Phục hồi (Disaster Recovery)  Phải có kế hoạch và quy trình sao lưu dữ liệu 2 ngày / lần. Trong trường hợp xảy ra lỗi nghiêm trọng, hệ thống phải được khôi phục về trạng thái hoạt động gần nhất trong vòng 4 giờ. & Passed \\
 		\hline
 	\end{tabular}
 	\caption{Test case cho các yêu cầu phi tính năng}
 \end{table} 
 
 Bên trên là bảng tổng hợp cho việc kiểm thử các yêu cầu phi chức năng. Bên dưới đây là các minh chứng cho từng test case được liệt kê bên trên. \\
+
+Đối với việc kiểm thử thời gian tải trang nhóm sử dụng chức năng lighthouse bên trong dev tool trên trình duyệt chrome để test. Bên dưới là các hình chụp minh chứng.
+
+\vspace{0.3cm}
+\noindent\textbf{Kiểm tra thời gian tải trang cho trang homepage}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|p{8.3cm}|c|}
+		\hline
+		\textbf{Mã TC} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+		\hline
+		NFR-C01 & Thời gian tải trang (Page Load Time): Trang chủ, trang danh mục và trang sản phẩm phải tải dưới 3 giây (tối ưu là 2 giây) trên cả thiết bị di động và máy tính. & Passed \\
+		\hline
+	\end{tabular}
+	\caption{Test case NFR-C01: Thời gian tải trang (Page Load Time)}
+\end{table} 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-homepage-on-mobile-1.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chủ dưới 3s trên nền tảng mobile.}
+\end{figure}
+
+Đây là điểm tổng mà công cụ chấm cho ứng dụng khi giả lập chạy trên mobile. Mức điểm này (87) đã tiệm cận mức tốt được đặt ra là từ 90 - 100\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-homepage-on-mobile-2.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chủ dưới 3s trên nền tảng mobile (Tiếp theo)}
+\end{figure}
+
+First Contentful Paint (FCP) – 2.0 s \\
+Ý nghĩa: Là thời điểm phần tử nội dung đầu tiên xuất hiện trên màn hình (có thể là một chữ, một ảnh, một khối màu nền, logo…). Đây là dấu mốc đầu tiên báo cho người dùng biết “trang web đang hoạt động”. \\
+Đánh giá: Google phân loại FCP dưới 1.8 s là nhanh, từ 1.8 s đến 3.0 s là trung bình. Với 2.0 s, trang nằm ở mức trung bình – người dùng vẫn thấy phản hồi ban đầu chấp nhận được nhưng chưa thực sự nhanh. Vẫn đáp ứng yêu cầu tải trang dưới 3 s. \\
+
+Largest Contentful Paint (LCP) – 3.5 s \\
+Ý nghĩa: Là thời điểm nội dung chính lớn nhất (ảnh hero, tiêu đề lớn, khối văn bản chính) hoàn tất hiển thị. Đây là chỉ số quan trọng nhất để đánh giá trang đã “hữu ích” thực sự hay chưa. \\
+Đánh giá: Ngưỡng tốt từ Google là $\leq 2.5$ s. 3.5 s nằm trong khoảng “cần cải thiện” (2.5 s – 4.0 s), tức là nội dung chính hiển thị hơi chậm. Với yêu cầu tải trang dưới 3 s, con số này vượt ngưỡng mong đợi, cần tối ưu thêm để cải thiện cảm nhận về tốc độ. \\
+
+Total Blocking Time (TBT) – 150 ms \\
+Ý nghĩa: Tổng thời gian (tính bằng mili giây) mà luồng chính (main thread) bị chặn, khiến trình duyệt không thể phản hồi thao tác của người dùng (click, gõ phím). TBT chỉ tính các tác vụ JavaScript kéo dài >50 ms, từ sau FCP cho đến khi trang tương tác được hoàn toàn. \\
+Đánh giá: Google coi TBT dưới 200 ms là tốt. 150 ms đạt ngưỡng này, nghĩa là các tác vụ JavaScript không gây “đơ” đáng kể, nhưng vẫn tồn tại một vài tác vụ dài khiến luồng chính bận. Người dùng hầu như không gặp gián đoạn lớn khi tương tác, nhưng vẫn có thể cải thiện để tiến tới mức tuyệt đối 0 ms. \\
+
+Speed Index – 3.4 s \\
+Ý nghĩa: Thể hiện tốc độ hiển thị nội dung một cách trực quan. Nó đo khoảng thời gian trung bình để tất cả phần nội dung nhìn thấy được (trên màn hình đầu tiên) hiển thị đầy đủ. Khác với FCP/LCP chỉ lấy một điểm mốc, Speed Index phản ánh quá trình hiển thị dần dần của toàn bộ khung nhìn. \\
+Đánh giá: Theo Google, Speed Index dưới 3.4 s là nhanh. Giá trị 3.4 s nằm chính xác tại ngưỡng tốt, cho thấy các thành phần giao diện hiện lên mượt mà ở mức vừa đủ, không gây cảm giác quá chậm. Tuy nhiên, để trải nghiệm tốt hơn, nên hướng tới con số thấp hơn ngưỡng này. \\
+
+Cumulative Layout Shift (CLS) – 0 \\
+Ý nghĩa: Đo sự ổn định về bố cục, tức mức độ các phần tử trên trang bị dịch chuyển ngoài ý muốn trong quá trình tải (ví dụ: đang đọc mà nút bấm nhảy xuống vì ảnh trên vừa load xong). CLS là tổng điểm dựa vào tần suất và kích thước của những cú dịch chuyển đó. \\
+Đánh giá: Ngưỡng tốt nhất là $\leq 0.1$. Điểm 0 là tuyệt đối, đồng nghĩa hoàn toàn không có bất kỳ sự dịch chuyển bố cục nào. Trải nghiệm thị giác cực kỳ ổn định, người dùng không bao giờ bị “click nhầm” hay mất vị trí đọc do layout thay đổi. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-homepage-on-desktop-1.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chủ dưới 3s trên nền tảng desktop.}
+\end{figure}
+
+Đây là điểm tổng thể mà công cụ chấm cho ứng dụng khi chạy giả lập trên desktop. Mức điểm này (86) đã tiệm cận mức tốt được đặt ra là từ 90 - 100. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-homepage-on-desktop-2.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chủ dưới 3s trên nền tảng desktop (Tiếp theo)}
+\end{figure}
+
+First Contentful Paint (FCP) – 1.4 s \\
+Ý nghĩa: Là thời điểm phần tử nội dung đầu tiên xuất hiện trên màn hình (có thể là một chữ, một ảnh, một khối màu nền, logo...). Đây là dấu mốc đầu tiên báo cho người dùng biết “trang web đang hoạt động”. \\
+
+Đánh giá: Google coi FCP dưới 1.8 s là nhanh, dưới 3 s là trung bình. Ở đây 1.4 s là rất tốt – người dùng cảm nhận trang phản hồi gần như ngay lập tức. \\
+
+Largest Contentful Paint (LCP) – 1.4 s \\ 
+Ý nghĩa: Là thời điểm nội dung chính lớn nhất (ảnh hero, tiêu đề lớn, khối văn bản chính) hoàn tất hiển thị. Đây là chỉ số quan trọng nhất để đánh giá trang đã "hữu ích" thực sự hay chưa. \\
+
+Đánh giá: Ngưỡng tốt từ Google là nhỏ hơn hoặc bằng 2.5 s. 1.4 s của bạn vượt xa yêu cầu – trang dường như sẵn sàng để đọc/tương tác ngay, cho cảm giác tải siêu nhanh. \\
+
+Total Blocking Time (TBT) – 0 ms \\
+Ý nghĩa: Tổng thời gian (tính bằng mili giây) mà luồng chính (main thread) bị chặn, khiến trình duyệt không thể phản hồi thao tác của người dùng (click, gõ phím). TBT chỉ tính các tác vụ JavaScript kéo dài >50 ms, từ sau FCP cho đến khi trang tương tác được hoàn toàn.\\ 
+
+Đánh giá: 0 ms nghĩa là không có bất kỳ tác vụ JavaScript nào chạy đủ lâu để gây “đơ”, trang luôn sẵn sàng xử lý thao tác của bạn. Đây là điểm tuyệt đối, cực kỳ hiếm gặp. \\
+
+Speed Index – 2.6 s \\
+Ý nghĩa: Thể hiện tốc độ hiển thị nội dung một cách trực quan. Nó đo khoảng thời gian trung bình để tất cả phần nội dung nhìn thấy được (trên màn hình đầu tiên) hiển thị đầy đủ. Khác với FCP/LCP chỉ lấy một điểm mốc, Speed Index phản ánh quá trình hiển thị dần dần của toàn bộ khung nhìn. \\
+
+Đánh giá: Dưới 3.4 s được coi là nhanh. 2.6 s là tốt, cho thấy các thành phần hiện lên mượt mà, không bị “pop up” đột ngột hay chậm trễ từng phần. \\
+
+Cumulative Layout Shift (CLS) – 0.001 \\
+Ý nghĩa: Đo sự ổn định về bố cục, tức mức độ các phần tử trên trang bị dịch chuyển ngoài ý muốn trong quá trình tải (ví dụ: đang đọc mà nút bấm nhảy xuống vì ảnh trên vừa load xong). CLS là tổng điểm dựa vào tần suất và kích thước của những cú dịch chuyển đó. \\
+
+Đánh giá: Ngưỡng tốt nhất là nhỏ hơn hoặc bằng 0.1. 0.001 là gần như không có sự dịch chuyển nào, trải nghiệm mắt cực kỳ dễ chịu, bạn không bao giờ bị “click nhầm” do trang tự nhảy. \\
+
+\newpage
+\vspace{0.3cm}
+\noindent\textbf{Kiểm tra thời gian tải trang cho trang danh mục sản phẩm}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|p{8.3cm}|c|}
+		\hline
+		\textbf{Mã TC} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+		\hline
+		NFR-C01 & Thời gian tải trang (Page Load Time): Trang chủ, trang danh mục và trang sản phẩm phải tải dưới 3 giây (tối ưu là 2 giây) trên cả thiết bị di động và máy tính. & Passed \\
+		\hline
+	\end{tabular}
+	\caption{Test case NFR-C01: Thời gian tải trang (Page Load Time)}
+\end{table} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-category-on-mobile-1.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang danh mục dưới 3s trên nền tảng mobile.}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-category-on-mobile-2.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang danh mục dưới 3s trên nền tảng mobile (Tiếp theo)}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-category-on-desktop-1.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang danh mục dưới 3s trên nền tảng desktop.}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-category-on-desktop-2.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang danh mục dưới 3s trên nền tảng desktop (Tiếp theo)}
+\end{figure}
+
+\vspace{0.3cm}
+\noindent\textbf{Kiểm tra thời gian tải trang cho trang chi tiết sản phẩm}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|p{8.3cm}|c|}
+		\hline
+		\textbf{Mã TC} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+		\hline
+		NFR-C01 & Thời gian tải trang (Page Load Time): Trang chủ, trang danh mục và trang sản phẩm phải tải dưới 3 giây (tối ưu là 2 giây) trên cả thiết bị di động và máy tính. & Passed \\
+		\hline
+	\end{tabular}
+	\caption{Test case NFR-C01: Thời gian tải trang (Page Load Time)}
+\end{table} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-product-detail-on-mobile-1.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chi tiết sản phẩm dưới 3s trên nền tảng mobile.}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-product-detail-on-mobile-2.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chi tiết sản phẩm dưới 3s trên nền tảng mobile (Tiếp theo)}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-product-detail-on-desktop-1.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chi tiết sản phẩm dưới 3s trên nền tảng desktop.}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-product-detail-on-desktop-2.png}
+	\vspace{0.5cm}
+	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chi tiết sản phẩm dưới 3s trên nền tảng desktop (Tiếp theo)}
+\end{figure}
+
+\vspace{0.3cm}
+\noindent\textbf{Kiểm tra thời gian phản hồi của các API tạo mới đơn hàng , API thêm sản phẩm vào giỏ hàng và API lấy thông tin sản phẩm trong giỏ hàng}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|p{8.3cm}|c|}
+		\hline
+		\textbf{Mã TC} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+		\hline
+		NFR-C03 & Thời gian phản hồi (Response Time): Thời gian phản hồi của API tạo mới đơn hàng, API thêm sản phẩm vào giỏ hàng và API lấy thông tin sản phẩm trong giỏ hàng phải dưới 2 giây để đảm bảo giao dịch diễn ra nhanh chóng. & Passed \\
+		\hline
+	\end{tabular}
+	\caption{Test case NFR-C03: Thời gian phản hồi (Response Time)}
+\end{table} 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-response-time-get-cart.png}
+	\vspace{0.5cm}
+	\caption{NFR-C03: Minh chứng cho việc thời gian phản hồi của api lấy ra giỏ hàng dưới 2s.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-response-time-create-new-cart-item.png}
+	\vspace{0.5cm}
+	\caption{NFR-C03: Minh chứng cho việc thời gian phản hồi của api thêm mới sản phẩm trong giỏ hàng dưới 2s.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Images/Testing/test-response-time-create-new-order.png}
+	\vspace{0.5cm}
+	\caption{NFR-C03: Minh chứng cho việc thời gian phản hồi của api thêm mới order dưới 2s.}
+\end{figure}
+
+
+\vspace{0.3cm}
+\noindent\textbf{Kiểm tra yêu cầu password đã được hash trước khi lưu vào database}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|p{8.3cm}|c|}
+		\hline
+		\textbf{Mã TC} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+		\hline
+		NFR-C04 & Bảo vệ dữ liệu người dùng (Data Protection), cụ thể mật khẩu đăng nhập tài khoản của người dùng phải được mã hóa trước khi lưu trữ tại database. & Passed \\
+		\hline
+		
+	\end{tabular}
+	\caption{Test case cho các yêu cầu phi tính năng}
+\end{table} 
+
 
 \begin{figure}[H]
 	\centering
