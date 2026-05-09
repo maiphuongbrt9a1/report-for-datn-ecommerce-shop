@@ -1282,12 +1282,17 @@ Cumulative Layout Shift (CLS) – 0.001 \\
 	\vspace{0.5cm}
 	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang danh mục dưới 3s trên nền tảng mobile.}
 \end{figure}
+
+Đối với việc tải trang danh mục trên nền tảng mobile điểm số 76 là thấp và cần được cải thiện trong thời gian tới. Song, thời gian 2.0s cho nội dung đầu tiên được hiển thị cũng đã đủ để đảm bảo trải nghiệm người dùng, không để người dùng chờ quá lâu mà trang web không phản hồi. \\
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-category-on-mobile-2.png}
 	\vspace{0.5cm}
 	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang danh mục dưới 3s trên nền tảng mobile (Tiếp theo)}
 \end{figure}
+
+Thời gian mà phần tử lớn nhất hiển thị hoàn tất là 5.3s đây là một con số lớn. Cần phải được nhóm chú trọng hơn trong tương lai để cải thiện. Các cách có thể để cải thiện là tối ưu lại kích thước các ảnh được tải lên hệ thống hoặc tải nhiều ảnh với các độ phân giải khác nhau để đảm bảo tùy theo chất lượng mạng internet của người dùng mà hiển thị ảnh sản phẩm phù hợp. \\ 
 
 \begin{figure}[H]
 	\centering
@@ -1301,6 +1306,8 @@ Cumulative Layout Shift (CLS) – 0.001 \\
 	\vspace{0.5cm}
 	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang danh mục dưới 3s trên nền tảng desktop (Tiếp theo)}
 \end{figure}
+
+Đối với nền tảng desktop thì kết quả được tối ưu rất tốt và cho trải nghiệm người dùng tốt nhất. Điều này thật sự là một tín hiệu tốt cho nhóm vì nhóm đã dành thời gian tối ưu ứng dụng web của mình trên nền tảng desktop nhiều hơn là trên mobile. \\
 
 \vspace{0.3cm}
 \noindent\textbf{Kiểm tra thời gian tải trang cho trang chi tiết sản phẩm}
@@ -1331,6 +1338,8 @@ Cumulative Layout Shift (CLS) – 0.001 \\
 	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chi tiết sản phẩm dưới 3s trên nền tảng mobile (Tiếp theo)}
 \end{figure}
 
+Đối với thời gian tải trang chi tiết sản phẩm trên nền tảng mobile kết quả tương tự như những kết quả test các api phía trên. Điều này cho thấy chất lượng sản phẩm của nhóm là tương đồng nhau cho mỗi api trên nền tảng mobile. Và đối với người dùng đây là thời gian phản hồi chậm nhận được, không để người dùng chờ quá lâu. \\ 
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Images/Testing/test-load-page-time-for-product-detail-on-desktop-1.png}
@@ -1343,6 +1352,66 @@ Cumulative Layout Shift (CLS) – 0.001 \\
 	\vspace{0.5cm}
 	\caption{NFR-C01: Minh chứng cho việc thời gian tải trang chi tiết sản phẩm dưới 3s trên nền tảng desktop (Tiếp theo)}
 \end{figure}
+
+Với điểm số tổng kết là 94 đây là một điểm số thuộc nhóm tốt theo đánh giá của Google. Thời gian chờ cho phần tử lớn nhất được hiển thị hoàn tất là 1.2s đây là thời gian rất nhanh và rất tốt cho trải nghiệm của người dùng. Đảm bảo người dùng sẽ luôn thấy mượt mà trong lúc sử dụng sản phẩm. \\
+
+\vspace{0.3cm}
+\noindent\textbf{Khả năng phục hồi của hệ thống sau sự cố}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|p{8.3cm}|c|}
+		\hline
+		\textbf{Mã TC} & \textbf{Tiêu chí chấp nhận} & \textbf{Đánh giá} \\
+		\hline
+		NFR-C02 & Khả năng Phục hồi (Disaster Recovery) Phải có kế hoạch và quy trình sao lưu dữ liệu 2 ngày / lần. Trong trường hợp xảy ra lỗi nghiêm trọng, hệ thống phải được khôi phục về trạng thái hoạt động gần nhất trong vòng 4 giờ. & Passed \\
+		\hline
+	\end{tabular}
+	\caption{Test case NFR-C02: Khả năng Phục hồi (Disaster Recovery)}
+\end{table} 
+
+Có hai cách để nhận được bản backup của database: Cách thứ nhất là làm thủ công, cách thứ hai là dùng GitHub Actions để tạo một cron job ảo, chạy đúng lịch và lưu file backup vào Artifacts. \\
+
+ Đối với cách thứ nhất làm thủ công, cách này yêu cầu ở máy local có cài đặt pgadmin 4 và đã kết nối thành công đến database production trên railway. Sau đó có thể dùng chức năng Backup của giao diện pgadmin 4 để lấy bản backup database. \\
+ 
+ Đối với cách thứ 2: Bên dưới đây là từng bước thực hiện: \\
+ 
+ Bước 1: Trước hết tạo file có tên là .github/workflows/db-backup.yml vào trong repo của backend. File này phải ở thư mục gốc của backend repo, cùng cấp với folder mà chứa file .git. \\
+ 
+ Bước 2: Sau đó tiến hành git push. Chờ 5 đến 6 phút. Vào tab Settings sau đó vào tab Secrets sau đó vào tab Actions sau đó vào tab New repository secret sau đó tạo Name: DB-PASSWORD, Value: điền mật khẩu database. \\
+ 
+ Bước 3: Sau đó có thể thực hiện Run workflow. Sau khi workflow chạy thành công file backup sẽ được tạo và sẵn sàng để sử dụng. \\
+ 
+ Bước 4: Tải file về máy và có thể chạy file backup này trên pgadmin 4. \\
+ 
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.75\textwidth]{Images/Testing/testing-workflow-code.png}
+ 	\vspace{0.5cm}
+ 	\caption{Code cài đặt workflow.}
+ \end{figure}
+ 
+ Đây là code cài đặt workflow mà nhóm đã hiện thực.
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.75\textwidth]{Images/Testing/testing-workflow-to-auto-create-backup-db.png}
+ 	\vspace{0.5cm}
+ 	\caption{Kết quả khi chạy workflow thành công.}
+ \end{figure}
+ 
+ Đây là kết quả khi chạy workflow thành công. Ta sẽ có một file db backup được nén lại. Chỉ cần download về là sử dụng được ngay.
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.75\textwidth]{Images/Testing/testing-workflow-result-restore-db.png}
+ 	\vspace{0.5cm}
+ 	\caption{Kết quả khi chạy restore db backup file thành công.}
+ \end{figure}
+ 
+ Đây là kết quả khi chạy db backup file thành công.
 
 \vspace{0.3cm}
 \noindent\textbf{Kiểm tra thời gian phản hồi của các API tạo mới đơn hàng , API thêm sản phẩm vào giỏ hàng và API lấy thông tin sản phẩm trong giỏ hàng}
@@ -1367,12 +1436,16 @@ Cumulative Layout Shift (CLS) – 0.001 \\
 	\caption{NFR-C03: Minh chứng cho việc thời gian phản hồi của api lấy ra giỏ hàng dưới 2s.}
 \end{figure}
 
+Theo hình minh chứng ta thấy, thời gian phản hồi cho một api lấy ra thông tin giỏ hàng chỉ có 480ms đã nhỏ hơn rất nhiều so với yêu cầu 2s. Do đó api này đã vượt qua kiểm thử. \\
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Images/Testing/test-response-time-create-new-cart-item.png}
 	\vspace{0.5cm}
 	\caption{NFR-C03: Minh chứng cho việc thời gian phản hồi của api thêm mới sản phẩm trong giỏ hàng dưới 2s.}
 \end{figure}
+
+Theo hình minh chứng ta thấy, thời gian phản hồi cho một api thêm mới sản phẩm vào trong giỏ hàng là 926ms < 1s theo yêu cầu. Do đó api này đã vượt qua kiểm thử. \\
 
 \begin{figure}[H]
 	\centering
@@ -1381,6 +1454,7 @@ Cumulative Layout Shift (CLS) – 0.001 \\
 	\caption{NFR-C03: Minh chứng cho việc thời gian phản hồi của api thêm mới order dưới 2s.}
 \end{figure}
 
+Theo hình minh chứng, ta thấy thời gian phản hồi cho một api thêm mới order là 1.98s đây là thời gian phản hồi ấn tượng cho một api phức tạp như tạo mới order. Vì khi tạo mới order, phải đi kiểm tra rất nhiều điều kiện của sản phẩm, voucher áp dụng, tính toán và kiểm tra lại giá cả sản phẩm, sau đó là đi cập nhật các bảng có liên quan khác. Với yêu cầu thời gian phản hồi < 2s ta thấy api này đã vượt qua kiểm thử. \\
 
 \vspace{0.3cm}
 \noindent\textbf{Kiểm tra yêu cầu password đã được hash trước khi lưu vào database}
