@@ -17,27 +17,27 @@ Về kiến trúc hệ thống, nhóm tiến hành thiết kế hệ thống the
 
 Tiếp theo đến với Application Tier - nhóm mô tả nó là back-end evironment, sau khi các dữ liệu được gửi từ tầng Presentation Tier xuống, sẽ cần đi qua các module cụ thể để xử lý chính xác yêu cầu đó. Bên dưới là tất cả các module mà trong hệ thống của nhóm sẽ có: \\
 \begin{itemize}
-	\item Category and product module: Đây là nơi mà tất cả các chức năng liên quan đến danh mục sản phẩm và sản phẩm được cài đặt. 
-	\item Review product module: Đây là module nơi xử lý tất cả các logic liên quan đến việc người dùng đánh giá một sản phẩm của cửa hàng. 
-	\item Cart module: Đây là module xử lý tất cả các nghiệp vụ liên quan đến giỏ hàng của người dùng.
-	\item  Order module: Đây là module xử lý tất cả các nghiệp vụ liên quan đến việc đặt hàng.
-	\item Payment module: Đây là module xử lý tất cả các nghiệp vụ liên quan đến việc thanh toán đơn hàng.
-	\item Shipment module: Xử lý các nghiệp vụ liên quan đến việc vận chuyển đơn hàng.
-	\item voucher module: Xử lý các nghiệp vụ liên quan đến voucher của cửa hàng.
-	\item Chat module: Xử lý các nghiệp vụ liên quan đến việc nhắn tin của cửa hàng.
-	\item Notification module: Xử lý các nghiệp vụ liên quan đến thông báo của cửa hàng.
-	\item Recommendation module: Xử lý các nghiệp vụ liên quan đến gợi ý.
-	\item Analytics module: Xử lý các nghiệp vụ liên quan đến phân tích các chỉ số kinh doanh và tập hợp dữ liệu cho dashboard admin.
-	\item User profile module: Xử lý các nghiệp vụ liên quan đến xử lý hồ sơ thông tin của người dùng trong hệ thống.
-	\item Auth module: Xử lý các nghiệp vụ liên quan đến việc xác thực người dùng đăng nhập và quyền hạn của người dùng trong hệ thống. Trong khi thực hiện module này nhóm quyết định sử dụng JWT STRATEGY và GOOGLE OAuth cho việc đăng nhập và đăng ký vì nhóm nhận thấy các chiến lược này là các quy chuẩn công nghiệp đã được công nhận và sử dụng rộng rãi bên ngoài thị trường. Giúp việc đăng nhập, đăng ký của người dùng vào hệ thống được nhanh chóng và hạn chế tối đa được các lỗ hổng bảo mật của hệ thống. Ngoài ra nhóm cũng thực hiện việc đăng nhập và đăng ký bằng email và password truyền thống bên trong LOCAL STRATEGY.
-	\item Media upload file module: Xử lý việc đăng tải hình ảnh video của sản phẩm, của đánh giá sản phẩm,.. lên hệ thống. Nhóm tiến hành chọn việc lưu trữ video và hình ảnh ở AWS S3 vì đây là dịch vụ lưu trữ đối tượng hàng đầu của nền tảng điện toán đám mây AWS. Thay vì phương
-	pháp truyền thống là lưu trữ tệp tin media (hình ảnh sản phẩm, video, ảnh đại diện) trực tiếp trên ổ cứng của máy
-	chủ ứng dụng (Web Server), việc sử dụng S3 mang lại giải pháp lưu trữ tách biệt và chuyên dụng.
-	S3 được thiết kế với độ bền dữ liệu lên tới 99,999999999\% (11 số 9) và khả năng mở rộng vô hạn, cho phép
-	hệ thống lưu trữ hàng triệu hình ảnh sản phẩm mà không ảnh hưởng đến hiệu năng của Backend. Hơn nữa, việc
-	tách rời lớp lưu trữ này giúp hệ thống dễ dàng triển khai trên nhiều môi trường khác nhau (Container/Docker) mà
-	không lo ngại vấn đề đồng bộ dữ liệu tĩnh (Static Assets), đồng thời tối ưu hóa băng thông tải trang nhờ khả năng
-	phục vụ nội dung tốc độ cao.
+  \item Category and product module: Đây là nơi mà tất cả các chức năng liên quan đến danh mục sản phẩm và sản phẩm được cài đặt.
+  \item Review product module: Đây là module nơi xử lý tất cả các logic liên quan đến việc người dùng đánh giá một sản phẩm của cửa hàng.
+  \item Cart module: Đây là module xử lý tất cả các nghiệp vụ liên quan đến giỏ hàng của người dùng.
+  \item  Order module: Đây là module xử lý tất cả các nghiệp vụ liên quan đến việc đặt hàng.
+  \item Payment module: Đây là module xử lý tất cả các nghiệp vụ liên quan đến việc thanh toán đơn hàng.
+  \item Shipment module: Xử lý các nghiệp vụ liên quan đến việc vận chuyển đơn hàng.
+  \item voucher module: Xử lý các nghiệp vụ liên quan đến voucher của cửa hàng.
+  \item Chat module: Xử lý các nghiệp vụ liên quan đến việc nhắn tin của cửa hàng.
+  \item Notification module: Xử lý các nghiệp vụ liên quan đến thông báo của cửa hàng.
+  \item Recommendation module: Xử lý các nghiệp vụ liên quan đến gợi ý.
+  \item Analytics module: Xử lý các nghiệp vụ liên quan đến phân tích các chỉ số kinh doanh và tập hợp dữ liệu cho dashboard admin.
+  \item User profile module: Xử lý các nghiệp vụ liên quan đến xử lý hồ sơ thông tin của người dùng trong hệ thống.
+  \item Auth module: Xử lý các nghiệp vụ liên quan đến việc xác thực người dùng đăng nhập và quyền hạn của người dùng trong hệ thống. Trong khi thực hiện module này nhóm quyết định sử dụng JWT STRATEGY cho việc đăng nhập và đăng ký vì nhóm nhận thấy các chiến lược này là các quy chuẩn công nghiệp đã được công nhận và sử dụng rộng rãi bên ngoài thị trường. Giúp việc đăng nhập, đăng ký của người dùng vào hệ thống được nhanh chóng và hạn chế tối đa được các lỗ hổng bảo mật của hệ thống. Ngoài ra nhóm cũng thực hiện việc đăng nhập và đăng ký bằng email và password truyền thống bên trong LOCAL STRATEGY.
+  \item Media upload file module: Xử lý việc đăng tải hình ảnh video của sản phẩm, của đánh giá sản phẩm,.. lên hệ thống. Nhóm tiến hành chọn việc lưu trữ video và hình ảnh ở AWS S3 vì đây là dịch vụ lưu trữ đối tượng hàng đầu của nền tảng điện toán đám mây AWS. Thay vì phương
+        pháp truyền thống là lưu trữ tệp tin media (hình ảnh sản phẩm, video, ảnh đại diện) trực tiếp trên ổ cứng của máy
+        chủ ứng dụng (Web Server), việc sử dụng S3 mang lại giải pháp lưu trữ tách biệt và chuyên dụng.
+        S3 được thiết kế với độ bền dữ liệu lên tới 99,999999999\% (11 số 9) và khả năng mở rộng vô hạn, cho phép
+        hệ thống lưu trữ hàng triệu hình ảnh sản phẩm mà không ảnh hưởng đến hiệu năng của Backend. Hơn nữa, việc
+        tách rời lớp lưu trữ này giúp hệ thống dễ dàng triển khai trên nhiều môi trường khác nhau (Container/Docker) mà
+        không lo ngại vấn đề đồng bộ dữ liệu tĩnh (Static Assets), đồng thời tối ưu hóa băng thông tải trang nhờ khả năng
+        phục vụ nội dung tốc độ cao.
 \end{itemize}
 
 Không những vậy, bên trong tầng Application, nhóm còn tích hợp các apis khác để có thể gọi được các dịch vụ bên ngoài. Đó là thanh toán online bằng cổng thanh toán VNPay, dịch vụ gửi mail, các apis tương tác với AWS S3 được cung cấp sẵn bên trong AWS Client. \\
@@ -55,56 +55,56 @@ Cuối cùng tầng Data Tier, đây là nơi sẽ lưu trữ dữ liệu bền 
   % Định nghĩa 3 cột: Cột nhóm (3cm), Cột tên thực thể (3.5cm), Cột ý nghĩa (9.5cm)
   \begin{tabular}{|m{3cm}|m{3.5cm}|m{9.5cm}|}
     \hline
-    \textbf{Phân loại} & \textbf{Tên thực thể} & \textbf{Ý nghĩa}                                                           \\ \hline
+    \textbf{Phân loại} & \textbf{Tên thực thể} & \textbf{Ý nghĩa}                                                                                                                     \\ \hline
 
     % --- NHÓM 1: 7 DÒNG ---
     \multirow{8}{=}{\textbf{Quản lý Người dùng}}
-                       & User                  & Chứa thông tin chi tiết của người dùng trong hệ thống.                     \\ \cline{2-3}
-                       & Customer              & Chứa thông tin user mà chỉ có người khách hàng mới có.                     \\ \cline{2-3}
-                       & Operator              & Chứa thông tin chung mà chỉ có người admin và staff có.                    \\ \cline{2-3}
-                       & Staff                 & Chứa thông tin mà chỉ có người nhân viên cửa hàng có.                      \\ \cline{2-3}
-                       & Admin                 & Chứa thông tin mà chỉ có người quản trị viên cửa hàng có.                  \\ \cline{2-3}
-                       & Address               & Chứa thông tin chi tiết về địa chỉ thực tế.                                \\ \cline{2-3}
+                       & User                  & Chứa thông tin chi tiết của người dùng trong hệ thống.                                                                               \\ \cline{2-3}
+                       & Customer              & Chứa thông tin user mà chỉ có người khách hàng mới có.                                                                               \\ \cline{2-3}
+                       & Operator              & Chứa thông tin chung mà chỉ có người admin và staff có.                                                                              \\ \cline{2-3}
+                       & Staff                 & Chứa thông tin mà chỉ có người nhân viên cửa hàng có.                                                                                \\ \cline{2-3}
+                       & Admin                 & Chứa thông tin mà chỉ có người quản trị viên cửa hàng có.                                                                            \\ \cline{2-3}
+                       & Address               & Chứa thông tin chi tiết về địa chỉ thực tế.                                                                                          \\ \cline{2-3}
                        & Size Profiles         & Chứa thông tin chi tiết về kích thước của người dùng về chiều cao, cân nặng, số đo ba vòng, chiều dài tay áo, chiều dài ống quần,... \\
     \cline{2-3}
-                       & Shop                  & Chứa thông tin chi tiết về shop.                                           \\
+                       & Shop                  & Chứa thông tin chi tiết về shop.                                                                                                     \\
     \hline
 
     % --- NHÓM 2: 3 DÒNG ---
     \multirow{4}{=}{\textbf{Sản phẩm}}
-                       & Category              & Thông tin về một danh mục sản phẩm.                                        \\ \cline{2-3}
-                       & Product               & Thông tin về một sản phẩm.                                                 \\ \cline{2-3}
-                       & Product Variant       & Thông tin về các biến thể của cùng một sản phẩm (size, màu sắc).           \\ \cline{2-3}
-                       & Media                 & Thông tin chi tiết về một video hoặc hình ảnh.                             \\ \hline
+                       & Category              & Thông tin về một danh mục sản phẩm.                                                                                                  \\ \cline{2-3}
+                       & Product               & Thông tin về một sản phẩm.                                                                                                           \\ \cline{2-3}
+                       & Product Variant       & Thông tin về các biến thể của cùng một sản phẩm (size, màu sắc).                                                                     \\ \cline{2-3}
+                       & Media                 & Thông tin chi tiết về một video hoặc hình ảnh.                                                                                       \\ \hline
 
     % --- NHÓM 3: 4 DÒNG ---
     \multirow{4}{=}{\textbf{Giỏ hàng \& Khuyến mãi}}
-                       & Cart                  & Thông tin về giỏ hàng của người khách hàng.                                \\ \cline{2-3}
-                       & Cart Item             & Chứa thông tin về một sản phẩm có trong giỏ hàng.                          \\ \cline{2-3}
-                       & Voucher               & Thông tin về một voucher của shop.                                         \\ \cline{2-3}
-                       & User Voucher          & Thông tin chi tiết về voucher mà người khách hàng đã lưu.                  \\ \hline
+                       & Cart                  & Thông tin về giỏ hàng của người khách hàng.                                                                                          \\ \cline{2-3}
+                       & Cart Item             & Chứa thông tin về một sản phẩm có trong giỏ hàng.                                                                                    \\ \cline{2-3}
+                       & Voucher               & Thông tin về một voucher của shop.                                                                                                   \\ \cline{2-3}
+                       & User Voucher          & Thông tin chi tiết về voucher mà người khách hàng đã lưu.                                                                            \\ \hline
 
     % --- NHÓM 4: 6 DÒNG ---
     \multirow{8}{=}{\textbf{Đơn hàng \& Giao dịch}}
-                       & Order                 & Thông tin chi tiết về đơn hàng.                                            \\ \cline{2-3}
-                       & Order Item            & Thông tin lưu trữ một món hàng của order.                                  \\ \cline{2-3}
-                       & Payment               & Thông tin chi tiết về thanh toán một đơn hàng.                             \\ \cline{2-3}
-                       & Shipments             & Thông tin vận chuyển của đơn hàng.                                         \\ \cline{2-3}
-                       & Update History        & Thông tin chi tiết về lịch sử đơn hàng.                                    \\ \cline{2-3}
-                       & Special Request       & Thông tin chung về các yêu cầu hủy đơn, trả hàng, hoàn tiền.               \\
+                       & Order                 & Thông tin chi tiết về đơn hàng.                                                                                                      \\ \cline{2-3}
+                       & Order Item            & Thông tin lưu trữ một món hàng của order.                                                                                            \\ \cline{2-3}
+                       & Payment               & Thông tin chi tiết về thanh toán một đơn hàng.                                                                                       \\ \cline{2-3}
+                       & Shipments             & Thông tin vận chuyển của đơn hàng.                                                                                                   \\ \cline{2-3}
+                       & Update History        & Thông tin chi tiết về lịch sử đơn hàng.                                                                                              \\ \cline{2-3}
+                       & Special Request       & Thông tin chung về các yêu cầu hủy đơn, trả hàng, hoàn tiền.                                                                         \\
     \cline{2-3}
-                       & Cancelled Request     & Thông tin chi tiết về các yêu cầu hủy đơn hàng.                            \\
+                       & Cancelled Request     & Thông tin chi tiết về các yêu cầu hủy đơn hàng.                                                                                      \\
     \cline{2-3}
-                       & Return Request        & Thông tin chi tiết về các yêu cầu trả hàng, hoàn tiền.                     \\
+                       & Return Request        & Thông tin chi tiết về các yêu cầu trả hàng, hoàn tiền.                                                                               \\
     \cline{2-3}
 
     \hline
 
     % --- NHÓM 5: 3 DÒNG ---
     \multirow{3}{=}{\textbf{Tương tác}}
-                       & Notification          & Chứa thông tin thông báo.                                                  \\ \cline{2-3}
-                       & Message               & Thông tin chi tiết đoạn tin nhắn của người khách hàng và nhân viên.        \\ \cline{2-3}
-                       & Review                & Thông tin chi tiết về đánh giá sản phẩm.                                   \\ \hline
+                       & Notification          & Chứa thông tin thông báo.                                                                                                            \\ \cline{2-3}
+                       & Message               & Thông tin chi tiết đoạn tin nhắn của người khách hàng và nhân viên.                                                                  \\ \cline{2-3}
+                       & Review                & Thông tin chi tiết về đánh giá sản phẩm.                                                                                             \\ \hline
   \end{tabular}
   \caption{Danh sách thực thể được phân nhóm theo chức năng.}
   \label{tab:mInfoGrouped}
@@ -201,45 +201,45 @@ Cả hai vai trò Admin và Staff đều có khả năng thực hiện xử lý 
 \subsection{Sơ đồ hoạt động}
 \subsubsection{Người quản trị viên, người nhân viên xử lý đơn hàng.}
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin processing order.jpg}
-	\vspace{0.5cm}
-	\caption{Sơ đồ hoạt động người quản trị viên, nhân viên cửa hàng xử lý đơn hàng}
-	\label{fig: Sơ đồ hoạt động người quản trị viên, nhân viên cửa hàng xử lý đơn hàng}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin processing order.jpg}
+  \vspace{0.5cm}
+  \caption{Sơ đồ hoạt động người quản trị viên, nhân viên cửa hàng xử lý đơn hàng}
+  \label{fig: Sơ đồ hoạt động người quản trị viên, nhân viên cửa hàng xử lý đơn hàng}
 \end{figure}
 
 Người quản trị viên và người nhân viên của cửa hàng đều có luồng xử lý và thẩm quyền như nhau trong việc xử lý một đơn hàng từ lúc đóng gói đến lúc giao hàng và cập nhật trạng thái đơn hàng trong quá trình vận chuyển. \\
 
 \begin{itemize}
-	\item  Người quản trị viên và người nhân viên bắt đầu quy trình xử lý đơn hàng bằng việc xem các đơn hàng đang chờ được xác nhận và đóng gói. \\
-	\item Sau đó đơn hàng khi đã được đồng ý và đóng gói sẽ được cấp cho một mã vận chuyển duy nhất, đồng thời video quay việc đóng gói và dán tem đơn hàng phải được cập nhật vào hệ thống. \\
-	\item Sau khi các thông tin này đều hợp lệ đơn hàng sẽ được cập nhật trạng thái mới là đã đóng gói. \\
-	\item Sau đó đơn hàng sẽ được kiểm tra lại một lần nữa. Và được cập nhật trạng thái đơn hàng đang chờ được vận chuyển. \\
-	\item Khi đơn hàng này được đem ra khỏi shop cho mục đích vận chuyển. Đơn hàng này sẽ được cập nhật trạng thái thành đang vận chuyển. \\
-	\item Khi đơn hàng được giao đến người khách hàng. Video, hình ảnh minh chứng cho việc giao hàng được tải lên hệ thống và trạng thái đơn hàng được cập nhật thành đã giao.\\
-	
-	\item Đến đây hoạt động xử lý đóng gói đơn hàng và vận chuyển đơn hàng kết thúc.
-	
+  \item  Người quản trị viên và người nhân viên bắt đầu quy trình xử lý đơn hàng bằng việc xem các đơn hàng đang chờ được xác nhận và đóng gói. \\
+  \item Sau đó đơn hàng khi đã được đồng ý và đóng gói sẽ được cấp cho một mã vận chuyển duy nhất, đồng thời video quay việc đóng gói và dán tem đơn hàng phải được cập nhật vào hệ thống. \\
+  \item Sau khi các thông tin này đều hợp lệ đơn hàng sẽ được cập nhật trạng thái mới là đã đóng gói. \\
+  \item Sau đó đơn hàng sẽ được kiểm tra lại một lần nữa. Và được cập nhật trạng thái đơn hàng đang chờ được vận chuyển. \\
+  \item Khi đơn hàng này được đem ra khỏi shop cho mục đích vận chuyển. Đơn hàng này sẽ được cập nhật trạng thái thành đang vận chuyển. \\
+  \item Khi đơn hàng được giao đến người khách hàng. Video, hình ảnh minh chứng cho việc giao hàng được tải lên hệ thống và trạng thái đơn hàng được cập nhật thành đã giao.\\
+
+  \item Đến đây hoạt động xử lý đóng gói đơn hàng và vận chuyển đơn hàng kết thúc.
+
 \end{itemize}
 
 \subsubsection{Người quản trị viên, người nhân viên xử lý trả đơn hàng - hoàn tiền.}
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin processing refund order.jpg}
-	\vspace{0.5cm}
-	\caption{Sơ đồ hoạt động người quản trị viên, nhân viên cửa hàng xử lý yêu cầu trả đơn hàng - hoàn tiền}
-	\label{fig: Sơ đồ hoạt động người quản trị viên, nhân viên cửa hàng xử lý yêu cầu trả đơn hàng - hoàn tiền}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Staff and Admin processing refund order.jpg}
+  \vspace{0.5cm}
+  \caption{Sơ đồ hoạt động người quản trị viên, nhân viên cửa hàng xử lý yêu cầu trả đơn hàng - hoàn tiền}
+  \label{fig: Sơ đồ hoạt động người quản trị viên, nhân viên cửa hàng xử lý yêu cầu trả đơn hàng - hoàn tiền}
 \end{figure}
 
 Đối với hoạt động xử lý yêu cầu trả hàng - hoàn tiền của người khách hàng. Có sự khác nhau trong thẩm quyền và luồng xử lý của người quản trị viên so với nhân viên. Đó là người quản trị viên mới có thẩm quyền thực hiện việc thanh toán để chuyển tiền đơn hàng về lại cho người khách hàng. Người nhân viên shop không thể thực hiện hoạt động chuyển khoản thanh toán này. Còn lại những hoạt động khác trong luồng xử lý yêu cầu trả hàng - hoàn tiền cả hai vai trò quản trị viên và nhân viên có thể làm như nhau. \\
 
 \subsubsection{Người khách hàng duyệt sản phẩm và mua sản phẩm.}
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer browse and buy product.jpg}
-	\vspace{0.5cm}
-	\caption{Sơ đồ hoạt động người khách hàng duyệt và mua sản phẩm}
-	\label{fig: Sơ đồ hoạt động người khách hàng duyệt và mua sản phẩm}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer browse and buy product.jpg}
+  \vspace{0.5cm}
+  \caption{Sơ đồ hoạt động người khách hàng duyệt và mua sản phẩm}
+  \label{fig: Sơ đồ hoạt động người khách hàng duyệt và mua sản phẩm}
 \end{figure}
 
 Sơ đồ bên trên thể hiện các luồng mua hàng mà người khách hàng có thể làm để mua được một sản phẩm ở cửa hàng. Trong đó ta thấy có ba cách để mua được một sản phẩm đó là mua hàng trực tiếp trong trang thông tin chi tiết của sản phẩm, cách thứ hai là thêm sản phẩm vào giỏ hàng sau đó tiến hành mua các sản phẩm từ giỏ hàng. Cách thứ ba là mua hàng từ việc mua lại một đơn hàng đã mua trước đó trong trang lịch sử đơn hàng. \\
@@ -250,11 +250,11 @@ Sau khi đặt hàng thành công sẽ có thông báo đặt hàng thành công
 
 \subsubsection{Người khách hàng hủy đơn hàng.}
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer cancel order.drawio.png}
-	\vspace{0.5cm}
-	\caption{Sơ đồ hoạt động người khách hàng hủy đơn hàng}
-	\label{fig: Sơ đồ hoạt động người khách hàng hủy đơn hàng}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer cancel order.drawio.png}
+  \vspace{0.5cm}
+  \caption{Sơ đồ hoạt động người khách hàng hủy đơn hàng}
+  \label{fig: Sơ đồ hoạt động người khách hàng hủy đơn hàng}
 \end{figure}
 
 Với quy trình hủy đơn hàng do người khách hàng thực hiện, có quy định rằng đơn hàng chỉ được hủy khi và chỉ khi đơn hàng chưa được shop đóng gói. Ngay khi đơn hàng được cập nhật trạng thái đã đóng gói người khách hàng không thể hủy đơn đặt hàng. Sẽ có thông báo từ chối hủy đơn hàng do đơn hàng đã đóng gói được hiển thị.\\
@@ -267,11 +267,11 @@ Trong trường hợp đơn hàng được thanh toán bằng hình thức thanh
 
 \subsubsection{Người khách hàng yêu cầu trả đơn hàng - hoàn tiền.}
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer refund order.jpg}
-	\vspace{0.5cm}
-	\caption{Sơ đồ hoạt động người khách hàng yêu cầu trả đơn hàng - hoàn tiền}
-	\label{fig: Sơ đồ hoạt động người khách hàng yêu cầu trả đơn hàng - hoàn tiền}
+  \centering
+  \includegraphics[width=0.7\textwidth]{Images/ActivityDiagram/Đồ án - HK251-Activity diagram Customer refund order.jpg}
+  \vspace{0.5cm}
+  \caption{Sơ đồ hoạt động người khách hàng yêu cầu trả đơn hàng - hoàn tiền}
+  \label{fig: Sơ đồ hoạt động người khách hàng yêu cầu trả đơn hàng - hoàn tiền}
 \end{figure}
 
 Khi người khách hàng tạo một yêu cầu trả hàng hoàn tiền người khách hàng phải cung cấp được cho cửa hàng video, hình ảnh lúc người khách hàng nhận được đơn hàng và mở gói hàng lần đầu. Video thể hiện được kiện hàng phải còn nguyên không bị khui mở từ trước nếu đơn hàng đã bị tráo ở giai đoạn vận chuyển người khách hàng cần phải chụp lại ngay tình trạng đơn hàng và thông báo cho shop ngay để được ghi nhận và giải quyết tại thời điểm nhận hàng. \\
@@ -520,7 +520,7 @@ Ngoài ra nếu người khách hàng lúc đặt đơn hàng đã thanh toán t
   \label{fig: Giao diện Chi tiết sản phẩm}
 \end{figure}
 \noindent\textbf{Các thao tác chính:} Xem hình ảnh sản phẩm chi tiết, chọn kích cỡ và màu sắc, xem thông tin mô tả, giá cả và đánh giá, thêm vào giỏ hàng, mua ngay.
-\subsubsubsection {So sánh Sản phẩm} 
+\subsubsubsection {So sánh Sản phẩm}
 \begin{figure}[H]
   \centering
   \includegraphics[width=1\textwidth]{Images/MockUp/Customer/Comparison/_1.png}
@@ -626,7 +626,7 @@ Ngoài ra nếu người khách hàng lúc đặt đơn hàng đã thanh toán t
           \label{fig: Giao diện đánh giá đơn hàng}
         \end{figure}
         \noindent\textbf{Các thao tác chính:} Xem lại chi tiết sản phẩm vừa mua, chọn số sao đánh giá, nhập nội dung nhận xét, đính kèm hình ảnh minh họa, gửi đánh giá, và xem danh sách các đánh giá đã tạo.
-  \newpage
+        \newpage
   \item Hủy/trả đơn hàng:
         \begin{figure}[H]
           \centering
@@ -636,7 +636,7 @@ Ngoài ra nếu người khách hàng lúc đặt đơn hàng đã thanh toán t
           \label{fig: Giao diện hủy/trả đơn hàng}
         \end{figure}
         \noindent\textbf{Các thao tác chính:} Tạo yêu cầu hủy đơn hàng hoặc trả hàng, chọn lý do hủy/trả hàng, mô tả chi tiết vấn đề gặp phải, đính kèm hình ảnh/video minh họa (đối với trả hàng), gửi yêu cầu.
-        
+
 \end{enumerate}
 \subsubsubsection {Thông báo}
 \begin{enumerate}
@@ -694,7 +694,7 @@ Ngoài ra nếu người khách hàng lúc đặt đơn hàng đã thanh toán t
         \end{figure}
         \noindent\textbf{Mô tả:} Hiển thị ngày đặt, trạng thái, khách hàng, địa chỉ giao, phương thức thanh toán, chi tiết sản phẩm (biến thể, số lượng, giá), phí vận chuyển, voucher, tổng tiền, lịch sử cập nhật trạng thái. Cho phép xác nhận, đóng gói, bàn giao vận chuyển, cập nhật trạng thái.
 
-	\newpage
+        \newpage
   \item Đơn hàng yêu cầu đổi/trả:
         \begin{figure}[H]
           \centering
