@@ -1,4 +1,4 @@
-\section{Kiểm thử và đánh giá hệ thống}
+﻿\section{Kiểm thử và đánh giá hệ thống}
 
 Kiểm thử phần mềm là quá trình đánh giá và xác minh hệ thống hoạt động đúng theo yêu cầu đặt ra. Trong dự án Paple, nhóm áp dụng đầy đủ bốn cấp độ kiểm thử theo mô hình kiểm thử phần mềm tiêu chuẩn — kiểm thử đơn vị, kiểm thử tích hợp, kiểm thử hệ thống và kiểm thử chấp nhận của người dùng — nhằm đảm bảo chất lượng toàn diện trước khi triển khai thực tế.
 
@@ -66,7 +66,16 @@ File kiểm thử được đặt tại \texttt{src/helpers/utils.spec.ts} với
   \caption{Danh sách test case kiểm thử đơn vị}
 \end{table}
 
-Ngoài kiểm thử các hàm tiện ích, nhóm còn thực hiện kiểm thử đơn vị cho tầng Service — nơi chứa logic nghiệp vụ chính của hệ thống. Kiểm thử tầng Service sử dụng kỹ thuật \textbf{mocking} để cô lập service khỏi các dependency bên ngoài (cơ sở dữ liệu, JWT, UserService), đảm bảo chỉ kiểm tra logic xử lý bên trong. Các service được kiểm thử bao gồm: \texttt{AuthService}, \texttt{ProductsService}, \texttt{CategoryService}, \texttt{AddressService}, \texttt{ReviewsService}, \texttt{VouchersService}, \texttt{ChatService}, \texttt{NotificationService} và \texttt{RecommendationService}.
+Ngoài kiểm thử các hàm tiện ích, nhóm còn thực hiện kiểm thử đơn vị cho tầng Service — nơi chứa logic nghiệp vụ chính của hệ thống. Kiểm thử tầng Service sử dụng kỹ thuật \textbf{mocking} để cô lập service khỏi các dependency bên ngoài (cơ sở dữ liệu, JWT, UserService, AwsS3Service), đảm bảo chỉ kiểm tra logic xử lý bên trong. Các service được kiểm thử bao gồm: \texttt{AuthService}, \texttt{ProductsService}, \texttt{CategoryService}, \texttt{AddressService}, \texttt{ReviewsService}, \texttt{VouchersService}, \texttt{ChatService}, \texttt{NotificationService}, \texttt{RecommendationService} và \texttt{AnalyticsService}.
+
+Riêng đối với \texttt{AnalyticsService} — module phụ trách tổng hợp doanh thu, đơn hàng, khách hàng và sản phẩm cho dashboard quản trị — nhóm tập trung kiểm thử các nhóm phương thức sau:
+
+\begin{itemize}
+  \item \texttt{calculateStartTimeOfViewMode} — tính ngày bắt đầu của khung thời gian phân tích theo chế độ WEEKLY/MONTHLY/YEARLY và xử lý chế độ không hợp lệ.
+  \item \texttt{getTotalRevenueInRangeTime} — tổng hợp doanh thu trong khoảng thời gian, chuẩn hóa các giá trị null về 0 và lọc đúng các trạng thái đơn hàng được tính doanh thu.
+  \item \texttt{getTotalOrdersInRangeTime}, \texttt{getTotalCancelledOrdersInRangeTime}, \texttt{getTotalReturnedOrdersInRangeTime} — đếm số lượng đơn hàng theo trạng thái trong khoảng thời gian.
+  \item \texttt{getTotalCustomersInRangeTime} — đếm số khách hàng có ít nhất một đơn hàng đủ điều kiện trong khoảng thời gian.
+\end{itemize}
 
 Để chạy toàn bộ kiểm thử đơn vị, thực thi lệnh sau:
 
@@ -76,7 +85,8 @@ npx jest --testPathPatterns="helpers/utils.spec
   |category/category.service.spec|address/address.service.spec
   |reviews/reviews.service.spec|vouchers/vouchers.service.spec
   |chat/chat.service.spec|notification/notification.service.spec
-  |recommendation/recommendation.service.spec"
+  |recommendation/recommendation.service.spec
+  |analytics/analytics.service.spec"
   --no-coverage --verbose
 \end{verbatim}
 
@@ -84,7 +94,7 @@ npx jest --testPathPatterns="helpers/utils.spec
   \centering
   \includegraphics[width=0.85\textwidth]{Images/Testing/unit-test-summary.png}
   \vspace{0.5cm}
-  \caption{Kết quả chạy kiểm thử đơn vị — 9 test suites, 65 test cases passed}
+  \caption{Kết quả chạy kiểm thử đơn vị — 11 test suites, 66 test cases passed}
 \end{figure}
 
 % ─────────────────────────────────────────────────────────────────
@@ -127,8 +137,9 @@ Tổng cộng \textbf{96 assertion} trên \textbf{12 module} đã được thự
     Chat               & 5                 & 5                   & Pass                \\
     Notification       & 5                 & 5                   & Pass                \\
     Recommendation     & 3                 & 3                   & Pass                \\
+    Analytics          & 5                 & 10                  & Pass                \\
     \hline
-    \textbf{Tổng cộng} & \textbf{101}      & \textbf{109}        & \textbf{100\% Pass} \\
+    \textbf{Tổng cộng} & \textbf{106}      & \textbf{119}        & \textbf{100\% Pass} \\
     \hline
   \end{tabular}
   \caption{Tổng hợp kết quả kiểm thử tích hợp theo module}
@@ -242,6 +253,13 @@ Dưới đây là kết quả chi tiết chạy Newman theo từng module:
   \caption{Kết quả kiểm thử tích hợp module Recommendation — 4/4 passed}
 \end{figure}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{Images/Testing/newman-analytics.png}
+  \vspace{0.5cm}
+  \caption{Kết quả kiểm thử tích hợp module Analytics — 10/10 passed}
+\end{figure}
+
 % ─────────────────────────────────────────────────────────────────
 \subsection{Kiểm thử hệ thống - System Testing}
 
@@ -280,7 +298,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st01-login-success.png}
   \vspace{0.5cm}
-  \caption{ST-01: Trang chủ sau khi đăng nhập thành công với tài khoản Customer}
+  \caption{ST-01: Kết quả: Trang chủ sau khi đăng nhập thành công với tài khoản Customer}
 \end{figure}
 
 \vspace{0.3cm}
@@ -306,7 +324,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st02-login-fail.png}
   \vspace{0.5cm}
-  \caption{ST-02: Trang đăng nhập hiển thị thông báo lỗi sau khi nhập sai mật khẩu}
+  \caption{ST-02: Kết quả: Trang đăng nhập hiển thị thông báo lỗi sau khi nhập sai mật khẩu}
 \end{figure}
 
 \vspace{0.3cm}
@@ -332,7 +350,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st03-signup.png}
   \vspace{0.5cm}
-  \caption{ST-03: Trang đăng ký tài khoản mới}
+  \caption{ST-03: Kết quả: Trang đăng ký tài khoản mới}
 \end{figure}
 
 \vspace{0.3cm}
@@ -357,7 +375,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st04-admin-login.png}
   \vspace{0.5cm}
-  \caption{ST-04: Trang tổng quan Admin sau khi đăng nhập}
+  \caption{ST-04: Kết quả: Trang tổng quan Admin sau khi đăng nhập}
 \end{figure}
 
 \vspace{0.3cm}
@@ -381,7 +399,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st05-homepage.png}
   \vspace{0.5cm}
-  \caption{ST-05: Customer bị chuyển hướng về trang chủ khi cố truy cập trang Admin}
+  \caption{ST-05: Kết quả: Customer bị chuyển hướng về trang chủ khi cố truy cập trang Admin}
 \end{figure}
 
 \subsubsection{Kịch bản kiểm thử module Sản phẩm \& Giỏ hàng}
@@ -406,7 +424,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st07-product-detail.png}
   \vspace{0.5cm}
-  \caption{ST-06: Trang chi tiết sản phẩm hiển thị đầy đủ thông tin}
+  \caption{ST-06: Kết quả: Trang chi tiết sản phẩm hiển thị đầy đủ thông tin}
 \end{figure}
 
 \vspace{0.3cm}
@@ -431,7 +449,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st06-search.png}
   \vspace{0.5cm}
-  \caption{ST-07: Kết quả tìm kiếm sản phẩm theo từ khóa}
+  \caption{ST-07: Kết quả: Kết quả tìm kiếm sản phẩm theo từ khóa}
 \end{figure}
 
 \vspace{0.3cm}
@@ -445,8 +463,8 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
     \textbf{Các bước thực hiện}  & \textbf{Kết quả kỳ vọng}                                  \\
     \hline
     -- Tại trang chi tiết sản phẩm \newline
-    -- Chọn size ``M'' \newline
-    -- Chọn màu ``Xanh Navy'' \newline
+    -- Chọn size ``41'' \newline
+    -- Chọn màu ``Be'' \newline
     -- Nhấn nút ``Thêm vào giỏ'' &
     Sản phẩm xuất hiện trong giỏ hàng, badge số lượng trên biểu tượng giỏ hàng được cập nhật \\
     \hline
@@ -457,7 +475,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st08-add-to-cart.png}
   \vspace{0.5cm}
-  \caption{ST-08: Giỏ hàng sau khi thêm sản phẩm thành công}
+  \caption{ST-08: Kết quả: Giỏ hàng sau khi thêm sản phẩm thành công}
 \end{figure}
 
 \vspace{0.3cm}
@@ -481,7 +499,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st18-cart.png}
   \vspace{0.5cm}
-  \caption{ST-09: Giỏ hàng với số lượng sản phẩm đã thay đổi}
+  \caption{ST-09: Kết quả: Giỏ hàng với số lượng sản phẩm đã thay đổi}
 \end{figure}
 
 \vspace{0.3cm}
@@ -505,7 +523,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/customer-cart.png}
   \vspace{0.5cm}
-  \caption{ST-10: Giao diện giỏ hàng sau khi xóa sản phẩm}
+  \caption{ST-10: Kết quả: Giao diện giỏ hàng sau khi xóa sản phẩm}
 \end{figure}
 
 \subsubsection{Kịch bản kiểm thử module Đơn hàng \& Thanh toán}
@@ -535,7 +553,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/customer-order-detail.png}
   \vspace{0.5cm}
-  \caption{ST-11: Chi tiết đơn hàng COD sau khi đặt thành công}
+  \caption{ST-11: Kết quả: Chi tiết đơn hàng COD sau khi đặt thành công}
 \end{figure}
 
 \vspace{0.3cm}
@@ -563,7 +581,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/vnpay-bank-list.png}
   \vspace{0.5cm}
-  \caption{ST-12: Chuyển hướng đến cổng thanh toán VNPay}
+  \caption{ST-12: Kết quả: Chuyển hướng đến cổng thanh toán VNPay}
 \end{figure}
 
 \vspace{0.3cm}
@@ -589,7 +607,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/vnpay-return-success.png}
   \vspace{0.5cm}
-  \caption{ST-13: Trang xác nhận thanh toán VNPay thành công}
+  \caption{ST-13: Kết quả: Trang xác nhận thanh toán VNPay thành công}
 \end{figure}
 
 \vspace{0.3cm}
@@ -617,7 +635,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/customer-order-detail.png}
   \vspace{0.5cm}
-  \caption{ST-14: Chi tiết đơn hàng sau khi đặt qua ``Mua ngay'' (COD)}
+  \caption{ST-14: Kết quả: Chi tiết đơn hàng sau khi đặt qua ``Mua ngay'' (COD)}
 \end{figure}
 
 \vspace{0.3cm}
@@ -645,7 +663,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/vnpay-bank-list.png}
   \vspace{0.5cm}
-  \caption{ST-15: Chuyển hướng đến cổng thanh toán VNPay sau khi ``Mua ngay''}
+  \caption{ST-15: Kết quả: Chuyển hướng đến cổng thanh toán VNPay sau khi ``Mua ngay''}
 \end{figure}
 
 \vspace{0.3cm}
@@ -674,7 +692,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/customer-order-detail.png}
   \vspace{0.5cm}
-  \caption{ST-16: Chi tiết đơn hàng mới sau khi ``Mua lại'' (COD)}
+  \caption{ST-16: Kết quả: Chi tiết đơn hàng mới sau khi ``Mua lại'' (COD)}
 \end{figure}
 
 \vspace{0.3cm}
@@ -703,7 +721,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/vnpay-bank-list.png}
   \vspace{0.5cm}
-  \caption{ST-17: Chuyển hướng đến cổng thanh toán VNPay sau khi ``Mua lại''}
+  \caption{ST-17: Kết quả: Chuyển hướng đến cổng thanh toán VNPay sau khi ``Mua lại''}
 \end{figure}
 
 \vspace{0.3cm}
@@ -727,7 +745,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st17-orders.png}
   \vspace{0.5cm}
-  \caption{ST-18: Trang danh sách đơn hàng của khách hàng}
+  \caption{ST-18: Kết quả: Trang danh sách đơn hàng của khách hàng}
 \end{figure}
 
 \vspace{0.3cm}
@@ -753,7 +771,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/customer-order-cancelled.png}
   \vspace{0.5cm}
-  \caption{ST-19: Chi tiết đơn hàng ở trạng thái ``Đã hủy''}
+  \caption{ST-19: Kết quả: Chi tiết đơn hàng ở trạng thái ``Đã hủy''}
 \end{figure}
 
 \subsubsection{Kịch bản kiểm thử module Yêu cầu hoàn trả}
@@ -783,7 +801,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/customer-return-request-detail.png}
   \vspace{0.5cm}
-  \caption{ST-20: Chi tiết đơn hàng sau khi gửi yêu cầu trả hàng}
+  \caption{ST-20: Kết quả: Chi tiết đơn hàng sau khi gửi yêu cầu trả hàng}
 \end{figure}
 
 \subsubsection{Kịch bản kiểm thử module Đánh giá sản phẩm}
@@ -814,7 +832,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/customer-review-submitted.png}
   \vspace{0.5cm}
-  \caption{ST-21: Đánh giá sản phẩm đã gửi thành công}
+  \caption{ST-21: Kết quả: Đánh giá sản phẩm đã gửi thành công}
 \end{figure}
 
 \subsubsection{Kịch bản kiểm thử module Thông báo}
@@ -842,7 +860,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/customer-notification-page.png}
   \vspace{0.5cm}
-  \caption{ST-22: Trang thông báo đầy đủ của khách hàng}
+  \caption{ST-22: Kết quả: Trang thông báo đầy đủ của khách hàng}
 \end{figure}
 
 \subsubsection{Kịch bản kiểm thử module Quản trị}
@@ -870,7 +888,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st09-admin-dashboard.png}
   \vspace{0.5cm}
-  \caption{ST-23: Trang tổng quan Admin — thống kê doanh thu và biểu đồ}
+  \caption{ST-23: Kết quả: Trang tổng quan Admin — thống kê doanh thu và biểu đồ}
 \end{figure}
 
 \vspace{0.3cm}
@@ -895,7 +913,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/admin-order-detail-pending.png}
   \vspace{0.5cm}
-  \caption{ST-24: Chi tiết đơn hàng đang chờ xử lý — Admin}
+  \caption{ST-24: Kết quả: Chi tiết đơn hàng đang chờ xử lý — Admin}
 \end{figure}
 
 \vspace{0.3cm}
@@ -923,7 +941,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st11-admin-products.png}
   \vspace{0.5cm}
-  \caption{ST-25: Trang quản lý sản phẩm Admin}
+  \caption{ST-25: Kết quả: Trang quản lý sản phẩm Admin}
 \end{figure}
 
 \vspace{0.3cm}
@@ -948,7 +966,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/admin-users.png}
   \vspace{0.5cm}
-  \caption{ST-26: Trang quản lý khách hàng Admin}
+  \caption{ST-26: Kết quả: Trang quản lý khách hàng Admin}
 \end{figure}
 
 \vspace{0.3cm}
@@ -975,7 +993,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/e2e-st14-admin-vouchers.png}
   \vspace{0.5cm}
-  \caption{ST-27: Trang quản lý voucher Admin}
+  \caption{ST-27: Kết quả: Trang quản lý voucher Admin}
 \end{figure}
 
 \vspace{0.3cm}
@@ -1001,7 +1019,7 @@ Kiểm thử hệ thống (System Testing) kiểm tra toàn bộ hệ thống nh
   \centering
   \includegraphics[width=0.8\textwidth]{Images/Testing/admin-chat.png}
   \vspace{0.5cm}
-  \caption{ST-28: Giao diện chat hỗ trợ Admin}
+  \caption{ST-28: Kết quả: Giao diện chat hỗ trợ Admin}
 \end{figure}
 
 \subsubsection{Kết quả kiểm thử hệ thống}
